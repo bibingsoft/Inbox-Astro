@@ -1,0 +1,29 @@
+{
+    "name": "astro-boilerplate",
+    "type": "module",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "dev": "astro dev",
+        "start": "astro dev",
+        "build": "astro build",
+        "preview": "astro preview",
+        "astro": "astro"
+    },
+    "devDependencies": {
+        "@astrojs/react": "^1.2.2",
+        "@popperjs/core": "^2.11.6",
+        "astro": "^1.6.14",
+        "autoprefixer": "^10.4.13",
+        "cssnano": "^5.1.14",
+        "sass": "^1.56.2"
+    },
+    "dependencies": {
+        "@types/react": "^18.0.26",
+        "@types/react-dom": "^18.0.9",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "bootstrap": "^5.2.3",
+        "cash-dom": "^8.1.2"
+    }
+}

@@ -1,0 +1,56 @@
+//
+// This file contains all application-wide Sass variables.
+// You can also override Bootstrap's Sass default variables.
+//
+// Nearly all variables in Bootstrap are written with the `!default` flag.
+// This allows you to override the default values of those variables before
+// you import Bootstrap's source Sass files.
+//
+// Overriding the default variable values is the best way to customize your
+// CSS without writing _new_ styles. For example, you can change
+// `$body-color` instead of writing more CSS that override's
+// Bootstrap's CSS like so:
+//      `body { color: red; }`.
+//
+// Refer Bootstrap's variables file found at for the list of variables:
+//      `node_modules/bootstrap/scss/_variables.scss`
+//
+
+
+
+:root {
+    //colors
+        --gs-primary-color: #333;
+        --gs-secondary-color: #555;
+        --gs-side-navbar-bg: #1E1E38;
+        --body-bg: rgb(235, 236, 241);
+        --gs-border-color: #BCBFD0;
+        --gs-dark-blue: #1E1E38;
+        --nav-active: #645DF6;
+        --gs-bg-white: #fff;
+        --gs--notification-badge: #2D50C8;
+        //--gs-secondary-light-blue:#DFE4F6;
+        --gs-blue:#157EFB;
+    
+    
+            //font weight
+--gs-font-400: 400;
+--gs-font-500: 500;
+--gs-font-600: 600;
+--gs-font-700: 700;
+
+
+
+
+//font-size
+
+--gs-font-13: toRem(13px);
+--gs-font-14: toRem(14px);
+--gs-font-15: toRem(15px);
+--gs-font-16: toRem(16px);
+--gs-font-17: toRem(17px);
+}
+
+
+    
+    
