@@ -2,8 +2,8 @@
 // This file contains all styles related to the button component.
 //
 .btn{
-    height: 35px;
-    font-size: 13px;
+    height: toRem(35px);
+    font-size: toRem(13px);
     border: none;
     &.inline{
       display: flex;
@@ -11,61 +11,61 @@
     }
     &.btn-primary{
       background: #000000;
-      border-radius: 5px;
-      font-size: 13px;
-      width: 110px;
+      border-radius: toRem(5px);
+      font-size: toRem(13px);
+      width: toRem(110px);
       text-align: center;
       justify-content: center;
     }
     &.btn-light{
       background-color: #EAEBF0;
-      font-size: 13px;
-      border-radius: 8px;
+      font-size: toRem(13px);
+      border-radius:toRem(8px);
     }
     &.btn-success{
       background-color: #FFE2AB;
-      font-size: 13px;
-      border-radius: 6px;
+      font-size:toRem(13px);
+      border-radius: toRem(6px);
       color: #404040;
     }
     &.btn-blue{
       background: #EFEBFF;
-  border-radius: 8px;
-      font-size: 13px;
+  border-radius: toRem(8px);
+      font-size: toRem(13px);
       color: #222;
-      padding: 8px 10px 8px 8px;
+      padding: toRem(8px) toRem(10px) toRem(8px) toRem(8px);
     }
     &.btn-purple{
       background: #E0E9FF;
-      border-radius: 6px;
-      font-size: 13px;
+      border-radius: toRem(6px);
+      font-size: toRem(13px);
       color: #222;
-      padding: 8px 10px 8px 8px;
+      padding: toRem(8px) toRem(10px) toRem(8px) toRem(8px);
     }
     &.btn-agent{
       border: 1px solid #B2BFD6;
-      border-radius: 6px;
-      font-size: 13px;
-      padding: 5px 8px;
+      border-radius: toRem(6px);
+      font-size: toRem(13px);
+      padding: toRem(5px) toRem(8px);
       img{
         width: 21px;
       }
     }
   }
   .btn-resolve{
-    padding-right: 15px;
+    padding-right: toRem(15px);
     width: auto !important;
     i{
       line-height: initial;
       img{
-        width: 17px;
+        width: toRem(17px);
       }
     }
   }
   
   .comm-btn{
-    height: 38px;
-      padding: 10px 20px;
+    height: toRem(38px);
+      padding: toRem(10px) toRem(20px);
        
         background: #000000;
         border-radius: 6px;
@@ -86,7 +86,7 @@
     }
   
   .black-btn{
-  height: 38px;
+  height: toRem(38px);
     padding: 10px 20px;
      
       background: #000000;

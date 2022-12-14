@@ -1,14 +1,14 @@
 import React from "react";
-import CircularProgressBar from "./CircularProgressBar.jsx";
+import CircularProgressBar from '../../common/forms/CircularProgressBar.jsx';
 function Header() {
     return (
         <nav className="nav-header header navbar navbar-expand-lg  bg-white ">
         <div className="container-fluid">
-         <a class="hamberger"  data-bs-toggle="offcanvas" href="#offcanvasMobile" role="button" aria-controls="offcanvasMobile" >
+         <a className="hamberger"  data-bs-toggle="offcanvas" href="#offcanvasMobile" role="button" aria-controls="offcanvasMobile" >
           <svg width="36" height="32" viewBox="0 0 36 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<line x1="7" y1="7" x2="29" y2="7" stroke="#555555" stroke-width="2" stroke-linecap="round"/>
-<line x1="7" y1="23" x2="29" y2="23" stroke="#555555" stroke-width="2" stroke-linecap="round"/>
-<line x1="7" y1="15" x2="22" y2="15" stroke="#555555" stroke-width="2" stroke-linecap="round"/>
+<line x1="7" y1="7" x2="29" y2="7" stroke="#555555" strokeWidth="2" strokeLinecap="round"/>
+<line x1="7" y1="23" x2="29" y2="23" stroke="#555555" strokeWidth="2" strokeLinecap="round"/>
+<line x1="7" y1="15" x2="22" y2="15" stroke="#555555" strokeWidth="2" strokeLinecap="round"/>
 </svg>
 
           </a> 
@@ -31,7 +31,7 @@ function Header() {
             
             </ul>
             <div className="d-flex ms-auto">
-             <CircularProgressBar value="12"/>
+             <CircularProgressBar value="12" datapercentage="30"/>
                  
                   <ul className="d-flex gap-5 align-items-center header-right-sec">
                     <li>

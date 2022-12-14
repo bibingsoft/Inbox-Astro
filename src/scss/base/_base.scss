@@ -20,13 +20,13 @@ html {
   }
   input,
 select {
-  height: 38px;
+  height: toRem(38px);
   border: 1px solid var(-gs-border-color);
 }
 .form-control,
 .form-select {
   border: 1px solid var(-gs-border-color);
-  border-radius: 6px;
+  border-radius: toRem(6px);
 }
 input:focus {
   outline: none !important;

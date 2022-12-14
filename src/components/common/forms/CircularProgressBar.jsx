@@ -2,10 +2,10 @@
 
 import React from "react";
 
-function CircularProgressBar({ value }) {
+function CircularProgressBar({ value , datapercentage}) {
     return (
         <div className="gap-2 my-2 progress-card">
-        <div className="progress" data-percentage="30">
+        <div className="progress" data-percentage={datapercentage}>
           <span className="progress-left">
             <span className="progress-bar"></span>
           </span>

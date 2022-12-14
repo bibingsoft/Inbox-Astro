@@ -1,7 +1,7 @@
 
     
     .card-radius{
-        border-radius: 8px 8px 0px 0px !important;
+        border-radius: toRem(8px) torem(8px) 0 0 !important;
     }
     %chat-bluebox {
         -webkit-border-top-left-radius: 0px;
@@ -42,19 +42,19 @@
       
       .panel-center {
         background-color: #fff;
-        margin-top: 1.3px;
-        border-radius: 8px;
+        margin-top: toRem(1.3px);
+        border-radius: toRem(8px);
       
         &-box {
           background-color: #fff;
-          padding: 10px 15px;
-          border-radius: 8px 8px 0px 0px;
+          padding: toRem(10px) toRem(15px);
+          border-radius: toRem(8px)  toRem(8px) 0 0;
           align-items: center;
           box-shadow: 0px 1px 3px rgb(62 72 105 / 29%);
           @media (max-width: 575.98px) {
             flex-direction: column;
-        gap: 10px;
-        align-items: start;
+        gap: toRem(10px);
+        align-items:flex-start;
           }
          
         }
@@ -68,25 +68,25 @@
         overflow-y: scroll;
         & .btn-user {
           background-color: #f1f1f2;
-          border-radius: 30px;
-          padding: 5px 20px 5px 5px;
+          border-radius: toRem(30px);
+          padding: toRem(5px) toRem(20px) toRem(5px) toRem(20px);
           border: 0;
-          font-size: 14px;
-          border: 1px solid #fff;
-          box-shadow: 0px 1px 13px 0px rgba(0, 0, 0, 0.34);
+          font-size: toRem(14px);
+          border: toRem(1px) solid #fff;
+          box-shadow: 0px toRem(12px) toRem(13px) 0px rgba(0, 0, 0, 0.34);
           &.avatar {
             position: relative;
             &:hover {
               color: var(--gs-primary-color);
             }
             & i.image {
-              width: 24px;
-              height: 24px;
+              width: toRem(24px);
+              height: toRem(24px);
               border-radius: 50%;
               display: inline-block;
-              margin-right: 5px;
+              margin-right: toRem(5px);
               overflow: hidden;
-              border: 1px solid;
+              border: toRem(1px) solid;
             }
           }
         }
@@ -94,16 +94,16 @@
           & .time-break {
             border-bottom: 1px solid rgba(112, 124, 151, 0.47);
             position: relative;
-            margin: 20px 0;
+            margin: toRem(20px) 0;
             span {
               color: var(--gs-secondary);
               background-color: #fff;
-              padding: 0px 15px;
+              padding: 0px toRem(15px);
               position: absolute;
               left: 50%;
               top: -10px;
               transform: translate(-50%, 0);
-              font-size: 14px;
+              font-size: toRem(14px);
             }
           }
           & .chat-left {
@@ -111,122 +111,115 @@
               color: #5e5e5e;
               display: block;
             }
-            & .user_ico {
-              width: 21px;
-              height: 21px;
+            & .user-ico {
+              width: toRem(21px);
+              height: toRem(21px);
               border-radius: 50%;
               display: inline-block;
-              margin-right: 5px;
+              margin-right: toRem(5px);
               background: url(../../assets/avatar2.jpg) no-repeat center center;
               background-size: contain;
             }
-            & .user_chat_ico {
+            & .user-chat-ico {
               display: flex;
               align-items: center;
               justify-content: center;
-              width: 22px;
-              height: 22px;
+              width: toRem(22px);
+              height: toRem(22px);
               border-radius: 50%;
-              margin-right: 5px;
+              margin-right: toRem(5px);
               background-size: contain;
               background: #d9d9d9;
-              border-radius: 50px;
+              border-radius: toRem(50px);
             }
             & .box-blue {
               background: #ebefff;
-              border-radius: 0px 10px 10px 10px;
+              border-radius: 0px toRem(10px) toRem(10px) toRem(10px);
               @extend %chat-bluebox;
               // max-width: 500px;
-              margin-bottom: 4px;
+              margin-bottom: toRem(4px);
               transition: all 0.3s ease-out;
               line-height: 1.5;
               display: flex;
               flex-direction: column;
-              align-items: end;
-              gap: 5px;
-              &:hover {
-                // transform: translateY(-5px) scale(1.005) translateZ(0);
-              }
+              align-items: flex-end;
+              gap: toRem(5px);
+             
               &.fadeless {
                 background: #ebefff;
               }
             }
             & span.time {
-              font-size: 14px;
+              font-size: toRem(14px);
               color: #777;
             }
           }
           & .chat-right {
             & .name {
                 color: var(--gs-secondary);
-              padding-left: 30px;
+              padding-left: toRem(30px);
               display: block;
             }
             & .tick {
-              width: 19px;
-              height: 19px;
+              width: toRem(19px);
+              height: toRem(19px);
               display: inline-block;
-              margin-right: 5px;
+              margin-right: toRem(5px);
               background: url(../../assets/dbl-tick-dark.svg) no-repeat center center;
-              background-position: 0px 5px;
+              background-position: 0px toRem(5px);
             }
             & .box-blueright {
               background: #ebf0f4;
-              border-radius: 0px 10px 10px 10px;
+              border-radius: 0px toRem(10px) toRem(10px) toRem(10px);
               color: var(--gs-primary-color);
-              margin-bottom: 10px;
+              margin-bottom: toRem(10px);
               line-height: 1.5;
               display: flex;
               flex-direction: column;
-              align-items: start;
-              gap: 5px;
+              align-items: flex-start;
+              gap: toRem(5px);
               @extend %chat-bluebox_right;
               // transition: all 0.3s ease-out;
-              &:hover {
-                //  transform: translateY(-5px) scale(1.005) translateZ(0);
-              }
+             
               &.fadeless {
                 background-color: #8bacff;
               }
             }
             & span.time {
-              font-size: 14px;
+              font-size: toRem(14px);
               color: var(--gs-secondary);
-              padding-left: 30px;
+              padding-left: toRem(30px);
             }
           }
           &__head {
             font-weight: 500;
-            font-size: 21px;
+            font-size: toRem(21px);
             color: #000000;
           }
           &__sub-head {
             font-weight: 400;
-            font-size: 13px;
+            font-size: toRem(13px);
             color: #333;
           }
         }
         .chat-attached {
           background: #f5faff;
-          border-radius: 7px;
-          padding: 10px;
-          margin-right: 10px;
-          img {
-            // width: 90px;
-            // max-width: 100%;
-          }
+          border-radius: toRem(7px);
+          padding: toRem(10px);
+          margin-right: toRem(10px);
+         
         }
       }
       .selected-count {
         display: flex;
         align-items: center;
         background: #e0e9ff;
-        border-radius: 6px;
-        font-size: 13px;
-        padding: 10px 0px 10px 10px;
-        height: 35px;
+        border-radius: toRem(6px);
+        font-size: toRem(13px);
+        padding: toRem(10px) toRem(0px) toRem(10px) toRem(10px);
+        height: toRem(35px);
         & ul {
-          padding: 8px;
+          padding: toRem(8px);
           display: flex;
           align-items: center;
           justify-content: center;
@@ -242,17 +235,17 @@
         background-color: transparent;
       }
       .selected-image {
-        width: 30px;
-        height: 30px;
+        width: toRem(30px);
+        height: toRem(30px);
         border-radius: 50%;
         overflow: hidden;
         // border: 1.3px solid #fff;
       }
       .selected-number {
         background: #dde9ff;
-        border: 1px solid #ffffff;
-        border-radius: 50px;
-        padding: 4px;
+        border: toRem(1px) solid #ffffff;
+        border-radius: toRem(50px);
+        padding: toRem(4px);
         span {
           font-weight: 600;
           color: #0061ff;
@@ -266,21 +259,18 @@
         width: 2.5vw;
         height: 2.5vw;
         background: #fec860;
-        border-radius: 5px;
+        border-radius: toRem(5px);
         cursor: pointer;
-        margin-right: 10px;
+        margin-right: toRem(10px);
       }
       
       .chatCntrl-box {
         background-color: #fff;
         box-shadow: 0px 4px 23px 0px rgba(0, 0, 0, 0.2);
         border: 1px solid #c8d1d9;
-        border-radius: 6px;
-        // position: fixed;
-        //   bottom: 10px;
-        //   width: calc(100% - 745px);
-        & .form-control {
-          // height: 90px;
+        border-radius: toRem(6px);
+       
+        & .form-control {        
           resize: none;
           border: 0;
           &:focus {
@@ -288,22 +278,21 @@
             box-shadow: none;
           }
           &.form-control {
-            border-radius: 15px;
+            border-radius: toRem(15px);
           }
         }
       
         & .control {
           padding: 0px;
-          align-items: center;
           & a.attach {
-            width: 35px;
-            height: 35px;
+            width: toRem(35px);
+            height: toRem(35px);
             border-radius: 50%;
             display: inline-block;
             background-color: #000;
-            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px toRem(4px) toRem(4px) 0px rgba(0, 0, 0, 0.25);
             text-align: center;
-            line-height: 32px;
+            line-height: toRem(32px);
             cursor: pointer;
           }
       
@@ -311,13 +300,13 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 35px;
-            height: 35px;
+            width: toRem(35px);
+            height: toRem(35px);
             border-radius: 50%;
             background-color: #000;
-            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px toRem(4px) toRem(4px) 0px rgba(0, 0, 0, 0.25);
             text-align: center;
-            line-height: 32px;
+            line-height: toRem(32px);
           }
       
           & .sendwithlock {
@@ -329,21 +318,15 @@
             }
           }
       
-          ul li {
-            //  margin: 0 10px;
-          }
+         
         }
       }
       
     
-      
-      .gs-infowindow {
-        width: 320px;
-        float: right;
-      }
+     
      
       .chat-flex {
-        gap: 5px;
+        gap: toRem(5px);
       }
       .chat-wrapper {
         height: calc(100vh - 150px);
@@ -352,19 +335,19 @@
       
       
       .agent-dropdown {
-        box-shadow: 0px 4px 23px rgba(0, 0, 0, 0.2);
-        border-radius: 6px;
+        box-shadow: 0px toRem(4px) toRem(23px) rgba(0, 0, 0, 0.2);
+        border-radius:  toRem(6px);
       
         .agent-assign-box {
           display: flex;
-          min-width: 500px;
+          min-width:  toRem(500px);
           justify-content: space-around;
         }
         & .agent-group {
           & .agent-head {
             color: #333;
             font-weight: 500;
-            font-size: 14px;
+            font-size:  toRem(14px);
           }
         }
         & .settings-box {
@@ -375,16 +358,16 @@
           width: 2vw;
           height: 2vw;
           background: #ebefff;
-          border-radius: 6px;
+          border-radius:  toRem(6px);
           cursor: pointer;
-          font-size: 11px;
+          font-size:  toRem(11px);
         }
         & .agent-group-list {
-          max-height: 200px;
+          max-height:  toRem(200px);
           overflow-y: scroll;
         }
         & .agent-list {
-          margin-bottom: 20px;
+          margin-bottom:  toRem(20px);
         }
         & .input-agent:checked + label {
           color: #645DF6 !important;
@@ -394,14 +377,14 @@
       
       .agent-group-list::-webkit-scrollbar {
         background-color: transparent;
-        width: 2px;
+        width:  toRem(2px);
       }
       .agent-group-list::-webkit-scrollbar-track {
         background-color: transparent;
       }
       .agent-group-list::-webkit-scrollbar-thumb {
-        height: 5px !important;
-        border-radius: 10px;
+        height: toRem(5px)!important;
+        border-radius:  toRem(10px);
         background: #b7bdcb;
         box-shadow: 4px 4px 15px rgba(112, 124, 151, 0.05),
           2px 2px 10px rgba(112, 124, 151, 0.1),
@@ -410,10 +393,10 @@
       
     
       .chat-ticket-status {
-        margin-top: 20px;
+        margin-top:  toRem(20px);
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap:  toRem(10px);
         justify-content: center;
         align-items: center;
       
@@ -422,139 +405,13 @@
           align-items: center;
           justify-content: center;
           background: #202124;
-          border-radius: 50px;
-          width: 129px;
-          height: 33px;
+          border-radius:  toRem(50px);
+          width:  toRem(129px);
+          height: toRem(33px);
           color: #fff;
-          font-size: 13px;
+          font-size:  toRem(13px);
         }
       }
       
 
-      //floating button
-      //chat box floating styles
-.floatingButtonWrap {
-    display: block;
-    position: relative;
-    top:0px;
-    left:0;
-    z-index: 999999999;
-        width: 35px;
-      height: 35px;
-  }
-  
-  .floatingButtonInner {
-    position: relative;
-  }
-  
-  .floatingButton {
-    display: block;
-    width: 35px;
-    height: 35px;
-    text-align: center;
-    background: #354053;
-  border-radius: 17.5px;
-    color: #fff;
-    line-height: 30px;
-    position: absolute;
-    border-radius: 50% 50%;
-    top: 0px;
-    left: 0px;
-   // border: 5px solid #b2bedc;
-    /* opacity: 0.3; */
-    opacity: 1;
-    transition: all 0.4s;
-  }
-  .floatingButton.open{
-    background-color: #949FB2;
-    ;
-  }
-  
-  .floatingButton.open,
-  .floatingButton:hover,
-  .floatingButton:focus,
-  .floatingButton:active {
-    opacity: 1;
-    color: #fff;
-  }
-  
-  
-  
-  .floatingButton .fa {
-    transform: rotate(0deg);
-    transition: all 0.4s;
-    position: absolute;
-    bottom: 10px;
-      left: 12px;
-  }
-  
-  .floatingButton.open .fa {
-    transform: rotate(270deg);
-  }
-  
-  .floatingMenu {
-    position: absolute;
-    bottom: 30px;
-    right: -6px;
-    /* width: 200px; */
-    display: none;
-  }
-  
-  .floatingMenu li {
-    width: 100%;
-    float: right;
-    list-style: none;
-    text-align: right;
-    margin-bottom: 5px;
-  }
-  
-  .floatingMenu li a {
-    padding: 8px 15px;
-    display: inline-block;
-    background: #ccd7f5;
-    border-radius: 5px;
-    overflow: hidden;
-    white-space: nowrap;
-    transition: all 0.4s;
-    /* -webkit-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.22);
-    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.22); */
-    -webkit-box-shadow: 1px 3px 5px rgba(211, 224, 255, 0.5);
-    box-shadow: 1px 3px 5px rgba(211, 224, 255, 0.5);
-  }
-  
-  .floatingMenu li a:hover {
-    margin-right: 10px;
-    text-decoration: none;
-  }
-  .minifab {
-  position: relative;
-  width: 30px;
-  height: 30px;
-  background: #354053;
-  border-radius: 17.5px;
-  z-index: 5;
-  float: left;
-  margin-left: 6px;
-  margin-right: 6px;
-  transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  }
-  
-  .minifab:hover {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  }
-  
-  .minifabIcon {
-  margin-top: 6px;
-  margin-left: 8px;
-  }
-  
-  .op1 {
-  background: #354053;
-  }
-  
-  
-  
-  
-  
-  
+     

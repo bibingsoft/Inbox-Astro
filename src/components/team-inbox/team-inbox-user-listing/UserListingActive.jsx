@@ -12,7 +12,7 @@ function UserListActive({ userimage,title, subtitle, time, username, socialmedia
         <div className="d-flex">               
           <div className="card-round">
             <div className="card-holder card-holder-sm">
-              <img classname="card-user-sm" src={userimage} alt="# "/>
+              <img className="card-user-sm" src={userimage} alt="# "/>
             </div>
           </div>
           <div className="ps-3 w-100">
