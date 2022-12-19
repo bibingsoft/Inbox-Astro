@@ -2,7 +2,7 @@ import React from "react";
 
 function SideNavMobile() {
     return (
-        <div className="offcanvas offcanvas-start  text-bg-dark offcanvas-sidenav" tabIndex="-1" id="offcanvasMobile" aria-labelledby="offcanvasMobileLabel">
+        <div className="offcanvas offcanvas-start  bg-dark-blue offcanvas-sidenav" tabIndex="-1" id="offcanvasMobile" aria-labelledby="offcanvasMobileLabel">
         <div className="offcanvas-header">
           <h5 className="offcanvas-title" id="offcanvasMobileLabel"></h5>
           <button type="button" className="btn-close btn-close-white" data-bs-dismiss="offcanvasMobile" aria-label="Close"></button>

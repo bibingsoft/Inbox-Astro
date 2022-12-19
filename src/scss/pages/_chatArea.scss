@@ -1,7 +1,7 @@
 
     
     .card-radius{
-        border-radius: toRem(8px) torem(8px) 0 0 !important;
+        border-radius: toRem(8px) toRem(8px) 0 0 !important;
     }
     %chat-bluebox {
         -webkit-border-top-left-radius: 0px;
@@ -41,15 +41,9 @@
       
       
       .panel-center {
-        background-color: #fff;
-        margin-top: toRem(1.3px);
-        border-radius: toRem(8px);
-      
-        &-box {
-          background-color: #fff;
-          padding: toRem(10px) toRem(15px);
-          border-radius: toRem(8px)  toRem(8px) 0 0;
-          align-items: center;
+       
+        &-box {         
+        
           box-shadow: 0px 1px 3px rgb(62 72 105 / 29%);
           @media (max-width: 575.98px) {
             flex-direction: column;
@@ -66,30 +60,7 @@
       .chat-section {
         height: calc(100vh - 330px);
         overflow-y: scroll;
-        & .btn-user {
-          background-color: #f1f1f2;
-          border-radius: toRem(30px);
-          padding: toRem(5px) toRem(20px) toRem(5px) toRem(20px);
-          border: 0;
-          font-size: toRem(14px);
-          border: toRem(1px) solid #fff;
-          box-shadow: 0px toRem(12px) toRem(13px) 0px rgba(0, 0, 0, 0.34);
-          &.avatar {
-            position: relative;
-            &:hover {
-              color: var(--gs-primary-color);
-            }
-            & i.image {
-              width: toRem(24px);
-              height: toRem(24px);
-              border-radius: 50%;
-              display: inline-block;
-              margin-right: toRem(5px);
-              overflow: hidden;
-              border: toRem(1px) solid;
-            }
-          }
-        }
+       
         &-chat-area {
           & .time-break {
             border-bottom: 1px solid rgba(112, 124, 151, 0.47);
@@ -109,7 +80,6 @@
           & .chat-left {
             & .name {
               color: #5e5e5e;
-              display: block;
             }
             & .user-ico {
               width: toRem(21px);
@@ -121,29 +91,16 @@
               background-size: contain;
             }
             & .user-chat-ico {
-              display: flex;
-              align-items: center;
-              justify-content: center;
+              
               width: toRem(22px);
-              height: toRem(22px);
-              border-radius: 50%;
-              margin-right: toRem(5px);
-              background-size: contain;
-              background: #d9d9d9;
-              border-radius: toRem(50px);
+              height: toRem(22px); 
             }
             & .box-blue {
               background: #ebefff;
               border-radius: 0px toRem(10px) toRem(10px) toRem(10px);
               @extend %chat-bluebox;
-              // max-width: 500px;
-              margin-bottom: toRem(4px);
               transition: all 0.3s ease-out;
-              line-height: 1.5;
-              display: flex;
-              flex-direction: column;
-              align-items: flex-end;
-              gap: toRem(5px);
+              line-height: 1.5;             
              
               &.fadeless {
                 background: #ebefff;
@@ -155,41 +112,22 @@
             }
           }
           & .chat-right {
-            & .name {
-                color: var(--gs-secondary);
-              padding-left: toRem(30px);
-              display: block;
-            }
+           
             & .tick {
               width: toRem(19px);
               height: toRem(19px);
-              display: inline-block;
-              margin-right: toRem(5px);
+              
               background: url(../../assets/dbl-tick-dark.svg) no-repeat center center;
               background-position: 0px toRem(5px);
             }
             & .box-blueright {
               background: #ebf0f4;
               border-radius: 0px toRem(10px) toRem(10px) toRem(10px);
-              color: var(--gs-primary-color);
-              margin-bottom: toRem(10px);
-              line-height: 1.5;
-              display: flex;
-              flex-direction: column;
-              align-items: flex-start;
-              gap: toRem(5px);
               @extend %chat-bluebox_right;
               // transition: all 0.3s ease-out;
              
-              &.fadeless {
-                background-color: #8bacff;
-              }
             }
-            & span.time {
-              font-size: toRem(14px);
-              color: var(--gs-secondary);
-              padding-left: toRem(30px);
-            }
+           
           }
           &__head {
             font-weight: 500;
@@ -264,11 +202,9 @@
         margin-right: toRem(10px);
       }
       
-      .chat-control-box {
-        background-color: #fff;
+      .chat-control-box {      
         box-shadow: 0px 4px 23px 0px rgba(0, 0, 0, 0.2);
         border: 1px solid #c8d1d9;
-        border-radius: toRem(6px);
        
         & .form-control {        
           resize: none;
@@ -282,35 +218,17 @@
           }
         }
       
-        & .control {
-          padding: 0px;
-          & a.attach {
-            width: toRem(35px);
-            height: toRem(35px);
-            border-radius: 50%;
-            display: inline-block;
-            background-color: #000;
-            box-shadow: 0px toRem(4px) toRem(4px) 0px rgba(0, 0, 0, 0.25);
-            text-align: center;
-            line-height: toRem(32px);
-            cursor: pointer;
-          }
+        & .control {        
+         
       
-          & a.send {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+          & a.send {           
             width: toRem(35px);
-            height: toRem(35px);
-            border-radius: 50%;
-            background-color: #000;
-            box-shadow: 0px toRem(4px) toRem(4px) 0px rgba(0, 0, 0, 0.25);
-            text-align: center;
+            height: toRem(35px);         
             line-height: toRem(32px);
           }
       
-          & .sendwithlock {
-            position: relative;
+          & .send-with-lock {
+          
             & .lock {
               position: absolute;
               top: -8px;

@@ -1,6 +1,4 @@
-//
-// This file contains all styles related to the button component.
-//
+
 .btn{
     height: toRem(35px);
     font-size: toRem(13px);
@@ -9,187 +7,187 @@
       display: flex;
       align-items: center;
     }
-    &.btn-primary{
-      background: #000000;
-      border-radius: toRem(5px);
-      font-size: toRem(13px);
-      width: toRem(110px);
-      text-align: center;
-      justify-content: center;
-    }
-    &.btn-light{
-      background-color: #EAEBF0;
-      font-size: toRem(13px);
-      border-radius:toRem(8px);
-    }
-    &.btn-success{
-      background-color: #FFE2AB;
-      font-size:toRem(13px);
-      border-radius: toRem(6px);
-      color: #404040;
-    }
-    &.btn-blue{
-      background: #EFEBFF;
-  border-radius: toRem(8px);
-      font-size: toRem(13px);
-      color: #222;
-      padding: toRem(8px) toRem(10px) toRem(8px) toRem(8px);
-    }
-    &.btn-purple{
-      background: #E0E9FF;
-      border-radius: toRem(6px);
-      font-size: toRem(13px);
-      color: #222;
-      padding: toRem(8px) toRem(10px) toRem(8px) toRem(8px);
-    }
-    &.btn-agent{
-      border: 1px solid #B2BFD6;
-      border-radius: toRem(6px);
-      font-size: toRem(13px);
-      padding: toRem(5px) toRem(8px);
-      img{
-        width: 21px;
-      }
-    }
+  //   &.btn-primary{
+  //     background: #000000;
+  //     border-radius: toRem(5px);
+  //     font-size: toRem(13px);
+  //     width: toRem(110px);
+  //     text-align: center;
+  //     justify-content: center;
+  //   }
+  //   &.btn-light{
+  //     background-color: #EAEBF0;
+  //     font-size: toRem(13px);
+  //     border-radius:toRem(8px);
+  //   }
+  //   &.btn-success{
+  //     background-color: #FFE2AB;
+  //     font-size:toRem(13px);
+  //     border-radius: toRem(6px);
+  //     color: #404040;
+  //   }
+  //   &.btn-blue{
+  //     background: #EFEBFF;
+  // border-radius: toRem(8px);
+  //     font-size: toRem(13px);
+  //     color: #222;
+  //     padding: toRem(8px) toRem(10px) toRem(8px) toRem(8px);
+  //   }
+  //   &.btn-purple{
+  //     background: #E0E9FF;
+  //     border-radius: toRem(6px);
+  //     font-size: toRem(13px);
+  //     color: #222;
+  //     padding: toRem(8px) toRem(10px) toRem(8px) toRem(8px);
+  //   }
+  //   &.btn-agent{
+  //     border: 1px solid #B2BFD6;
+  //     border-radius: toRem(6px);
+  //     font-size: toRem(13px);
+  //     padding: toRem(5px) toRem(8px);
+  //     img{
+  //       width: 21px;
+  //     }
+  //   }
   }
-  .btn-resolve{
-    padding-right: toRem(15px);
-    width: auto !important;
-    i{
-      line-height: initial;
-      img{
-        width: toRem(17px);
-      }
-    }
-  }
+  // .btn-resolve{
+  //   padding-right: toRem(15px);
+  //   width: auto !important;
+  //   i{
+  //     line-height: initial;
+  //     img{
+  //       width: toRem(17px);
+  //     }
+  //   }
+  // }
   
-  .comm-btn{
-    height: toRem(38px);
-      padding: toRem(10px) toRem(20px);
+  // .comm-btn{
+  //   height: toRem(38px);
+  //     padding: toRem(10px) toRem(20px);
        
-        background: #000000;
-        border-radius: 6px;
-        color:#fff;
-        border:none;
-        min-width: 100px;
-        &:hover{
-          background: #000000;
-          color:#fff;
-        }
-        &.active{
-          background: #000000;
-          color:#fff;
-          align-items: center;
-            display: flex;
-            justify-content: center;
-        }
-    }
+  //       background: #000000;
+  //       border-radius: 6px;
+  //       color:#fff;
+  //       border:none;
+  //       min-width: 100px;
+  //       &:hover{
+  //         background: #000000;
+  //         color:#fff;
+  //       }
+  //       &.active{
+  //         background: #000000;
+  //         color:#fff;
+  //         align-items: center;
+  //           display: flex;
+  //           justify-content: center;
+  //       }
+  //   }
   
-  .black-btn{
-  height: toRem(38px);
-    padding: 10px 20px;
+  // .black-btn{
+  // height: toRem(38px);
+  //   padding: 10px 20px;
      
-      background: #000000;
-      border-radius: 6px;
-      color:#fff;
-      border:none;
-      min-width: 100px;
-      &:hover{
-        background: #000000;
-        color:#fff;
-      }
-      &.active{
-        background: #000000;
-        color:#fff;
-        align-items: center;
-          display: flex;
-          justify-content: center;
-      }
-  }
-  .black-btn-disabled{
-  height: 38px;
-    padding: 10px 20px;
+  //     background: #000000;
+  //     border-radius: 6px;
+  //     color:#fff;
+  //     border:none;
+  //     min-width: 100px;
+  //     &:hover{
+  //       background: #000000;
+  //       color:#fff;
+  //     }
+  //     &.active{
+  //       background: #000000;
+  //       color:#fff;
+  //       align-items: center;
+  //         display: flex;
+  //         justify-content: center;
+  //     }
+  // }
+  // .black-btn-disabled{
+  // height: 38px;
+  //   padding: 10px 20px;
      
-      background: #CFCFCF;
-      border-radius: 6px;
-      color: #76787A;
-      border:none;
-      min-width: 100px;
-      &:hover{
-        background: #CFCFCF;
-      }
-      &.active{
-        background: #CFCFCF;
-        align-items: center;
-          display: flex;
-          justify-content: center;
-      }
-  }
+  //     background: #CFCFCF;
+  //     border-radius: 6px;
+  //     color: #76787A;
+  //     border:none;
+  //     min-width: 100px;
+  //     &:hover{
+  //       background: #CFCFCF;
+  //     }
+  //     &.active{
+  //       background: #CFCFCF;
+  //       align-items: center;
+  //         display: flex;
+  //         justify-content: center;
+  //     }
+  // }
   
-  .light-btn{
-    height: 38px;
-      padding: 10px 20px;
+  // .light-btn{
+  //   height: 38px;
+  //     padding: 10px 20px;
        
-        min-width: 100px;
-       // box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
-        border-radius: 6px;
-        color: #000000;
-        border: 1px solid #76829B;
-        display: flex;
-      align-items: center;
-      justify-content: center;
-        &:hover{
-          background: #000000;
-          color: #fff;
-        }
-        &.active{
-          background: #000000;
-          color: #fff;
-            display: flex;
-            justify-content: center;
-        }
-    }
+  //       min-width: 100px;
+  //      // box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+  //       border-radius: 6px;
+  //       color: #000000;
+  //       border: 1px solid #76829B;
+  //       display: flex;
+  //     align-items: center;
+  //     justify-content: center;
+  //       &:hover{
+  //         background: #000000;
+  //         color: #fff;
+  //       }
+  //       &.active{
+  //         background: #000000;
+  //         color: #fff;
+  //           display: flex;
+  //           justify-content: center;
+  //       }
+  //   }
   
-    .chat-btn{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #E9EAED;
-  border-radius: 5px;
-  padding: 10px;
-  min-width: 80px;
-  color:#333;
-  font-weight: 600;
-  &:hover{
-    background: #d4d8e6;
-    color:#333;
-  }
-    }
+  //   .chat-btn{
+  //     display: flex;
+  //     align-items: center;
+  //     justify-content: center;
+  //     background: #E9EAED;
+  // border-radius: 5px;
+  // padding: 10px;
+  // min-width: 80px;
+  // color:#333;
+  // font-weight: 600;
+  // &:hover{
+  //   background: #d4d8e6;
+  //   color:#333;
+  // }
+  //   }
   
-    .red-btn{
-      height: 38px;
-        padding: 10px 20px;
-        background: #CA4A46;
-          border-radius: 6px;
-          color:#fff;
-          border:none;
-          min-width: 100px;
-          display: flex;
-         align-items: center;
-         justify-content: center;
-          &:hover{
-            background: #e8504b;
-            color:#fff;
-            align-items: center;
+  //   .red-btn{
+  //     height: 38px;
+  //       padding: 10px 20px;
+  //       background: #CA4A46;
+  //         border-radius: 6px;
+  //         color:#fff;
+  //         border:none;
+  //         min-width: 100px;
+  //         display: flex;
+  //        align-items: center;
+  //        justify-content: center;
+  //         &:hover{
+  //           background: #e8504b;
+  //           color:#fff;
+  //           align-items: center;
              
-          }
-          &.active{
-            background: #CA4A46;
-            color:#fff;
-            align-items: center;
+  //         }
+  //         &.active{
+  //           background: #CA4A46;
+  //           color:#fff;
+  //           align-items: center;
              
-          }
-      }
+  //         }
+  //     }
   
       .min-width-custom{
         min-width: max-content;

@@ -1,13 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Accordion from "../components/Accordion.jsx";
-import Search from "../components/Search.jsx";
-import UserList from "../components/UserListing.jsx";
-import UserListActive from "../components/UserListingActive.jsx";
+
 ---
 
 <Layout title="comm chat">
-    <div class="wrapper">
+    <div class="wrapper ms-5 ms-md-0 ps-2">
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-3 pe-lg-0 ">
@@ -59,15 +57,9 @@ import UserListActive from "../components/UserListingActive.jsx";
                       <!-- menu filter ends -->
                     </div>
                     <!--/.filter-box-->
-                  <!-- custom search starts -->
-                  <Search/>
-                    <!--/.custom_search-->
-                    <div class="inbox-wrapper mt-3">
-                        <!-- chat listing -->
-                    <UserList userimage="assets/chat-widget-sidebar.svg" title="Gsoftcomm" subtitle="Welcome to gsoftcomm..." time="2 Min ago" username="Chat widget" socialmedia="assets/chat-widget-sidebar.svg"/>
-                    <UserListActive userimage="assets/chat-widget-sidebar.svg" title="Gsoftcomm" subtitle="Welcome to gsoftcomm..." time="1 Min ago" username="Chat widget2" socialmedia="assets/chat-widget-sidebar.svg"/>
-                    <UserList userimage="assets/chat-widget-sidebar.svg" title="Gsoftcomm" subtitle="Welcome to gsoftcomm..." time="5 Min ago" username="Chat widget3" socialmedia="assets/chat-widget-sidebar.svg"/>
-                      
+                 
+                    <div class="inbox-wrapper rounded mt-3">
+                     
                     </div>
                   </div><!--/-panel-left-->
 

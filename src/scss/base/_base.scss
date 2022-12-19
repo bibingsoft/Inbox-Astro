@@ -11,9 +11,9 @@ html {
     margin: 0;
     font-family: "Poppins";
     font-size:13px;
-    font-weight: var(--gs-font-400);
-    color: var(--gs-primary-color);
-    background-color: var(--body-bg);
+   font-weight: $font-weight-light;
+    color: $primary-color;
+    background-color: $body-bg;
     -webkit-text-size-adjust: 100%;
     overflow-x: hidden;
     
@@ -21,11 +21,11 @@ html {
   input,
 select {
   height: toRem(38px);
-  border: 1px solid var(-gs-border-color);
+ // border: 1px solid $border-color;
 }
 .form-control,
 .form-select {
-  border: 1px solid var(-gs-border-color);
+ // border: 1px solid $border-color;
   border-radius: toRem(6px);
 }
 input:focus {
@@ -66,62 +66,9 @@ a{
   color: #4A6ADA;
 }
 
-.primary-color{
-  color: var(--gs-primary-color);
-}
-
-.secondary-color{
-  color: var(--gs-secondary-color);
-}
-.dark-charcoal{
-  color: var(--gs-primary-color);
-}
-.dark-grey{
-  color: var(--gs-secondary-color);
-}
-.text-black{
-  color:#000;
-}
-.fw-400{
-  font-weight:400;
-}
 .fw-500{
   font-weight:500;
 }
-.fw-600{
-  font-weight:600;
-}
-.fw-700{
-  font-weight:700;
-}
 .fw-800{
-  font-weight:800;
-}
-
-.fs-10{
-  font-size:10px;
-}
-.fs-11{
-  font-size:11px;
-}
-.fs-12{
-  font-size:12px;
-}
-.fs-13{
-  font-size:13px;
-}
-.fs-14{
-  font-size:14px;
-}
-.fs-15{
-  font-size:15px;
-}
-.fs-16{
-  font-size:16px;
-}
-.fs-17{
-  font-size:17px;
-}
-.fs-18{
-  font-size:18px;
+  font-weight:500;
 }

@@ -1,37 +1,19 @@
 
-// .SideNavMobile{
-//   display: none;
-//   @media (max-width:  767.98px) {
-  
-//   }
+
+
+// .left-navbar{
+//     width:toRem(65px);
+//     @media (max-width: 575.98px) {
+//                 width: toRem(50px);
+//       }
 // }
 
-
-.left-navbar{
-    width:toRem(65px);
-    height: 100vh;
-    @media (max-width: 575.98px) {
-                width: toRem(50px);
-      }
-}
-
-.bg-dark-nav{
-    background:var(--gs-side-navbar-bg);
- }
- 
- .page {
-   display: flex;
-   flex-direction: column;
-   position: relative;
-   min-height: 100%;
- }
  .nav-item a {
-             display: inline-block;
+            
              padding: 0;
-             text-align: center;
              line-height: 40px;
              text-decoration: none;
-             border-radius: 8px;
+             border-radius: 6px;
              width: 40px;
              height: 40px;
              display: flex;
@@ -43,21 +25,18 @@
               align-items: center;
               justify-content: start;
               gap:toRem(20px);
-              color: var(--gs-bg-white);
+              color: #fff;
               padding: toRem(20px);
              }
              &:hover{
-               background-color: var(--nav-active);
+               background-color: $blue-active;
              }
              &.active{
-                background-color: var(--nav-active) !important;
+                background-color: $blue-active !important;
              }
            }  
                    
-.nav-logo:hover{
-    background-color: transparent !important;
 
-}
  
    .divider{
      border-bottom: 1px solid rgba(255, 255, 255, 0.12);

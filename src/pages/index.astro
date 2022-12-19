@@ -9,30 +9,31 @@ import SideNavMobile from "../components/common/navbars/SideNavMobile.jsx";
 import AccordionCustom from "../components/team-inbox/common/AccordionCustom.jsx";
 import Checkbox from "../components/common/forms/Checkbox.jsx";
 import FloatingButton from "../components/team-inbox/common/FloatingButton.jsx";
+import Button from "../components/common/forms/Button.jsx";
 ---
 
 <Layout title="comm chat">
-    <div class="wrapper">
+    <div class="wrapper ms-lg-5 ms-md-0 ps-lg-3 ps-md-0 mt-lg-65 mt-md-80">
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-3 pe-lg-0 ">
                 <div class="panel-left p-2 p-md-4 pb-5">
            
-                    <div class="filter-box p-3  d-flex align-items-center">
-                      <div class="select-box">
-                        New <i class="count">1</i>
+                    <div class="filter-box bg-white rounded-3 shadow-sm p-3  d-flex align-items-center">
+                      <div class="select-box text-primary position-relative fw-500 text-decoration-none fs-6 pe-4">
+                        New <i class="count  bg-blue-badge text-white text-center ms-3 d-inline-block rounded-circle">1</i>
                       </div>
                       <div class="ms-auto me-4">
-                        <ul class="switcher">
-                          <li class="active"><a href="#"><img src="/assets/bag.svg"></a></li>
-                          <li><a href="#"><img src="/assets/bag-in.svg"></a></li>
+                        <ul class="switcher d-flex align-items-center justify-content-between rounded-pill p-1 bg-cyan-blue">
+                          <li class="active"><a class="d-block text-center rounded-circle" href="#"><img src="/assets/bag.svg"></a></li>
+                          <li><a class="d-block text-center rounded-circle" href="#"><img src="/assets/bag-in.svg"></a></li>
                         </ul>
                       </div>
           
                        <!--menu filter starts -->
                        <div class="dropdown more">
           
-                        <div id="filter-button" class="filter-round" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div id="filter-button" class="filter-round d-flex align-items-center justify-content-center flex-direction-column rounded-circle p-1" data-bs-toggle="dropdown" aria-expanded="false">
                           <div data-bs-toggle="tooltip" data-bs-placement="top" title="Filter" data-bs-original-title="Filter"
                             aria-label="Filter">
                           
@@ -59,7 +60,7 @@ import FloatingButton from "../components/team-inbox/common/FloatingButton.jsx";
                   <!-- custom search starts -->
                   <Search/>
                     <!--/.custom_search ends-->
-                    <div class="inbox-wrapper mt-3">
+                    <div class="inbox-wrapper rounded bg-white  mt-3">
                         <!-- chat listing -->
                     <UserList userimage="assets/chat-widget-sidebar.svg" title="Gsoftcomm" subtitle="Welcome to gsoftcomm..." time="2 Min ago" username="Chat widget" socialmedia="assets/chat-widget-sidebar.svg"/>
                     <UserListActive userimage="assets/chat-widget-sidebar.svg" title="Gsoftcomm" subtitle="Welcome to gsoftcomm..." time="1 Min ago" username="Chat widget2" socialmedia="assets/chat-widget-sidebar.svg"/>
@@ -73,26 +74,23 @@ import FloatingButton from "../components/team-inbox/common/FloatingButton.jsx";
              
              <div class="col-lg-9 ps-lg-0">
               <div class="row h-100">
-                <div class="col-12">
+                <div class="col-12 pe-4">
                  
                   <div class="row content-area mt-4">
                     <div id="chat-expand" class="col-lg-8">                   
-                        <div class="panel-center">
-                          <div class="panel-center-box d-flex flex-wrap justify-content-between">
+                        <div class="panel-center bg-white rounded">
+                          <div class="panel-center-box rounded-top bg-white d-flex flex-wrap align-items-center p-3 justify-content-between">
             
-                            <button class="btn btn-blue inline"><i class="me-2">
-            
-                                <img src="/assets/chat-widget-sidebar.svg" alt="# ">
-            
-                              </i><span class="ms-2">Chat widget</span> </button>
+                          <Button btnImage="/assets/chat-widget-sidebar.svg" btnName="Chat widget"/>
+
                             <div class="d-flex align-items-center">
             
                               <!-- Assign to an agent -->
             
             
-                              <div class="dropdown more">
-            
-                                <button class="btn btn-agent inline me-3 pulse" data-bs-toggle="dropdown" aria-expanded="false"><i class="me-2 "><img src="/assets/agent.svg"></i>
+                              <div class="dropdown more">           
+                              
+                                <button class="btn border border-1 rounded px-2 py-3 d-flex align-items-center me-3 pulse" data-bs-toggle="dropdown" aria-expanded="false"><i class="me-2 "><img src="/assets/agent.svg"></i>
                                   Assign to agent</button>
             
                                 <ul class="dropdown-menu p-3 ps-4 mt-2" id="dropdown-assign-agent" aria-labelledby="dropdownMenuLink" >
@@ -105,7 +103,7 @@ import FloatingButton from "../components/team-inbox/common/FloatingButton.jsx";
             
                               <!-- assign to an agent -->
             
-                              <button class="btn btn-primary inline pulse btn-resolve"><i class="me-1"><img src="/assets/check.svg"></i>
+                              <button class="btn d-flex align-items-center justify-content-center bg-black text-center text-white rounded"><i class="me-1"><img src="/assets/check.svg"></i>
                                 Resolve</button>
             
                             </div>
@@ -116,12 +114,12 @@ import FloatingButton from "../components/team-inbox/common/FloatingButton.jsx";
             
                               <div class="chat-section-chat-area">
                              
-                                <ChatLeft username="Amanda Hug" time="18:15" chatcustomer="Hello! Finally found the time to write to you) I need your help in creating interactive animations" />
+                                <ChatLeft username="Amanda Hug" time="18:15" chatCustomer="Hello! Finally found the time to write to you) I need your help in creating interactive animations" />
                                 <ChatRight username="Steven Paul" time="18:20" chatsupport="Sure I will assist you" />
                                 
                                
                                 <div class="time-break"><span>Today</span></div>
-                                <ChatLeft username="Amanda Hug" time="18:25" chatcustomer="Thank you" />
+                                <ChatLeft username="Amanda Hug" time="18:25" chatCustomer="Thank you" />
                              
                               
                                
@@ -134,24 +132,24 @@ import FloatingButton from "../components/team-inbox/common/FloatingButton.jsx";
                               </div>
                             </div>
             
-                            <div class="chat-control-box">
-                              <textarea class="form-control p-3 p-lg-4" placeholder="‘Shift + Enter’ to add a new line; Start with 'Shift + #' to select a Stored Response"></textarea>
+                            <div class="chat-control-box  rounded bg-white">
+                              <textarea class="form-control bg-white p-3 p-lg-4" placeholder="‘Shift + Enter’ to add a new line; Start with 'Shift + #' to select a Stored Response"></textarea>
                               <div class="control d-flex p-2 p-sm-4">
-                                <!-- <a class="attach"><img src="/assets/plus.svg"></a> -->
+                              
                               <FloatingButton/> 
                              
                               
                                 <div class="ms-auto">
                                   <ul class="d-flex align-items-center">
                                     <li class="me-4">
-                                      <button class="btn btn-success rounded-pill inline pulse">
-                                        <div class="me-2 sendwithlock"><img src="/assets/send.svg"><span class="lock"><img src="/assets/lock.svg"></span></div>
+                                      <button class="btn bg-light-yellow rounded-pill d-flex align-items-center pulse">
+                                        <div class="me-2 send-with-lock position-relative"><img src="/assets/send.svg"><span class="lock"><img src="/assets/lock.svg"></span></div>
                                         <span class="d-none d-sm-block">Send as private note</span>
                                       </button>
                                     </li>
                                     <li class="me-3"><a href="#" class=""><i class="me-2"><img src="/assets/Smile-icon.svg"></i></a>
                                     </li>
-                                    <li><a href="#" class="send pulse"><img src="/assets/send-w.svg"></a></li>
+                                    <li><a href="#" class="send d-flex align-items-center justify-content-center bg-black text-center rounded-circle shadow-sm pulse"><img src="/assets/send-w.svg"></a></li>
                                   </ul>
                                 </div>
                               </div>
@@ -164,8 +162,8 @@ import FloatingButton from "../components/team-inbox/common/FloatingButton.jsx";
                        <!-- hide content -->
                 <div class="panel-right">
                     <!--/.user details box-->
-                  <div class="card box-grey mb-3">
-                    <div class="collapseicon-right">
+                  <div class="card box-grey overflow-hidden card p-4 bg-white  border-0 shadow-sm mb-3 rounded position-relative mb-3">
+                    <div class="collapseicon-right position-absolute">
                       <a id="collapse-right" href="#"><img src="/assets/preview.svg" /></a>
   
                     </div>
@@ -179,7 +177,7 @@ import FloatingButton from "../components/team-inbox/common/FloatingButton.jsx";
                               <img class="card-user-lg" src="assets/chat-widget-sidebar.svg" alt="# "></div></div>
                           </div>
                           <div>
-                            <span class="card-name">Gsoftcomm</span>
+                            <span class="card-name fs-6 d-block fw-500 text-primary">Gsoftcomm</span>
                             <span class="card-message"><a href="#"><i class="me-1"><img
                                     src="/assets/location.svg"></i></a>Location</span>
                           </div>
@@ -194,8 +192,8 @@ import FloatingButton from "../components/team-inbox/common/FloatingButton.jsx";
                       <i class="me-2"><img src="/assets/call.svg"></i>
                       <a href="#" class="black font-500">+1 6573456228</a>
                     </div>
-                    <div class="box-grey-footer d-flex align-items-center mt-3">
-                      <span><label>Identifier:</label> 74474012152860</span>
+                    <div class="box-grey-footer bg-white rounded d-flex align-items-center p-3 mt-3">
+                      <span><label class="text-secondary">Identifier:</label> 74474012152860</span>
                       <a href="#" class="ms-auto"><img src="/assets/duplicate.svg"></a>
                     </div>
                   </div>
@@ -258,7 +256,7 @@ import FloatingButton from "../components/team-inbox/common/FloatingButton.jsx";
                                 <i class="me-2"><img src="/assets/call.svg"></i>
                                 <span  class="black">+1 6573456228</span>
                               </div>
-                              <div class="box-grey-footer d-flex align-items-center mt-3">
+                              <div class="box-grey-footer bg-white rounded d-flex align-items-center p-3 mt-3">
                                 <span><label>Identifier:</label> 74474012152860</span>
                                 <span  class="ms-auto"><img src="/assets/duplicate.svg"></span>
                               </div>

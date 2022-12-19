@@ -2,15 +2,7 @@
 // This file contains styles that are specific to the home page.
 //
 
-.wrapper{
-    padding-left: toRem(55px);
-    margin-top:toRem(65px);
-    @media (max-width:  767.98px) {
-      padding-left: 0;
-      margin-top:toRem(80px);
-    }
-  }
-  
+
   
   .panel-left{
     height: 100%;
@@ -20,42 +12,18 @@
   .inbox-wrapper{
     overflow-y: scroll;
      // height: calc(100vh - 260px);
-      border-radius: toRem(5px);;
-      background-color: #fff;
       box-shadow: 0px 1px 3px rgb(116 116 116 / 17%);
   }
-  .bdr-blue{
-    border-color: #3360FF;
-  }
+ 
   
-  .bdr-grn{
-    border-color: #24A803;
-  }
-  
-  .filter-box{
-    background-color: var(--gs-bg-white);
-    box-shadow: 0px 1px 3px rgba(116, 116, 116, 0.17);
-  border-radius: toRem(8px);
+  .filter-box{  
   min-height:toRem(61px);
-    & .select-box{
-      color: var(--gs-primary-color);
-      text-decoration: none;
-      padding-right: toRem(20px);
-      position: relative;
-      font-weight: var(--gs-font-500);
-      font-size: toRem(13px);
-        i.count{
+    & .select-box{    
+            i.count{
         font-style: normal;
         width: toRem(21px);
-        height: toRem(21px);
-        background-color: var(--gs--notification-badge);
-        border-radius: 50%;
-        display: inline-block;
-        color: #fff;
-        text-align: center;
+        height: toRem(21px);     
         font-size: toRem(12px);
-        line-height: 21px;
-        margin-left: toRem(10px);
         }
         &:after{
           position: absolute;
@@ -67,24 +35,14 @@
     }
     & ul.switcher{
       width: toRem(65px);
-      height: toRem(30px);
-      border-radius: toRem(50px);
-      background: #ebf0f4;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: toRem(2px);
+      height: toRem(30px);   
       & a{
         width: toRem(30px);
-        height: toRem(30px);
-        border-radius: 50%;
-        display: block;
-        text-align: center;
+        height: toRem(30px);       
         line-height: toRem(30px);
       }
       & li.active a{
-        background-color: #000;
-      
+        background-color: #000;      
        // -webkit-transform: all 0.5s ease-in-out;
        
         & img{
@@ -94,8 +52,8 @@
     }
   }
   
-  .custom_search{
-    position: relative;
+  .custom-search{
+  
       input{
           background-color: #E1E3EE;
           border-radius:toRem(7px);
@@ -117,45 +75,27 @@
        z-index: 10;
       }
   }
-  .custom_search-sidebar{
+  .custom-search-sidebar{
     height:toRem(43px);
     border-radius: toRem(7px);
   }
   .filter-round {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+   
     background: #dfe4f6;
-    border-radius: toRem(20px);
     cursor: pointer;
     font-size: toRem(11px);
-    gap: toRem(5px);
     content: url(../../assets/filter-black.svg);
-    padding: toRem(4px);
   }
   .filter-round-active {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+   
     background: #000;
-    border-radius: toRem(20px);
     cursor: pointer;
     font-size: toRem(11px);
-    gap: toRem(5px);
     content: url(../../assets/filter-white.svg);
-    padding: toRem(4px);
   }
-  .card{
-    background: var(--gs-bg-white);
-    padding: toRem(20px);
-    border-radius: toRem(6px);
-    font-size: toRem(14px);
-    border: none;
-    position: relative;
-    &:hover{
-     
+  .card{    
+  
+    &:hover{     
      cursor: pointer;
     }    
     &-active{
@@ -195,12 +135,7 @@
           }
     }
   
-    &-name{
-      font-size: toRem(13.5px);
-      font-weight: 500;
-      display: block;
-      color: var(--gs-primary-color);
-    }
+   
     &-message{
         color: #7B7B7B;
         font-size: toRem(13px);
@@ -233,10 +168,7 @@
         padding:toRem(5px) toRem(10px);
         font-weight: 600;
     }
-    &-round{
-      display: flex;
-      flex-wrap: nowrap;
-    }
+   
   
     &-holder{
       display: flex;
@@ -340,16 +272,7 @@
   //panel right
  
     .box-grey{
-      background: #FFFFFF;
-      box-shadow: 0px toRem(1px) toRem(3px) rgba(116, 116, 116, 0.17);
-    padding: toRem(25px);
-    border-radius: toRem(8px);
-    font-size: toRem(13px);
-    border: none;
-    position: relative;
-    margin-bottom: toRem(15px);
-    overflow: hidden;
-    
+      
       &-avatar{
           position: relative;
           height: toRem(50px);
@@ -372,25 +295,15 @@
           display: block;
       }
       &-footer{
-        background: #FFFFFF;
+       
         border: 1px solid #CAD3F3;
-        border-radius: toRem(8px);
-        padding:toRem(10px);
-          label{
-            color: var(--gs-secondary-color);
-          }
+       
       }
     }
   
   
   .acc-card{
-    background: #fff;
-    padding: toRem(10px);
-    border-radius: toRem(8px) !important;
-    font-size: toRem(13px);
-    border: none;
-    position: relative;
-    margin-bottom: toRem(15px);
+   
     box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.12);
     
     &-ico-cvr{
@@ -464,24 +377,7 @@
   padding: toRem(5px)  toRem(10px);
         font-weight: 600;
     }
-    & .no-agent{
-       
-        display: flex;
-        align-items: center;
-        padding: toRem(5px)  toRem(10px);
-        color:#555;
-    }
-    & .status-low{
-        &:before{
-          content: "";
-          width: toRem(9px);
-          height: toRem(9px);
-          background-color: #FF7E36;
-          border-radius: 50%;
-          display: inline-block;
-          margin-right: toRem(5px);
-        }
-    }
+    
     }
   
   }
@@ -489,38 +385,8 @@
     color: #2D50C8;
     font-weight: 500;
   }
-  .profile-pic{
-    width: toRem(65px);
-    height: toRem(65px);
-    border-radius: 50%;
-    overflow: hidden;
-    img{
-      width: 100%;
-    }
-  }
-  .profile-pic-chat{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: toRem(75px);
-    height: toRem(75px);
-    border-radius: 50%;
-    overflow: hidden;
-    background: #E7E6FF;
-  border-radius: toRem(50px);
-  cursor: pointer;
-  
-  }
-  .collpse-btn {
-    position: absolute;
-    right: toRem(15px);
-    top: toRem(10px);
-    img{
-      width: toRem(25px);
-    }
-  }
+ 
   .collapseicon-right{
-    position: absolute;
     right: toRem(15px);
     top: toRem(15px);
       img{
@@ -537,92 +403,14 @@
     font-weight: 600;
   }
   
-  // user timeline
-  .sidebar-timeline{
-    & .user-history {
-         min-height: 4rem;
-         position: relative;
-     }
-   &  .user-history::before {
-         content: "";
-         position: absolute;
-         left: -32px;
-         top: toRem(8px);
-         color: #ffffff;
-         background-color: #4b7efe;
-         width: toRem(10px);
-         height: toRem(10px);
-         text-align: center;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         border-radius: 50%;
-     }
-     
-     
-     
-    & .user-history::after {
-         content: "";
-         position: absolute;
-         left: -2.125rem;
-         top: 1.375rem;
-         background-color: #C3CEE9;;
-         width: 0.0625rem;
-         height: calc(100% + 0.3rem);
-     }
-     
-    & .user-date::before{
-         content: "Jan, 21, 2022";
-         position: absolute;
-         left: -40px;
-         top: -9px;
-         background: #DCE4FF;
-     border-radius: toRem(20px);
-     font-weight: 500;
-     color:#333;
-     padding: toRem(4px) toRem(10px);
-         text-align: center;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         
-     }
-    & .user-date::after {
-         content: "";
-         position: absolute;
-         left: -2.125rem;
-         top: 1.375rem;
-         background-color: #C3CEE9;;
-         width: 0.0625rem;
-         height: calc(100% + 0.3rem);
-     }
-     
-    & .user-history-end::after{
-         content: none;
-     
-     }
-    & .user-timeline {
-         margin-left: 2.8125rem;
-         position: relative;
-     }
-    & .user-action {
-         display: flex;
-         flex-direction: row;
-         gap: 1rem;
-         align-items: baseline;
-         padding: 1.25rem;
-         margin-top: 0.9375rem;
-     }
-  
-    }
+
 
     .accordion-custom-right{
        & .accordion-button:not(.collapsed) {
             color: transparent;
-            background-color:var(--gs-bg-white);
+            background-color:#fff;
             box-shadow: none;
         }
 
     }
-   //right
    

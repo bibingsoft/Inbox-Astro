@@ -18,39 +18,109 @@
 
 
 
-:root {
     //colors
-        --gs-primary-color: #333;
-        --gs-secondary-color: #555;
-        --gs-side-navbar-bg: #1E1E38;
-        --body-bg: rgb(235, 236, 241);
-        --gs-border-color: #BCBFD0;
-        --gs-dark-blue: #1E1E38;
-        --nav-active: #645DF6;
-        --gs-bg-white: #fff;
-        --gs--notification-badge: #2D50C8;
+        $primary-color: #333333;
+        $secondary-color: #222222;
+        $dark-blue: #1E1E38;
+        $red:#D21E1E;
+        $light-green:#00B27D;
+        $blue:#157EFB;
+        $blue-active:#645DF6;
+        $blue-badge:#2D50C8;
+        $body-bg: rgb(235, 236, 241);
+        $border-color: #BCBFD0;
+        $cyan-blue: #EBF0F4;
+        $border-input:#AFB5BF;
+        $dark:#000000;
+        $light-blue:#EFEBFF;
+        $light-grey:#d9d9d9;
+        $light-yellow:#FFE2AB;
+
+      
+       // --gs-dark-blue: #1E1E38;
+        // --nav-active: #645DF6;
+        // --gs-bg-white: #fff;
+        // --gs--notification-badge: #2D50C8;
         //--gs-secondary-light-blue:#DFE4F6;
-        --gs-blue:#157EFB;
+        $theme-colors: (
+            "primary":  $primary-color,
+            "secondary":  $secondary-color,
+            "danger":  $red,
+            "dark": $dark
+          );
+        $custom-colors: (
+            "blue":$blue,
+            "dark-blue":   $dark-blue,   
+            "border-color": $border-color,
+            "blue-active": $blue-active,
+            "blue-badge":  $blue-badge,
+            "cyan-blue":  $cyan-blue,
+            "border-input":  $border-input,
+            "light-blue": $light-blue,
+            "light-grey":$light-grey,
+            "light-yellow": $light-yellow,
+          );
+         
     
-    
-            //font weight
---gs-font-400: 400;
---gs-font-500: 500;
---gs-font-600: 600;
---gs-font-700: 700;
-
-
-
-
-//font-size
-
---gs-font-13: toRem(13px);
---gs-font-14: toRem(14px);
---gs-font-15: toRem(15px);
---gs-font-16: toRem(16px);
---gs-font-17: toRem(17px);
-}
-
-
-    
-    
+          $utilities: (
+  "Spacing": (
+    responsive: true,
+    class:p,
+    property: padding,
+    values: (
+     6: 10rem,
+     7: 15rem,
+    )
+  ),
+  "Spacing-px": (
+    responsive: true,
+    class:px,
+    property: padding,
+    values: (
+     6: toRem(10px),
+    )
+  ),
+  "Spacing-ps": (
+    responsive: true,
+    class:ps,
+    property: padding,
+    values: (
+     body-left: toRem(55px),
+    )
+  ),
+  "Spacing-mt": (
+    responsive: true,
+    class:mt,
+    property: margin-top,
+    values: (
+     65: toRem(65px),
+     80: toRem(80px),
+    )
+  ),
+  "Spacing-ms": (
+    responsive: true,
+    class:ms,
+    property: margin-left,
+    values: (
+     65: toRem(66px),
+    )
+  ),
+  "height": (
+      property: height,
+      class: h,
+      values: (
+        20: toRem(66px),
+       
+      )
+    ),
+    "width": (
+      property: width,
+      responsive: true,
+      class: w,
+      values: (
+        100: 100%,
+        nav: toRem(66px),
+       nav-md: toRem(50px),
+      )
+    ),
+);

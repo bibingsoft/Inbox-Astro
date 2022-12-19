@@ -4,18 +4,18 @@ function SideNav() {
     return (
     
    
-    <aside className="left-navbar position-fixed d-flex flex-column align-items-center flex-shrink-0 bg-dark-nav  d-none d-md-block">
+    <aside className="w-lg-nav w-md-nav-md vh-100 position-fixed d-flex flex-column align-items-center flex-shrink-0 bg-dark-blue  d-none d-md-block">
 
       <ul className="nav nav-pills nav-flush flex-column mb-auto text-center">
         <li className="nav-item mb-4 mt-3">
-          <a href="#" className="nav-link nav-link-side nav-logo py-3" aria-current="page" data-bs-toggle="tooltip"
+          <a href="#" className="nav-link nav-link-side bg-transparent nav-logo py-3" aria-current="page" data-bs-toggle="tooltip"
             data-bs-placement="right" data-bs-title="Home">
             <img src="/assets/switcher.svg" />
           </a>
         </li>
 
         <li className="nav-item mb-4">
-          <a href="#" className="nav-link nav-link-side nav-logo py-3" aria-current="page"  data-bs-toggle="tooltip"
+          <a href="#" className="nav-link nav-link-side bg-transparent nav-logo py-3" aria-current="page"  data-bs-toggle="tooltip"
             data-bs-placement="right" data-bs-title="Home">
             <img src="/assets/g-logo.svg" />
           </a>

@@ -18,6 +18,9 @@
 @import 'abstracts/mixins/overlay';
 @import 'abstracts/mixins/unselectable';
 
+// Mix colors from variables before bootstrap
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
 // 2. Vendors
 @import 'bootstrap/scss/bootstrap.scss';
 

@@ -4,13 +4,13 @@ import React from "react";
 
 function UserList({ userimage,title, subtitle, time, username, socialmedia }) {
     return (
-        <div className="card ">
-        <div className="new-message-dot">
+        <div className="card rounded border-0 position-relative p-4">
+        <div className="new-message-dot ">
         
-          <i className="card-circle-org float-end mt-1"></i>
+          <i className="card-circle-org bg-blue float-end mt-1"></i>
         </div>
         <div className="d-flex">               
-          <div className="card-round">
+          <div className="card-round d-flex flex-nowrap">
             <div className="card-holder card-holder-sm">
               <img className="card-user-sm" src={userimage} alt="# "/>
             </div>
@@ -18,7 +18,7 @@ function UserList({ userimage,title, subtitle, time, username, socialmedia }) {
           <div className="ps-3 w-100">
             <div className="d-flex">
               <div>
-                <span className="card-name">{title}</span>
+                <span className="card-name fs-6 d-block fw-500 text-primary">{title}</span>
                 <span className="card-message card-truncate">{subtitle}</span>
               </div>
         

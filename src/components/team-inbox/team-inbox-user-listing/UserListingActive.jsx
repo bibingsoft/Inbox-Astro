@@ -4,7 +4,7 @@ import React from "react";
 
 function UserListActive({ userimage,title, subtitle, time, username, socialmedia }) {
     return (
-        <div className="card card-active">
+        <div className="card rounded border-0 position-relative p-4 card-active">
         <div className="new-message-dot">
         
           <i className="card-circle-org float-end mt-1"></i>
@@ -18,7 +18,7 @@ function UserListActive({ userimage,title, subtitle, time, username, socialmedia
           <div className="ps-3 w-100">
             <div className="d-flex">
               <div>
-                <span className="card-name">{title}</span>
+                <span className="card-name fs-6 d-block fw-500 text-primary">{title}</span>
                 <span className="card-message card-truncate">{subtitle}</span>
               </div>
         

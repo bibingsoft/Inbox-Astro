@@ -2,7 +2,7 @@ import React from "react";
 import CircularProgressBar from '../../common/forms/CircularProgressBar.jsx';
 function Header() {
     return (
-        <nav className="nav-header header navbar navbar-expand-lg  bg-white ">
+        <nav className="nav-header header ms-lg-65 ms-md-0 navbar navbar-expand-lg  bg-white position-fixed  py-0 px-lg-3 px-md-0">
         <div className="container-fluid">
          <a className="hamberger"  data-bs-toggle="offcanvas" href="#offcanvasMobile" role="button" aria-controls="offcanvasMobile" >
           <svg width="36" height="32" viewBox="0 0 36 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -14,7 +14,7 @@ function Header() {
           </a> 
          
          
-          <a className="navbar-brand nav-head" href="#">Team Inbox</a>
+          <a className="navbar-brand nav-head text-dark-blue fw-500" href="#">Team Inbox</a>
          
       
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
