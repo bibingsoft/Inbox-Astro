@@ -97,41 +97,6 @@
   box-shadow: 0 0 6px rgba(0, 0, 0, .16), 0 6px 12px rgba(0, 0, 0, .32);
 }
 
-.fab_field {
-  width: 100%;
-  display: inline-block;
-  text-align: center;
-  background: #eceff1;
-  box-shadow: 0 0 6px rgba(0, 0, 0, .16), 0 6px 12px rgba(0, 0, 0, .32);
-}
-
-.fab_field a {
-  display: inline-block;
-  text-align: center;
-}
-
-#fab_listen {
-  float: left;
-  background: rgba(0, 0, 0, 0);
-}
-
-#fab_send {
-  float: right;
-  background: rgba(0, 0, 0, 0);
-}
-
-.fab_field .fab {
-  width: toRem(35px);
-  height: toRem(35px);
-  box-shadow: none;
-  margin: toRem(5px);
-}
-
-.fab_field .fab>i {
-  font-size: 1.6em;
-  line-height: toRem(35px);
-  color: #263238;
-}
 
 
 /*Element state*/
@@ -204,43 +169,6 @@
     -webkit-transform: scale(1);
     transform: scale(1);
     opacity: 0;
-  }
-}
-/* SMARTPHONES PORTRAIT */
-
-@media only screen and (min-width: 300px) {
-  .chat {
-    width: toRem(200px);
-  }
-}
-/* SMARTPHONES LANDSCAPE */
-
-@media only screen and (min-width: 480px) {
-  .chat {
-    width: toRem(300px);
-  }
-  .chat_field {
-    width: 65%;
-  }
-}
-/* TABLETS PORTRAIT */
-
-@media only screen and (min-width: 768px) {
-  .chat {
-    width: toRem(300px);
-  }
-  .chat_field {
-    width: 65%;
-  }
-}
-/* TABLET LANDSCAPE / DESKTOP */
-
-@media only screen and (min-width: 1024px) {
-  .chat {
-    width: toRem(400px);
-  }
-  .chat_field {
-    width: 65%;
   }
 }
 

@@ -4,7 +4,7 @@ function SideNav() {
     return (
     
    
-    <aside className="w-lg-nav w-md-nav-md vh-100 position-fixed d-flex flex-column align-items-center flex-shrink-0 bg-dark-blue  d-none d-md-block">
+    <aside className="w-lg-nav w-md-nav-md vh-100 position-fixed d-flex flex-column align-items-center flex-shrink-0 bg-dark-blue  d-none d-lg-block">
 
       <ul className="nav nav-pills nav-flush flex-column mb-auto text-center">
         <li className="nav-item mb-4 mt-3">

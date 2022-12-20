@@ -20,21 +20,32 @@
 
     //colors
         $primary-color: #333333;
-        $secondary-color: #222222;
+        $secondary-color: #555555;
         $dark-blue: #1E1E38;
         $red:#D21E1E;
         $light-green:#00B27D;
         $blue:#157EFB;
+        $blue-link: #4a6ada;
         $blue-active:#645DF6;
         $blue-badge:#2D50C8;
+        $light-blue:#e6e5ff;
         $body-bg: rgb(235, 236, 241);
         $border-color: #BCBFD0;
         $cyan-blue: #EBF0F4;
         $border-input:#AFB5BF;
         $dark:#000000;
+        $light-dark:#222222;
         $light-blue:#EFEBFF;
         $light-grey:#d9d9d9;
         $light-yellow:#FFE2AB;
+        $yellow:#FFB82E;
+        $gray-blue: #8190B7;
+        $chat-blue: #ebefff;
+        $contrast-blue:#6174A4;
+        $gray-medium:#7b7b7b;
+        $mist-gray:#596781;
+        $carbon-gray:#5e5e5e;
+
 
       
        // --gs-dark-blue: #1E1E38;
@@ -46,7 +57,8 @@
             "primary":  $primary-color,
             "secondary":  $secondary-color,
             "danger":  $red,
-            "dark": $dark
+            "dark": $dark,
+            "light-blue": $light-blue
           );
         $custom-colors: (
             "blue":$blue,
@@ -59,6 +71,14 @@
             "light-blue": $light-blue,
             "light-grey":$light-grey,
             "light-yellow": $light-yellow,
+            "light-dark":  $light-dark,
+            "yellow": $yellow,
+            "gray-blue":  $gray-blue,
+            "chat-blue":  $chat-blue,
+            "gray-medium": $gray-medium,
+            "mist-gray": $mist-gray,
+            "carbon-gray":  $carbon-gray,
+            "contrast-blue":  $contrast-blue
           );
          
     
@@ -121,6 +141,14 @@
         100: 100%,
         nav: toRem(66px),
        nav-md: toRem(50px),
+      )
+    ),
+    "font-size": (
+      rfs: true,
+      property: font-size,
+      class: fs,
+      values: (
+      12: toRem(12px),
       )
     ),
 );

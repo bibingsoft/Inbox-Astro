@@ -27,7 +27,7 @@ function FloatingButton() {
 
           </a>
           <a href="#" className="fab" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Gallery" aria-label="Gallery">
-                                            <svg className="minifabIcon" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <svg className="mini-fab-icon" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                               <path d="M12.6248 0.239624H2.37522C1.19797 0.239624 0.239594 1.19729 0.239594 2.37525V12.6255C0.239594 13.8028 1.19726 14.7612 2.37522 14.7612H12.6255C13.8028 14.7612 14.7611 13.8035 14.7611 12.6255V2.37525C14.7604 1.19729 13.8028 0.239624 12.6248 0.239624ZM13.9062 12.6248C13.9062 13.331 13.3317 13.9062 12.6248 13.9062H2.37522C1.66901 13.9062 1.09384 13.3317 1.09384 12.6248V11.08L4.54059 7.25L9.19647 11.4823L11.7713 9.33675L13.9069 11.1161V12.6248H13.9062ZM13.9062 10.0047L11.7706 8.22537L9.21984 10.3504L4.48039 6.04087L1.09384 9.80354V2.37525C1.09384 1.66904 1.6683 1.09387 2.37522 1.09387H12.6255C13.3317 1.09387 13.9069 1.66833 13.9069 2.37525V10.0047H13.9062Z" fill="white"></path>
                                             </svg>
                                           </a>

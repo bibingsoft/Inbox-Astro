@@ -2,61 +2,13 @@
     
     .card-radius{
         border-radius: toRem(8px) toRem(8px) 0 0 !important;
-    }
-    %chat-bluebox {
-        -webkit-border-top-left-radius: 0px;
-        -webkit-border-top-right-radius: 10px;
-        -webkit-border-bottom-right-radius: 10px;
-        -webkit-border-bottom-left-radius: 10px;
-        -moz-border-radius-topleft: 0px;
-        -moz-border-radius-topright: 10px;
-        -moz-border-radius-bottomright: 10px;
-        -moz-border-radius-bottomleft: 10px;
-        border-top-left-radius: 0px;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-        border-bottom-left-radius: 10px;
-       // color: $chat-color;
-        padding: 15px;
-        display: block;
-      }
-      
-      %chat-bluebox_right {
-        -webkit-border-top-left-radius: 0px;
-        -webkit-border-top-right-radius: 10px;
-        -webkit-border-bottom-right-radius: 10px;
-        -webkit-border-bottom-left-radius: 10px;
-        -moz-border-radius-topleft: 0px;
-        -moz-border-radius-topright: 10px;
-        -moz-border-radius-bottomright: 10px;
-        -moz-border-radius-bottomleft: 10px;
-        border-top-left-radius: 0px;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-        border-bottom-left-radius: 10px;
-      //  color: $chat-color;
-        padding: 15px;
-        display: block;
-      }
-      
-      
+    } 
       .panel-center {
        
-        &-box {         
-        
-          box-shadow: 0px 1px 3px rgb(62 72 105 / 29%);
-          @media (max-width: 575.98px) {
-            flex-direction: column;
-        gap: toRem(10px);
-        align-items:flex-start;
-          }
-         
-        }
         .box-shadow {
           box-shadow: 0 3px 8px 0 rgb(119 124 141 / 53%);
         }
-      }
-      
+      }      
       .chat-section {
         height: calc(100vh - 330px);
         overflow-y: scroll;
@@ -64,180 +16,45 @@
         &-chat-area {
           & .time-break {
             border-bottom: 1px solid rgba(112, 124, 151, 0.47);
-            position: relative;
-            margin: toRem(20px) 0;
-            span {
-              color: var(--gs-secondary);
-              background-color: #fff;
-              padding: 0px toRem(15px);
-              position: absolute;
+            
+            span {             
               left: 50%;
               top: -10px;
               transform: translate(-50%, 0);
-              font-size: toRem(14px);
             }
-          }
-          & .chat-left {
-            & .name {
-              color: #5e5e5e;
-            }
-            & .user-ico {
-              width: toRem(21px);
-              height: toRem(21px);
-              border-radius: 50%;
-              display: inline-block;
-              margin-right: toRem(5px);
-              background: url(../../assets/avatar2.jpg) no-repeat center center;
-              background-size: contain;
-            }
-            & .user-chat-ico {
-              
-              width: toRem(22px);
-              height: toRem(22px); 
-            }
-            & .box-blue {
-              background: #ebefff;
-              border-radius: 0px toRem(10px) toRem(10px) toRem(10px);
-              @extend %chat-bluebox;
-              transition: all 0.3s ease-out;
-              line-height: 1.5;             
-             
-              &.fadeless {
-                background: #ebefff;
-              }
-            }
-            & span.time {
-              font-size: toRem(14px);
-              color: #777;
-            }
-          }
-          & .chat-right {
-           
-            & .tick {
-              width: toRem(19px);
-              height: toRem(19px);
-              
+          }          
+          & .chat-right {           
+            & .tick {                        
               background: url(../../assets/dbl-tick-dark.svg) no-repeat center center;
               background-position: 0px toRem(5px);
             }
-            & .box-blueright {
-              background: #ebf0f4;
-              border-radius: 0px toRem(10px) toRem(10px) toRem(10px);
-              @extend %chat-bluebox_right;
-              // transition: all 0.3s ease-out;
-             
-            }
+           
            
           }
-          &__head {
-            font-weight: 500;
-            font-size: toRem(21px);
-            color: #000000;
-          }
-          &__sub-head {
-            font-weight: 400;
-            font-size: toRem(13px);
-            color: #333;
-          }
-        }
-        .chat-attached {
-          background: #f5faff;
-          border-radius: toRem(7px);
-          padding: toRem(10px);
-          margin-right: toRem(10px);
          
         }
+       
       }
-      .selected-count {
-        display: flex;
-        align-items: center;
-        background: #e0e9ff;
-        border-radius: toRem(6px);
-        font-size: toRem(13px);
-        padding: toRem(10px) toRem(0px) toRem(10px) toRem(10px);
-        height: toRem(35px);
-        & ul {
-          padding: toRem(8px);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-        & ul li {
-          margin-left: -10px;
-          display: flex;
-          align-items: center;
-          margin-left: -10px;
-        }
+     
+       .chat-border {           
+        border-radius: 0px toRem(10px) toRem(10px) toRem(10px);             
       }
-      .bg-transparent {
-        background-color: transparent;
-      }
-      .selected-image {
-        width: toRem(30px);
-        height: toRem(30px);
-        border-radius: 50%;
-        overflow: hidden;
-        // border: 1.3px solid #fff;
-      }
-      .selected-number {
-        background: #dde9ff;
-        border: toRem(1px) solid #ffffff;
-        border-radius: toRem(50px);
-        padding: toRem(4px);
-        span {
-          font-weight: 600;
-          color: #0061ff;
-        }
-      }
-      .pvt-box {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 2.5vw;
-        height: 2.5vw;
-        background: #fec860;
-        border-radius: toRem(5px);
-        cursor: pointer;
-        margin-right: toRem(10px);
-      }
+     
+   
       
       .chat-control-box {      
         box-shadow: 0px 4px 23px 0px rgba(0, 0, 0, 0.2);
         border: 1px solid #c8d1d9;
        
         & .form-control {        
-          resize: none;
-          border: 0;
+         
           &:focus {
             background-color: #fdfdfd;
             box-shadow: none;
           }
-          &.form-control {
-            border-radius: toRem(15px);
-          }
-        }
-      
-        & .control {        
-         
-      
-          & a.send {           
-            width: toRem(35px);
-            height: toRem(35px);         
-            line-height: toRem(32px);
-          }
-      
-          & .send-with-lock {
-          
-            & .lock {
-              position: absolute;
-              top: -8px;
-              right: -4px;
-            }
-          }
-      
          
         }
+        
       }
       
     

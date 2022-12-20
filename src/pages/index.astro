@@ -21,26 +21,26 @@ import Button from "../components/common/forms/Button.jsx";
            
                     <div class="filter-box bg-white rounded-3 shadow-sm p-3  d-flex align-items-center">
                       <div class="select-box text-primary position-relative fw-500 text-decoration-none fs-6 pe-4">
-                        New <i class="count  bg-blue-badge text-white text-center ms-3 d-inline-block rounded-circle">1</i>
+                        New <i class="count h-3 w-3 fst-normal  bg-blue-badge text-white text-center ms-3 d-inline-block rounded-circle">1</i>
                       </div>
-                      <div class="ms-auto me-4">
-                        <ul class="switcher d-flex align-items-center justify-content-between rounded-pill p-1 bg-cyan-blue">
-                          <li class="active"><a class="d-block text-center rounded-circle" href="#"><img src="/assets/bag.svg"></a></li>
-                          <li><a class="d-block text-center rounded-circle" href="#"><img src="/assets/bag-in.svg"></a></li>
+                      <div class="ms-auto me-3">
+                        <ul class="switcher h-4 w-10 d-flex align-items-center justify-content-between rounded-pill p-1 bg-cyan-blue">
+                          <li class="active"><a class="d-block h-5 w-5 text-center rounded-circle" href="#"><img src="/assets/bag.svg"></a></li>
+                          <li><a class="d-block h-5 w-5 text-center rounded-circle" href="#"><img src="/assets/bag-in.svg"></a></li>
                         </ul>
                       </div>
           
                        <!--menu filter starts -->
                        <div class="dropdown more">
           
-                        <div id="filter-button" class="filter-round d-flex align-items-center justify-content-center flex-direction-column rounded-circle p-1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div id="filter-button" class="filter-round  d-flex align-items-center justify-content-center flex-direction-column rounded-circle p-1" data-bs-toggle="dropdown" aria-expanded="false">
                           <div data-bs-toggle="tooltip" data-bs-placement="top" title="Filter" data-bs-original-title="Filter"
                             aria-label="Filter">
                           
                           </div>
                         </div>
           
-                        <ul class="dropdown-menu dropdown-response-filter p-4 mt-2" id="dropdown-response-filter" aria-labelledby="dropdownMenuLink">
+                        <ul class="dropdown-menu dropdown-response-filter p-4 mt-2 ms-3" id="dropdown-response-filter" aria-labelledby="dropdownMenuLink">
                           <div class="form-group">
                             <div class="d-flex flex-column gap-2">
                               <Checkbox title="First Response" id="first-response"/>
@@ -55,6 +55,29 @@ import Button from "../components/common/forms/Button.jsx";
                         </ul>
                       </div>
                       <!-- menu filter ends -->
+                      <!-- right section responsive view starts-->
+                      <div class="dropdown more">
+          
+                        <div  class="d-block d-lg-none bg-cyan-blue d-flex align-items-center justify-content-center flex-direction-column rounded-circle p-2" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="/assets/mobile-filter.svg"/>
+                          <div data-bs-toggle="tooltip" data-bs-placement="top" title="Filter" data-bs-original-title="Filter"
+                            aria-label="Filter">
+                          
+                          </div>
+                        </div>
+          
+                        <ul class="dropdown-menu dropdown-response-filter p-4 mt-2" id="dropdown-response-filter" aria-labelledby="dropdownMenuLink">
+                          <div class="form-group">
+                            <div class="d-flex flex-column gap-2">
+                             
+                           
+                            </div>
+                          </div>
+          
+          
+                        </ul>
+                      </div>
+                       <!-- right section responsive view ends-->
                     </div>
                     <!--/.filter-box-->
                   <!-- custom search starts -->
@@ -62,9 +85,9 @@ import Button from "../components/common/forms/Button.jsx";
                     <!--/.custom_search ends-->
                     <div class="inbox-wrapper rounded bg-white  mt-3">
                         <!-- chat listing -->
-                    <UserList userimage="assets/chat-widget-sidebar.svg" title="Gsoftcomm" subtitle="Welcome to gsoftcomm..." time="2 Min ago" username="Chat widget" socialmedia="assets/chat-widget-sidebar.svg"/>
-                    <UserListActive userimage="assets/chat-widget-sidebar.svg" title="Gsoftcomm" subtitle="Welcome to gsoftcomm..." time="1 Min ago" username="Chat widget2" socialmedia="assets/chat-widget-sidebar.svg"/>
-                    <UserList userimage="assets/chat-widget-sidebar.svg" title="Gsoftcomm" subtitle="Welcome to gsoftcomm..." time="5 Min ago" username="Chat widget3" socialmedia="assets/chat-widget-sidebar.svg"/>
+                    <UserList userImage="assets/chat-widget-sidebar.svg" title="Gsoftcomm" subtitle="Welcome to gsoftcomm..." time="2 Min ago" username="Chat widget" socialMedia="assets/chat-widget-sidebar.svg"/>
+                    <UserListActive userImage="assets/chat-widget-sidebar.svg" title="Gsoftcomm" subtitle="Welcome to gsoftcomm..." time="1 Min ago" username="Chat widget2" socialMedia="assets/chat-widget-sidebar.svg"/>
+                    <UserList userImage="assets/chat-widget-sidebar.svg" title="Gsoftcomm" subtitle="Welcome to gsoftcomm..." time="5 Min ago" username="Chat widget3" socialMedia="assets/chat-widget-sidebar.svg"/>
                       
                     </div>
                   </div><!--/-panel-left-->
@@ -79,7 +102,7 @@ import Button from "../components/common/forms/Button.jsx";
                   <div class="row content-area mt-4">
                     <div id="chat-expand" class="col-lg-8">                   
                         <div class="panel-center bg-white rounded">
-                          <div class="panel-center-box rounded-top bg-white d-flex flex-wrap align-items-center p-3 justify-content-between">
+                          <div class="panel-center-box shadow-sm rounded-top bg-white d-flex flex-wrap align-items-center p-3 justify-content-between ">
             
                           <Button btnImage="/assets/chat-widget-sidebar.svg" btnName="Chat widget"/>
 
@@ -118,7 +141,7 @@ import Button from "../components/common/forms/Button.jsx";
                                 <ChatRight username="Steven Paul" time="18:20" chatsupport="Sure I will assist you" />
                                 
                                
-                                <div class="time-break"><span>Today</span></div>
+                                <div class="time-break position-relative my-4"><span class="bg-white text-secondary fs-6 position-absolute px-3">Today</span></div>
                                 <ChatLeft username="Amanda Hug" time="18:25" chatCustomer="Thank you" />
                              
                               
@@ -133,7 +156,7 @@ import Button from "../components/common/forms/Button.jsx";
                             </div>
             
                             <div class="chat-control-box  rounded bg-white">
-                              <textarea class="form-control bg-white p-3 p-lg-4" placeholder="‘Shift + Enter’ to add a new line; Start with 'Shift + #' to select a Stored Response"></textarea>
+                              <textarea class="form-control border-0 rounded-2 bg-white p-3 p-lg-4" placeholder="‘Shift + Enter’ to add a new line; Start with 'Shift + #' to select a Stored Response"></textarea>
                               <div class="control d-flex p-2 p-sm-4">
                               
                               <FloatingButton/> 
@@ -149,7 +172,7 @@ import Button from "../components/common/forms/Button.jsx";
                                     </li>
                                     <li class="me-3"><a href="#" class=""><i class="me-2"><img src="/assets/Smile-icon.svg"></i></a>
                                     </li>
-                                    <li><a href="#" class="send d-flex align-items-center justify-content-center bg-black text-center rounded-circle shadow-sm pulse"><img src="/assets/send-w.svg"></a></li>
+                                    <li><a href="#" class="send h-5 w-5 d-flex align-items-center justify-content-center bg-black text-center rounded-circle shadow-sm pulse"><img src="/assets/send-w.svg"></a></li>
                                   </ul>
                                 </div>
                               </div>
@@ -173,12 +196,12 @@ import Button from "../components/common/forms/Button.jsx";
                         <div class="d-flex flex-column align-items-center gap-3">
   
                           <div class="d-flex flex-column">
-                            <div class="card-round"><div class="card-holder card-holder-lg">
-                              <img class="card-user-lg" src="assets/chat-widget-sidebar.svg" alt="# "></div></div>
+                            <div class="card-round"><div class="d-flex align-items-center justify-content-center rounded-circle bg-light-blue h-12 w-12">
+                              <img class="h-4 w-4" src="assets/chat-widget-sidebar.svg" alt="# "></div></div>
                           </div>
                           <div>
                             <span class="card-name fs-6 d-block fw-500 text-primary">Gsoftcomm</span>
-                            <span class="card-message"><a href="#"><i class="me-1"><img
+                            <span class="text-gray-medium fs-6 d-block mt-2"><a href="#"><i class="me-1"><img
                                     src="/assets/location.svg"></i></a>Location</span>
                           </div>
                         </div>
@@ -188,7 +211,7 @@ import Button from "../components/common/forms/Button.jsx";
                       <i class="me-2"><img src="/assets/mail.svg"></i>
                       <a href="#">name@example.com</a>
                     </div>
-                    <div class="d-flex align-items-center my-3">
+                    <div class="d-flex align-items-center">
                       <i class="me-2"><img src="/assets/call.svg"></i>
                       <a href="#" class="black font-500">+1 6573456228</a>
                     </div>
@@ -202,9 +225,17 @@ import Button from "../components/common/forms/Button.jsx";
 
                
                   
-                  <AccordionCustom image="/assets/chat-image.svg" title="Chat Update"/>
+                  <AccordionCustom image="/assets/chat-image.svg" title="Chat Update" id="accordionChat" parent="#accordionChat" collapseId="chatUpdate" collapseTarget="#chatUpdate">
                      <!-- Accordion box -->
-                  
+                     <a href="#" class="text-contrast-blue fs-12 fw-normal bg-transparent align-items-center rounded-pill py-1 px-2 chat-widget bg-white">
+                      <i><img class="me-2" src="/assets/chat-widget-sidebar.svg"/></i>Amanda_hug
+                    </a>
+                    <span class="d-block my-2 mt-4"><label class="text-primary">Last Seen:</label><span class="text-secondary"> 13/03/2022 11:31 AM</span></span>
+                    <span class="d-block my-2"><label  class="text-primary">Created on:</label> <span class="text-secondary">13/03/2022 11:31AM</span></span>
+                  </AccordionCustom>
+
+                  <AccordionCustom image="/assets/help-desk.svg" title="Support desk" id="accordionSupport" parent="#accordionSupport"  collapseId="chatSupport" collapseTarget="#chatSupport">
+                  </AccordionCustom>
                 </div>
                
               </div>
@@ -248,11 +279,11 @@ import Button from "../components/common/forms/Button.jsx";
                                   </div>
                                 </div>
                               </div>
-                              <div class="d-flex align-items-center  my-3">
+                              <div class="d-flex align-items-center">
                                 <i class="me-2"><img src="/assets/mail.svg"></i>
                                 <span >name@example.com</span>
                               </div>
-                              <div class="d-flex align-items-center  my-3">
+                              <div class="d-flex align-items-center">
                                 <i class="me-2"><img src="/assets/call.svg"></i>
                                 <span  class="black">+1 6573456228</span>
                               </div>

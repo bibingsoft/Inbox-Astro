@@ -2,29 +2,15 @@
 // This file contains styles that are specific to the home page.
 //
 
-
-  
-  .panel-left{
-    height: 100%;
-   
-  }
-  
   .inbox-wrapper{
     overflow-y: scroll;
-     // height: calc(100vh - 260px);
       box-shadow: 0px 1px 3px rgb(116 116 116 / 17%);
   }
  
-  
   .filter-box{  
   min-height:toRem(61px);
-    & .select-box{    
-            i.count{
-        font-style: normal;
-        width: toRem(21px);
-        height: toRem(21px);     
-        font-size: toRem(12px);
-        }
+    & .select-box{ 
+           
         &:after{
           position: absolute;
           content: url('../../assets/drop-dwn.svg');
@@ -34,11 +20,8 @@
         }
     }
     & ul.switcher{
-      width: toRem(65px);
-      height: toRem(30px);   
-      & a{
-        width: toRem(30px);
-        height: toRem(30px);       
+        
+      & a{             
         line-height: toRem(30px);
       }
       & li.active a{
@@ -52,42 +35,14 @@
     }
   }
   
-  .custom-search{
-  
-      input{
-          background-color: #E1E3EE;
-          border-radius:toRem(7px);
-          height: toRem(43px);
-          line-height: toRem(43px);
-          border: none;
-          font-size: toRem(14px);
-          &:focus{
-            box-shadow: none;
-            background-color: #d9dbe7;
-          }
-      }
-      button{
-       background: none;
-       border: none;
-       position: absolute;
-       right: toRem(10px);
-       top: toRem(10px);
-       z-index: 10;
-      }
-  }
-  .custom-search-sidebar{
-    height:toRem(43px);
-    border-radius: toRem(7px);
-  }
-  .filter-round {
-   
+
+  .filter-round {   
     background: #dfe4f6;
     cursor: pointer;
     font-size: toRem(11px);
     content: url(../../assets/filter-black.svg);
   }
-  .filter-round-active {
-   
+  .filter-round-active {   
     background: #000;
     cursor: pointer;
     font-size: toRem(11px);
@@ -111,114 +66,9 @@
         display: block;
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #7165ff;
       }
-    }
-    &-avatar{
-        position: relative;
-        height: toRem(38px);
-          & span.image{
-              width: toRem(38px);
-              height: toRem(38px);
-              border-radius: 50%;
-              display: block;
-              overflow: hidden;
-              border: 1px solid ;
-          }
-          & i{
-              width: toRem(19px);
-              height: toRem(19px);
-              border-radius: 50%;
-              position: absolute;
-              bottom: -4px;
-              right: -5px;
-              background-color: var(--gs-bg-white);
-              text-align: center
-          }
-    }
-  
-   
-    &-message{
-        color: #7B7B7B;
-        font-size: toRem(13px);
-        margin-top: 6px;
-        display: block;
-    }
-    &-status{
-        color: #596781;
-        font-size: toRem(13px);
-    }
-    &-circle-org{
-      width: toRem(7px);
-      height: toRem(7px);
-      background: var(--gs-blue);
-      border-radius: 50%;
-      display: block;
-    }
-    &-time{
-      font-size: toRem(12px);
-  line-height: toRem(18px);
-  font-weight: 400;
-  color: #596781;
-  
-    }
-    &-open{
-        color: #4F80FF;
-        background-color: rgba(42, 139, 242, .26);
-        font-size: toRem(12px);
-        border-radius: toRem(20px);
-        padding:toRem(5px) toRem(10px);
-        font-weight: 600;
-    }
-   
-  
-    &-holder{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-     
-      border-radius: 50%;
-      background: #E6E5FF;
-    }
-
-    &-holder-sm{
-        width: toRem(40px);
-        height: toRem(40px);
-    }
-    &-holder-md{
-        width: toRem(40px);
-        height: toRem(40px);
-    }
-    &-holder-lg{
-        width: toRem(75px);
-        height: toRem(75px);
-    }
-    &-user-sm{
-        width: toRem(18px);
-        height: toRem(16px);
-    }
-    &-user-md{
-        width: toRem(40px);
-        height: toRem(40px);
-    }
-    &-user-lg{
-        width: toRem(35px);
-        height: toRem(31px);
-    }
-    
+    }   
   }
-  .gs-welcome {
-    height: calc(100vh - 100px);
-}
-  .card-chat-medium{
-    
-    background: transparent;   
-    border-radius: toRem(50px);
-    padding: toRem(3px) toRem(6px) toRem(3px) toRem(4px);
-    font-weight: 400;
-    font-size: toRem(12px);
-    display: inline-flex;
-    align-items: center;
-    color: #596781;
-  }
+ 
   .chat-widget{
    
     border: toRem(1px) dotted #605E9D;
@@ -229,20 +79,8 @@
   .chat-fb{
     border: toRem(1px) dotted #6174A4;
   }
-  span.loading{
-      text-align: center;
-      display: block;
-    &:before{
-      width: toRem(18px);
-      height: toRem(18px);
-     // content: url(../images/loading.svg);
-      vertical-align: middle;
-      margin-right: toRem(10px);
-    }
-  }
-  .text-loader{
-    color:#8D42E9 !important;
-  }
+ 
+ 
   .dropdown-menu{
     border: none;
     box-sizing: border-box;
@@ -255,14 +93,7 @@
   .dropdown-response-filter{
     min-width: toRem(300px);
   }
-  .custom-search-sidebar{
-    & .input-group-text {
-      height: toRem(43px);
-    }
-    & .search-input {
-      height: toRem(43px);
-    }
-  } 
+   
   
 
   
@@ -272,119 +103,18 @@
   //panel right
  
     .box-grey{
-      
-      &-avatar{
-          position: relative;
-          height: toRem(50px);
-            & span.image{
-                width: toRem(50px);
-                height: toRem(50px);
-                border-radius: 50%;
-                display: block;
-                overflow: hidden;
-            }
-      }
-      &-name{
-          font-weight: 500;
-          display: block;
-          margin-bottom: toRem(6px);
-      }
-      &-location{
-          font-size: toRem(14px);
-          font-weight: 500;
-          display: block;
-      }
-      &-footer{
-       
+     
+      &-footer{       
         border: 1px solid #CAD3F3;
        
       }
     }
   
   
-  .acc-card{
-   
+  .acc-card{   
     box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.12);
-    
-    &-ico-cvr{
-       
-        border-radius: toRem(4px);
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: toRem(10px);
-    }
-    &-conv{
-      background: #EEF0F9;
-      border-radius:toRem(6px);
-      padding: toRem(15px);
-      margin-top: toRem(20px);
-  
-      
-    }
-  
-    &-head{
-      color: #333;
-      font-weight: 500;
-      display: block;
-      font-size: toRem(14px);
-    }
-    & a.cntrl{
-      width: toRem(16px);
-      height:  toRem(16px);
-      border-radius: 50%;
-      border:  toRem(1px) solid #555555;
-      display: block;
-      text-align: center;
-      line-height:  toRem(6px);
-      cursor: pointer;
-      &:before{
-      content: url(../../img/plus2.svg);    
-      line-height:  toRem(14px);
-      }
-    }
-    &.in a.cntrl{
-      &:before{
-        content: url(../../img/minus.svg);
-        line-height: 0px;
-        }
-    }
-    &-content{
-      padding:  toRem(15px);
-      & label{
-          color: var(--gs-secondary-color);
-      }
-     
-        & .yllw-ico{     
-          background-color: #FFB800;
-          width:  toRem(41px);
-          height: toRem(30px);
-          border-radius: toRem(4px);
-          overflow: hidden;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin-right:  toRem(10px);
-          padding: 0;
-      }
-    
-    & .open{
-      color: #4B7EFE;
-      background: #DDE7FF;
-      border-radius:  toRem(6px);
-        font-size:  toRem(12px);
-  padding: toRem(5px)  toRem(10px);
-        font-weight: 600;
-    }
-    
-    }
-  
   }
-  .view-ticket{
-    color: #2D50C8;
-    font-weight: 500;
-  }
+  
  
   .collapseicon-right{
     right: toRem(15px);
@@ -394,17 +124,6 @@
       }
   }
   
-  .accordion-collapse.open {
-    color: #4B7EFE;
-    background: #DDE7FF;
-    border-radius: toRem(6px);
-    font-size: toRem(12px);
-    padding: toRem(5px) toRem(10px);
-    font-weight: 600;
-  }
-  
-
-
     .accordion-custom-right{
        & .accordion-button:not(.collapsed) {
             color: transparent;

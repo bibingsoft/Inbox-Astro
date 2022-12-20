@@ -19,7 +19,7 @@ function Header() {
       
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
              
-              <li className="search-global">
+              <li className="search-global ms-lg-5 ms-sm-0">
                 <div className="input-group  align-items-center">
                   <span className="border-0 search-global-icon ">
                     <a href="#"><img src="/assets/search-form.svg"/></a></span>
@@ -42,7 +42,7 @@ function Header() {
                           <i className="count">2</i>
                         </a>
       
-                        <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <ul className="dropdown-menu mt-4 dropdown-menu-right" aria-labelledby="dropdownMenuLink">
                           <li><a className="dropdown-item" href="#">Action</a></li>
                           <li><a className="dropdown-item" href="#">Another action</a></li>
                           <li><a className="dropdown-item" href="#">Something else here</a></li>
@@ -56,7 +56,7 @@ function Header() {
                           <img src="/assets/social.svg"/>
                         </a>
       
-                        <ul className="dropdown-menu " aria-labelledby="dropdownMenuLink">
+                        <ul className="dropdown-menu mt-4 dropdown-menu-right" aria-labelledby="dropdownMenuLink">
                           <li><a className="dropdown-item" href="#">Action</a></li>
                           <li><a className="dropdown-item" href="#">Another action</a></li>
                           <li><a className="dropdown-item" href="#">Something else here</a></li>
@@ -75,7 +75,7 @@ function Header() {
                           <img src="/assets/more.svg"/>
                         </a>
       
-                        <ul className="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                        <ul className="dropdown-menu dropdown-menu-right mt-4" aria-labelledby="dropdownMenuLink">
                           <li><a className="dropdown-item" href="#">Action</a></li>
                           <li><a className="dropdown-item" href="#">Another action</a></li>
                           <li><a className="dropdown-item" href="#">Something else here</a></li>
