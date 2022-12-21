@@ -17,37 +17,29 @@
             & .tick {                        
               background: url(../../assets/dbl-tick-dark.svg) no-repeat center center;
               background-position: 0px toRem(5px);
-            }
+            }         
            
-           
-          }
-         
-        }
-       
+          }         
+        }       
       }
      
        .chat-border {           
         border-radius: 0px toRem(10px) toRem(10px) toRem(10px);             
       }
      
-   
-      
       .chat-control-box {      
         box-shadow: 0px 4px 23px 0px rgba(0, 0, 0, 0.2);
         border: 1px solid #c8d1d9;
        
-        & .form-control {        
+        & .form-control {       
          
           &:focus {
             background-color: #fdfdfd;
             box-shadow: none;
-          }
-         
+          }         
         }
-        
       }
       
-   
       .chat-wrapper {
         height: calc(100vh - 150px);
       }
