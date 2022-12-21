@@ -9,8 +9,7 @@
  
   .filter-box{  
   min-height:toRem(61px);
-    & .select-box{ 
-           
+    & .select-box{            
         &:after{
           position: absolute;
           content: url('../../assets/drop-dwn.svg');

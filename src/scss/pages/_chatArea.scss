@@ -1,14 +1,4 @@
-
-    
-    .card-radius{
-        border-radius: toRem(8px) toRem(8px) 0 0 !important;
-    } 
-      .panel-center {
-       
-        .box-shadow {
-          box-shadow: 0 3px 8px 0 rgb(119 124 141 / 53%);
-        }
-      }      
+      
       .chat-section {
         height: calc(100vh - 330px);
         overflow-y: scroll;
@@ -57,96 +47,12 @@
         
       }
       
-    
-     
-     
-      .chat-flex {
-        gap: toRem(5px);
-      }
+   
       .chat-wrapper {
         height: calc(100vh - 150px);
       }
       
       
-      
-      .agent-dropdown {
-        box-shadow: 0px toRem(4px) toRem(23px) rgba(0, 0, 0, 0.2);
-        border-radius:  toRem(6px);
-      
-        .agent-assign-box {
-          display: flex;
-          min-width:  toRem(500px);
-          justify-content: space-around;
-        }
-        & .agent-group {
-          & .agent-head {
-            color: #333;
-            font-weight: 500;
-            font-size:  toRem(14px);
-          }
-        }
-        & .settings-box {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          width: 2vw;
-          height: 2vw;
-          background: #ebefff;
-          border-radius:  toRem(6px);
-          cursor: pointer;
-          font-size:  toRem(11px);
-        }
-        & .agent-group-list {
-          max-height:  toRem(200px);
-          overflow-y: scroll;
-        }
-        & .agent-list {
-          margin-bottom:  toRem(20px);
-        }
-        & .input-agent:checked + label {
-          color: #645DF6 !important;
-          font-weight: 500;
-        }
-      }
-      
-      .agent-group-list::-webkit-scrollbar {
-        background-color: transparent;
-        width:  toRem(2px);
-      }
-      .agent-group-list::-webkit-scrollbar-track {
-        background-color: transparent;
-      }
-      .agent-group-list::-webkit-scrollbar-thumb {
-        height: toRem(5px)!important;
-        border-radius:  toRem(10px);
-        background: #b7bdcb;
-        box-shadow: 4px 4px 15px rgba(112, 124, 151, 0.05),
-          2px 2px 10px rgba(112, 124, 151, 0.1),
-          1px 1px 50px rgba(112, 124, 151, 0.15);
-      }
-      
     
-      .chat-ticket-status {
-        margin-top:  toRem(20px);
-        display: flex;
-        flex-direction: column;
-        gap:  toRem(10px);
-        justify-content: center;
-        align-items: center;
-      
-        & .chat-notify-msg {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          background: #202124;
-          border-radius:  toRem(50px);
-          width:  toRem(129px);
-          height: toRem(33px);
-          color: #fff;
-          font-size:  toRem(13px);
-        }
-      }
-      
 
      
