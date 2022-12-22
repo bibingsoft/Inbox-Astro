@@ -29,6 +29,7 @@
         $blue-active:#645DF6;
         $blue-badge:#2D50C8;
         $light-blue:#e6e5ff;
+        $blueberry: #364887;
         $body-bg: rgb(235, 236, 241);
         $border-color: #BCBFD0;
         $cyan-blue: #EBF0F4;
@@ -45,6 +46,9 @@
         $gray-medium:#7b7b7b;
         $mist-gray:#596781;
         $carbon-gray:#5e5e5e;
+        $vampire-gray:#4d4d4d;
+        $off-white: #ffffff1f;
+        $tropical-blue:#D6DCF9;
 
 
       
@@ -78,7 +82,11 @@
             "gray-medium": $gray-medium,
             "mist-gray": $mist-gray,
             "carbon-gray":  $carbon-gray,
-            "contrast-blue":  $contrast-blue
+            "contrast-blue":  $contrast-blue,
+            "off-white": $off-white,
+            "blueberry": $blueberry,
+            "tropical-blue": $tropical-blue,
+            "vampire-gray":  $vampire-gray,
           );
          
     
@@ -98,6 +106,7 @@
     property: padding,
     values: (
      6: toRem(10px),
+    
     )
   ),
   "Spacing-ps": (
@@ -115,6 +124,7 @@
     values: (
      65: toRem(65px),
      80: toRem(80px),
+     90: toRem(90px),
     )
   ),
   "Spacing-ms": (
@@ -143,13 +153,17 @@
        nav-md: toRem(50px),
       )
     ),
-    "font-size": (
-      rfs: true,
-      property: font-size,
-      class: fs,
-      values: (
-      12: toRem(12px),
-      )
-    ),
+    // "font-size": (     
+    //   property: font-size,
+    //   responsive: true,
+    //   class: fs,
+    //   values: (    
+    //   9: toRem(9px),
+    //   10: toRem(10px),
+    //   11: toRem(11px),
+    //   12: toRem(12px),
+    //   13: toRem(13px),
+    //   )
+    // ),
    
 );

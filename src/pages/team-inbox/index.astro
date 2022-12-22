@@ -1,14 +1,14 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Search from "../components/team-inbox/common/Search.jsx";
-import UserList from "../components/team-inbox/team-inbox-user-listing/UserListing.jsx";
-import UserListActive from "../components/team-inbox/team-inbox-user-listing/UserListingActive.jsx";
-import ChatLeft from "../components/team-inbox/team-inbox-chat/ChatCustomer.jsx";
-import ChatRight from "../components/team-inbox/team-inbox-chat/ChatSupport.jsx";
-import AccordionCustom from "../components/team-inbox/common/AccordionCustom.jsx";
-import Checkbox from "../components/common/forms/Checkbox.jsx";
-import FloatingButton from "../components/team-inbox/common/FloatingButton.jsx";
-import Button from "../components/common/forms/Button.jsx";
+import Layout from "../../layouts/Layout.astro";
+import Search from "../../components/team-inbox/common/Search.jsx";
+import UserList from "../../components/team-inbox/team-inbox-user-listing/UserListing.jsx";
+import UserListActive from "../../components/team-inbox/team-inbox-user-listing/UserListingActive.jsx";
+import ChatLeft from "../../components/team-inbox/team-inbox-chat/ChatCustomer.jsx";
+import ChatRight from "../../components/team-inbox/team-inbox-chat/ChatSupport.jsx";
+import AccordionCustom from "../../components/team-inbox/common/AccordionCustom.jsx";
+import Checkbox from "../../components/common/forms/Checkbox.jsx";
+import FloatingButton from "../../components/team-inbox/common/FloatingButton.jsx";
+import Button from "../../components/common/forms/Button.jsx";
 ---
 
 <Layout title="comm chat">
@@ -84,9 +84,9 @@ import Button from "../components/common/forms/Button.jsx";
                     <!--/.custom_search ends-->
                     <div class="inbox-wrapper rounded bg-white  mt-3">
                         <!-- chat listing -->
-                    <UserList userImage="assets/chat-widget-sidebar.svg" title="Gsoftcomm" subtitle="Welcome to gsoftcomm..." time="2 Min ago" username="Chat widget" socialMedia="assets/chat-widget-sidebar.svg"/>
-                    <UserListActive userImage="assets/chat-widget-sidebar.svg" title="Gsoftcomm" subtitle="Welcome to gsoftcomm..." time="1 Min ago" username="Chat widget2" socialMedia="assets/chat-widget-sidebar.svg"/>
-                    <UserList userImage="assets/chat-widget-sidebar.svg" title="Gsoftcomm" subtitle="Welcome to gsoftcomm..." time="5 Min ago" username="Chat widget3" socialMedia="assets/chat-widget-sidebar.svg"/>
+                    <UserList userImage="/assets/chat-widget-sidebar.svg" title="Gsoftcomm" subtitle="Welcome to gsoftcomm..." time="2 Min ago" username="Chat widget" socialMedia="/assets/chat-widget-sidebar.svg"/>
+                    <UserListActive userImage="/assets/chat-widget-sidebar.svg" title="Gsoftcomm" subtitle="Welcome to gsoftcomm..." time="1 Min ago" username="Chat widget2" socialMedia="/assets/chat-widget-sidebar.svg"/>
+                    <UserList userImage="/assets/chat-widget-sidebar.svg" title="Gsoftcomm" subtitle="Welcome to gsoftcomm..." time="5 Min ago" username="Chat widget3" socialMedia="/assets/chat-widget-sidebar.svg"/>
                       
                     </div>
                   </div><!--/-panel-left-->
@@ -194,7 +194,7 @@ import Button from "../components/common/forms/Button.jsx";
   
                           <div class="d-flex flex-column">
                             <div class="card-round"><div class="d-flex align-items-center justify-content-center rounded-circle bg-light-blue h-12 w-12">
-                              <img class="h-4 w-4" src="assets/chat-widget-sidebar.svg" alt="# "></div></div>
+                              <img class="h-4 w-4" src="/assets/chat-widget-sidebar.svg" alt="# "></div></div>
                           </div>
                           <div>
                             <span class="card-name fs-6 d-block fw-500 text-primary">Gsoftcomm</span>

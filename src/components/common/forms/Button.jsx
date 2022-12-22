@@ -2,13 +2,13 @@
 
 import React from "react";
 
-function Button({ btnImage ,btnName  }) {
+function Button({ btnImage ,btnName, bgColor ,textColor }) {
     return (
-        <button className="btn bg-light-blue d-flex align-items-center text-secondary "><i class="me-2">
+        <button className={`btn bg-${bgColor} d-flex align-items-center text-${textColor}`}><i class="me-2">
             
                                 <img src={btnImage} alt="# "/>
             
-                              </i><span className="ms-2">{btnName}</span> </button>
+                              </i><span>{btnName}</span> </button>
     );
 }
 

@@ -5,6 +5,7 @@ import 'font-awesome/css/font-awesome.min.css';
 import AccordionAstro from "../components/AccordionAstro.astro";
 import Header from "../components/common/navbars/Header.jsx";
 import SideNav from "../components/common/navbars/SideNav.jsx";
+import SideNavMobile from "../components/common/navbars/SideNavMobile.jsx";
 const { title } = Astro.props;
 ---
 
@@ -27,7 +28,9 @@ const { title } = Astro.props;
             <slot />
           
             </main>
-           
+            <!-- off canvas sidebar for mobile starts -->
+            <SideNavMobile/>
+            <!-- off canvas sidebar for mobile ends -->
      
         <script>
             import "../js/main";

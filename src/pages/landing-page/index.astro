@@ -1,0 +1,274 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Search from "../../components/team-inbox/common/Search.jsx";
+import UserList from "../../components/team-inbox/team-inbox-user-listing/UserListing.jsx";
+import UserListActive from "../../components/team-inbox/team-inbox-user-listing/UserListingActive.jsx";
+import ChatLeft from "../../components/team-inbox/team-inbox-chat/ChatCustomer.jsx";
+import ChatRight from "../../components/team-inbox/team-inbox-chat/ChatSupport.jsx";
+import AccordionCustom from "../../components/team-inbox/common/AccordionCustom.jsx";
+import Checkbox from "../../components/common/forms/Checkbox.jsx";
+import FloatingButton from "../../components/team-inbox/common/FloatingButton.jsx";
+import Button from "../../components/common/forms/Button.jsx";
+import Products from "../../components/landing-page/Products.jsx";
+import ProductsListing from "../../components/landing-page/ProductListing.jsx";
+---
+
+<Layout title="comm chat">
+  <div class="wrapper ms-lg-5 ms-md-0 ps-lg-3 ps-md-0 mt-lg-65 mt-80">
+    <div class="container-fluid">
+      <!-- user details section starts-->
+      <div class="bg-white shadow rounded mt-4 p-4 ms-lg-4 me-2">
+        <div class="row">
+          <div class="col-lg-4 col-sm-6 col-12">
+            <div class="d-flex flex-row align-items-center gap-2">
+              <div>
+                <img src="/assets/landing-user.svg" alt="" />
+              </div>
+              <div class="d-flex flex-column gap-2">
+                <div>
+                  Welcome, <span class="fw-semibold text-primary">
+                    Steven Paul</span
+                  >
+                  <span
+                    class="fw-semibold px-2 py-1 text-uppercase fs-9 text-blueberry bg-tropical-blue rounded ms-3"
+                    >Administrator</span
+                  >
+                </div>
+                <div class="text-blue-active">steven@example.com</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 col-12 mt-4 mt-lg-0">
+            <div class="d-flex flex-row align-items-center gap-2">
+              <div>
+                <img src="/assets/buildings.svg" alt="" />
+              </div>
+              <div class="d-flex flex-column gap-2">
+                <div>
+                  <span class="fw-semibold text-primary"
+                    >ABC International pvt. ltd.
+                  </span>
+                </div>
+                <div class="fw-normal text-secondary">
+                  abcinternational.gsoftcomm.com
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 col-12 mt-4 mt-lg-0">
+            <div class="d-flex flex-row align-items-center gap-2 float-lg-end">
+              <div class="d-flex flex-nowrap">
+                <div
+                  class="d-flex align-items-center justify-content-center rounded-circle bg-contrast-blue h-6 w-6"
+                >
+                  <img
+                    width="25"
+                    height="25"
+                    src="/assets/bot-white.svg"
+                    alt="#"
+                  />
+                </div>
+              </div>
+              <div class="d-flex flex-column gap-2">
+                <div>
+                  <span class="fw-normal text-primary">Lets configure the</span>
+                </div>
+                <div class="text-blue-active">ChatBot</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- user details section Ends-->
+
+      <!-- products listing -->
+
+      <div class="row">
+        <div class="col-lg-8 col-md-12 col-sm-12 pe-lg-0">
+          <div class="bg-white shadow rounded mt-4 p-4 ms-lg-4 me-2">
+            <div class="text-primary fs-normal">Account</div>
+            <div class="fw-500 text-blue-badge">
+              abcinternational.comm.com
+              <a
+                href="#"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-bs-original-title="info"
+                aria-label="info"
+              >
+                <img class="ms-2" src="/assets/info.svg" alt="" />
+              </a>
+              <a href="#">
+                <img
+                  class="ms-2"
+                  src="/assets/copy-code.svg"
+                  alt=""
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  data-bs-original-title="copy"
+                  aria-label="copy"
+                />
+              </a>
+            </div>
+            <div class="col-lg-5 col-sm-12 mt-3 ">
+            <Products client:load option={0}
+              logo="/assets/comm-voice.svg"
+              productName="Comm Voice"
+              link="Go to Console"
+              plan="Change plan"
+            />
+            </div>
+           
+             <div class="row ">
+                <div class="col-lg-5 col-sm-12 mt-3 pe-lg-0 ">
+              <Products client:load option={1}
+                logo="/assets/comm-chat.svg"
+                productName="Comm Chat"
+                link="Continue trial"
+                plan="Purchase"
+              />
+              </div>
+              <div class="col-lg-5 col-sm-12 mt-3 ">
+              <Products client:load option={1}
+                logo="/assets/comm-support.svg"
+                productName="Comm Support"
+                link="Continue trial"
+                plan="Purchase"
+              />
+              </div>
+            </div>
+          </div>
+
+          <!-- product box 2 -->
+          <div class="bg-white shadow rounded mt-4 p-4 ms-lg-4 me-2">
+            <div class="text-primary fs-normal">Account</div>
+            <div class="fw-500 text-blue-badge">
+              abcinternational_prod1.comm.com
+              <a
+                href="#"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-bs-original-title="info"
+                aria-label="info"
+              >
+                <img class="ms-2" src="/assets/info.svg" alt="" />
+              </a>
+              <a href="#">
+                <img
+                  class="ms-2"
+                  src="/assets/copy-code.svg"
+                  alt=""
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  data-bs-original-title="copy"
+                  aria-label="copy"
+                />
+              </a>
+            </div>
+            <div class="col-lg-5 col-sm-12 mt-3 pe-lg-0 ">
+            <Products client:load option={1}
+              logo="/assets/comm-chat.svg"
+              productName="Comm chat"
+              link="Go to Console"
+              plan="Change plan"
+            />
+            </div>
+
+            <!-- product box 2 -->
+          </div>
+
+          <!-- offer section starts -->
+          <div class="bg-white shadow rounded mt-4 p-4 ms-lg-4 me-2">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    
+                          <!-- whats new box start -->
+                          <div class="d-flex gap-3">
+                            <div>
+                              <img class="me-2 rounded" src="/assets/whats-new.svg" alt="whats new">
+                            </div>
+        
+        
+                            <div class="d-flex flex-column gap-3">
+                              <div class="text-blue-active fw-500 text-uppercase"> What's New</div>
+                              <div class="text-primary fw-500">Chat grouping feature</div>
+                              <div class="text-primary fw-normal">Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
+                                Aliquam sem urna, condimentum sed nisl ac, rhoncus
+                              </div>
+                              <div>
+                                <a href="#" class="mb-5"> Read more</a>
+                              </div>
+                            </div>
+        
+        
+                          </div>
+                          <!-- whats new box start -->
+                       
+        
+                     
+                     
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 mt-5 mt-md-0 mt-lg-0">
+                    <!-- deal box start -->
+                    <div class="d-flex gap-3">
+                      <div>
+                        <img class="me-2 rounded" src="/assets/offer.svg" alt="start call">
+                      </div>  
+                      <div class="d-flex flex-column gap-3">
+                        <div class="text-blue-active fw-500 text-uppercase"> TODAY’s DEAL</div>
+                        <div class="text-primary fe-500">Special Offer on Comm Voice</div>
+                        <div class="text-primary fw-normal">Buy Plan work $200.00 today get discount upto 50%. 
+                            <span class="fw-500">Offer end</span> in<span class="font-500">24 hours</span>  
+                        </div>
+                        <div>
+                            <Button bgColor="black" textColor="white" btnImage="/assets/check.svg" btnName="Purchase Now"/>                        
+                        </div>
+                      </div>  
+                    </div>
+                    <!-- deal box ends -->
+                  </div>               
+            </div>
+            </div>
+          <!-- offer section ends -->
+        </div>
+
+        <div class="col-lg-4 col-md-12 col-sm-12">
+          <div class="bg-white shadow rounded mt-4 p-4 me-2">
+            <h6 class="text-primary fw-500 fs-5">Experience other products</h6>
+            <p class="text-secondary fw-normal fs-6 mb-2">5 items avaialble</p>
+            <div class="gs-product-listing">
+              <ProductsListing
+                logo="/assets/comm-support.svg"
+                name="Comm Support"
+                desc="Creates and manages support tickets."
+              />
+              <ProductsListing
+                logo="/assets/comm-chat.svg"
+                name="Comm Chat"
+                desc="Creates and manages support tickets."
+              />
+              <ProductsListing
+                logo="/assets/comm-voice.svg"
+                name="Comm Voice"
+                desc="Provide voice, SMS support to clients."
+              />
+              <ProductsListing
+                logo="/assets/comm-omni.svg"
+                name="Comm Omnichannel"
+                desc="Creates and manages support tickets."
+              />
+              <ProductsListing
+                logo="/assets/comm-omni.svg"
+                name="Comm Support and Voice"
+                desc="Package of Comm Supporta nd voice."
+              />
+            </div>
+          </div>
+        </div>
+        <!-- products listing -->
+      </div>
+    </div>
+  </div>
+</Layout>

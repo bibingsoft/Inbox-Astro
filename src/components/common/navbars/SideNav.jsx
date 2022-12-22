@@ -8,23 +8,23 @@ function SideNav() {
 
       <ul className="nav nav-pills nav-flush flex-column mb-auto text-center">
         <li className="nav-item mb-4 mt-3">
-          <a href="#" className="nav-link nav-link-side bg-transparent nav-logo py-3" aria-current="page" data-bs-toggle="tooltip"
+          <a href="#" className="nav-link nav-link-side bg-transparent nav-logo py-3 d-flex align-items-center justify-content-center m-auto p-0  h-6 w-6 text-decoration-none" aria-current="page" data-bs-toggle="tooltip"
             data-bs-placement="right" data-bs-title="Home">
             <img src="/assets/switcher.svg" />
           </a>
         </li>
 
         <li className="nav-item mb-4">
-          <a href="#" className="nav-link nav-link-side bg-transparent nav-logo py-3" aria-current="page"  data-bs-toggle="tooltip"
+          <a href="#" className="nav-link nav-link-side bg-transparent nav-logo py-3 d-flex align-items-center justify-content-center m-auto p-0  h-6 w-6 text-decoration-none" aria-current="page"  data-bs-toggle="tooltip"
             data-bs-placement="right" data-bs-title="Home">
             <img src="/assets/g-logo.svg" />
           </a>
         </li>
-        <li className="mb-4">
-            <div className="divider"></div>
+        <li className="mb-4 mt-3">
+            <div className="border-bottom w-6 m-auto"></div>
         </li>
         <li className="nav-item mb-4">
-          <a href="#" className="nav-link nav-link-side  py-3" aria-current="page"  data-bs-toggle="tooltip"
+          <a href="#" className="nav-link nav-link-side bg-transparent nav-logo py-3 d-flex align-items-center justify-content-center m-auto p-0  h-6 w-6 text-decoration-none" aria-current="page"  data-bs-toggle="tooltip"
             data-bs-placement="right" data-bs-title="Home">
             <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -43,7 +43,7 @@ function SideNav() {
           </a>
         </li>
         <li className="nav-item mb-4">
-          <a href="#" className="nav-link nav-link-side active py-3"  data-bs-toggle="tooltip" data-bs-placement="right"
+          <a href="#" className="active nav-link nav-link-side bg-transparent nav-logo py-3 d-flex align-items-center justify-content-center m-auto p-0  h-6 w-6 text-decoration-none"  data-bs-toggle="tooltip" data-bs-placement="right"
             data-bs-title="Dashboard">
             <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -59,7 +59,7 @@ function SideNav() {
           </a>
         </li>
         <li className="nav-item mb-4">
-          <a href="#" className="nav-link nav-link-side py-3" data-bs-toggle="tooltip" data-bs-placement="right"
+          <a href="#" className="nav-link nav-link-side bg-transparent nav-logo py-3 d-flex align-items-center justify-content-center m-auto p-0  h-6 w-6 text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="right"
             data-bs-original-title="Orders">
             <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -84,7 +84,7 @@ function SideNav() {
           </a>
         </li>
         <li className="nav-item mb-4">
-          <a href="#" className="nav-link nav-link-side py-3 "  data-bs-toggle="tooltip" data-bs-placement="right"
+          <a href="#" className="nav-link nav-link-side bg-transparent nav-logo py-3 d-flex align-items-center justify-content-center m-auto p-0  h-6 w-6 text-decoration-none"  data-bs-toggle="tooltip" data-bs-placement="right"
             data-bs-title="Products">
             <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path

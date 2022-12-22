@@ -1,34 +1,10 @@
-
- .nav-item a {            
-             padding: 0;
-             line-height: 40px;
-             text-decoration: none;
-             border-radius: 6px;
-             width: 40px;
-             height: 40px;
-             display: flex;
-             align-items: center;
-             justify-content: center;
-             margin: 0 auto;
-             @media (max-width: 991.98px) {  
-              width: 100%;
-              align-items: center;
-              justify-content: start;
-              gap:toRem(20px);
-              color: #fff;
-              padding: toRem(20px);
-             }
-             &:hover{
-               background-color: $blue-active;
-             }
-             &.active{
-                background-color: $blue-active !important;
-             }
-           }  
-                   
-
- 
-   .divider{
-     border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-   }
-   
+.nav-item a {
+  &:hover {
+    background-color: $blue-active;
+  }
+  &.active {
+    width: toRem(40px);
+    height: toRem(40px);
+    background-color: $blue-active !important;
+  }
+}

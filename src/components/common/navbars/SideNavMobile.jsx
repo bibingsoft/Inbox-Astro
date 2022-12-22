@@ -10,7 +10,7 @@ function SideNavMobile() {
         <div className="offcanvas-body">
         <ul className="nav nav-pills nav-flush flex-column mb-auto text-center">
         <li className="nav-item mb-4 mt-3">
-          <a href="#" className="nav-link nav-link-side nav-logo py-3" aria-current="page" data-bs-toggle="tooltip"
+          <a href="#" className="nav-link nav-link-side nav-logo py-3 d-flex align-items-center text-white justify-content-start gap-4 p-4 w-100" aria-current="page" data-bs-toggle="tooltip"
             data-bs-placement="right" data-bs-title="Home">
             <img src="/assets/switcher.svg" />
             Gsoftcomm Apps
@@ -18,20 +18,20 @@ function SideNavMobile() {
         </li>
 
         <li className="nav-item mb-4">
-          <a href="#" className="nav-link nav-link-side nav-logo py-3" aria-current="page"  data-bs-toggle="tooltip"
+          <a href="#" className="nav-link nav-link-side nav-logo py-3 d-flex align-items-center text-white justify-content-start gap-4 p-4 w-100" aria-current="page"  data-bs-toggle="tooltip"
             data-bs-placement="right" data-bs-title="Home">
             <img src="/assets/g-logo.svg" />
             Team Inbox
           </a>
         </li>
         <li className="nav-item mb-4">
-        <a href="#" className="nav-link nav-link-side nav-logo py-3 fw-500 fs-18">
+        <a href="#" className="nav-link nav-link-side nav-logo py-3 d-flex align-items-center text-white justify-content-start gap-4 p-4 w-100 fw-500 fs-18">
           
         Support desk
           </a>
         </li>
         <li className="nav-item mb-4">
-          <a href="#" className="nav-link nav-link-side  py-3" aria-current="page"  data-bs-toggle="tooltip"
+          <a href="#" className="nav-link nav-link-side nav-logo py-3 d-flex align-items-center text-white justify-content-start gap-4 p-4 w-100" aria-current="page"  data-bs-toggle="tooltip"
             data-bs-placement="right" data-bs-title="Home">
             <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -53,7 +53,7 @@ function SideNavMobile() {
           </a>
         </li>
         <li className="nav-item mb-4">
-          <a href="#" className="nav-link nav-link-side active py-3"  data-bs-toggle="tooltip" data-bs-placement="right"
+          <a href="#" className="active nav-link nav-link-side nav-logo py-3 d-flex align-items-center text-white justify-content-start gap-4 p-4 w-100"  data-bs-toggle="tooltip" data-bs-placement="right"
             data-bs-title="Dashboard">
             <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -71,7 +71,7 @@ function SideNavMobile() {
           </a>
         </li>
         <li className="nav-item mb-4">
-          <a href="#" className="nav-link nav-link-side py-3" data-bs-toggle="tooltip" data-bs-placement="right"
+          <a href="#" className="nav-link nav-link-side nav-logo py-3 d-flex align-items-center text-white justify-content-start gap-4 p-4 w-100" data-bs-toggle="tooltip" data-bs-placement="right"
             data-bs-original-title="Orders">
             <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -101,7 +101,7 @@ function SideNavMobile() {
 
         </li>
         <li className="nav-item mb-4">
-          <a href="#" className="nav-link nav-link-side py-3 "  data-bs-toggle="tooltip" data-bs-placement="right"
+          <a href="#" className="nav-link nav-link-side nav-logo py-3 d-flex align-items-center text-white justify-content-start gap-4 p-4 w-100"  data-bs-toggle="tooltip" data-bs-placement="right"
             data-bs-title="Products">
             <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path

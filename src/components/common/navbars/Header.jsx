@@ -31,7 +31,7 @@ function Header() {
             
             </ul>
             <div className="d-flex ms-auto">
-             <CircularProgressBar value="12" datapercentage="30"/>
+             <CircularProgressBar value="12" dataPercentage="30"/> 
                  
                   <ul className="d-flex gap-5 align-items-center header-right-sec">
                     <li>

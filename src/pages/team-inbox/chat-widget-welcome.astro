@@ -1,0 +1,162 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Search from "../../components/team-inbox/common/Search.jsx";
+import UserList from "../../components/team-inbox/team-inbox-user-listing/UserListing.jsx";
+import UserListActive from "../../components/team-inbox/team-inbox-user-listing/UserListingActive.jsx";
+import ChatLeft from "../../components/team-inbox/team-inbox-chat/ChatCustomer.jsx";
+import ChatRight from "../../components/team-inbox/team-inbox-chat/ChatSupport.jsx";
+import AccordionCustom from "../../components/team-inbox/common/AccordionCustom.jsx";
+import Checkbox from "../../components/common/forms/Checkbox.jsx";
+import FloatingButton from "../../components/team-inbox/common/FloatingButton.jsx";
+import Button from "../../components/common/forms/Button.jsx";
+---
+
+<Layout title="comm chat">
+  <div
+    class="wrapper ms-lg-5 ms-md-0 ps-lg-3 ps-md-0 mt-lg-65 mt-md-80 mt-90"
+  >
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3 pe-lg-0 ">
+          <div class="panel-left p-2 p-lg-4 pb-5">
+            <div
+              class="filter-box bg-white rounded-3 shadow-sm p-3 d-flex align-items-center"
+            >
+              <div
+                class="select-box text-primary position-relative fw-500 text-decoration-none fs-6 pe-4"
+              >
+                New <i
+                  class="count h-3 w-3 fst-normal bg-blue-badge text-white text-center ms-3 d-inline-block rounded-circle"
+                  >1</i
+                >
+              </div>
+              <div class="ms-auto me-3">
+                <ul
+                  class="switcher h-4 w-10 d-flex align-items-center justify-content-between rounded-pill p-1 bg-cyan-blue"
+                >
+                  <li class="active">
+                    <a
+                      class="d-block h-5 w-5 text-center rounded-circle"
+                      href="#" data-bs-toggle="tooltip" data-bs-title="tooltip" data-bs-placement="top"
+                      ><img src="/assets/bag.svg" />
+                    </a>
+                  </li>
+                  <li>
+                    <a 
+                      class="d-block h-5 w-5 text-center rounded-circle"
+                      href="#" data-bs-toggle="tooltip" data-bs-title="Priority inbox" data-bs-placement="top"
+                      ><img src="/assets/bag-in.svg" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <!--menu filter starts -->
+              <div class="dropdown more">
+                <div
+                  id="filter-button"
+                  class="filter-round d-flex align-items-center justify-content-center flex-direction-column rounded-circle p-1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <div
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="Filter"
+                    data-bs-original-title="Filter"
+                    aria-label="Filter"
+                  >
+                  </div>
+                </div>
+
+                <ul
+                  class="dropdown-menu dropdown-response-filter p-4 mt-2 ms-3"
+                  id="dropdown-response-filter"
+                  aria-labelledby="dropdownMenuLink"
+                >
+                  <div class="form-group">
+                    <div class="d-flex flex-column gap-2">
+                      <Checkbox title="First Response" id="first-response" />
+                      <Checkbox title="Response Due" id="Response Due" />
+                      <Checkbox title="No Response Due" id="No Response Due" />
+                    </div>
+                  </div>
+                </ul>
+              </div>
+              <!-- menu filter ends -->
+              <!-- right section responsive view starts-->
+              <div class="dropdown more">
+                <div
+                  class="d-block d-lg-none bg-cyan-blue d-flex align-items-center justify-content-center flex-direction-column rounded-circle p-2"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img src="/assets/mobile-filter.svg" />
+                  <div
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="Filter"
+                    data-bs-original-title="Filter"
+                    aria-label="Filter"
+                  >
+                  </div>
+                </div>
+
+                <ul
+                  class="dropdown-menu dropdown-response-filter p-4 mt-2"
+                  id="dropdown-response-filter"
+                  aria-labelledby="dropdownMenuLink"
+                >
+                  <div class="form-group">
+                    <div class="d-flex flex-column gap-2"></div>
+                  </div>
+                </ul>
+              </div>
+              <!-- right section responsive view ends-->
+            </div>
+            <!--/.filter-box-->
+            <!-- custom search starts -->
+            <Search />
+            <!--/.custom_search ends-->
+            <div class="inbox-wrapper rounded bg-white mt-3">
+              <!-- chat listing -->
+              <UserList
+                userImage="/assets/chat-widget-sidebar.svg"
+                title="Gsoftcomm"
+                subtitle="Welcome to gsoftcomm..."
+                time="2 Min ago"
+                username="Chat widget"
+                socialMedia="/assets/chat-widget-sidebar.svg"
+              />
+            </div>
+          </div><!--/-panel-left-->
+          <div class="loading text-center">
+            <div class="spinner-border text-vampire-gray text-loader spinner-border-sm" role="status">
+              <span class="sr-only">Loading...</span>
+            </div> Loading more conversations
+          </div>
+        </div>
+        <!--/.col-3-->
+
+        <div class="col-lg-9 ps-lg-0">
+          <div class="row h-100">
+            <div class="col-12 pe-4">
+              <div class="bg-white h-99 rounded d-flex justify-content-center align-items-center mt-4 p-5 flex-column">
+                <div>
+                  <h4 class="fw-500 text-black">Welcome user!</h4>
+                </div>
+  
+  
+                <div class="mt-3 primary-color fw-normal">Let’s click and see the conversations</div>
+                <div class="mt-5">
+                  <img src="/assets/welcome.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/.col--9-->
+      </div>
+    </div>
+  </div>
+</Layout>
