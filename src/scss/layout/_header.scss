@@ -20,22 +20,7 @@
     }
     
  
-  & .dropdown-menu{
-   // margin-top: 22px !important;
-    & .dropdown-item{
-        padding: .50rem 1rem
-    }
-  }
-  & .dropdown {
-    display: block;
-    margin-top: 0; 
- }
-//  & .search-global{
-//   margin-left:toRem(60px);
-//   @media (max-width: 575.98px) {
-//     margin-left: 0;
-//   }
-//  }
+
  & .global-search::placeholder {
     color: #868686;;
     font-weight: 400;
@@ -53,10 +38,7 @@
     }
 
     &:focus {
-      //   width: 250px;
-      //   outline:none;
-      //   box-shadow: none;
-
+      
       transition: width 0.2s ease-in-out;
       background: #ebecf1;
       border-radius: toRem(6px);
@@ -118,17 +100,7 @@
        }
       }
     }
-    & .avatar{
-      position: relative;
-      height: 31px;
-        & span.image{
-            width: 31px;
-            height: 31px;
-            border-radius: 50%;
-            display: block;
-            overflow: hidden;
-        }
-    }
+    
     .more{
       .dropdown-toggle{
         position: relative;

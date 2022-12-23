@@ -73,6 +73,11 @@ $('.global-search').on({
     }
   });
 
+
+  //custom filter show and hide
+  $('#custom-filter').on('click',function(){
+    $(".custom-filter-box").toggleClass("d-none d-block");
+  });
  // Prevents menu from closing when clicked inside
 //  document.getElementById("dropdown-response-filter").addEventListener('click', function (event) {
       

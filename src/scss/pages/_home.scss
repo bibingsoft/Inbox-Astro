@@ -24,7 +24,7 @@
         line-height: toRem(30px);
       }
       & li.active a{
-        background-color: #000;      
+        background-color: $dark;      
        // -webkit-transform: all 0.5s ease-in-out;
        
         & img{
@@ -70,13 +70,13 @@
  
   .chat-widget{
    
-    border: toRem(1px) dotted #605E9D;
+    border: toRem(1px) dotted $widget-blue;
   }
   .chat-whatsapp{
-    border: toRem(1px) dotted #67ac55;
+    border: toRem(1px) dotted $whatsapp-green;
   }
   .chat-fb{
-    border: toRem(1px) dotted #6174A4;
+    border: toRem(1px) dotted $fb-blue;
   }
  
  
@@ -92,7 +92,10 @@
   .dropdown-response-filter{
     min-width: toRem(300px);
   }
-   
+  .dropdown-item:hover {
+    background: $chat-blue;
+    color: $blue-badge;
+}
   //panel right
  
     .box-grey{
@@ -132,4 +135,16 @@
     .fs-9{
       font-size: toRem(9px);
     }
+    .fs-14{
+      font-size: toRem(14px);
+    }
 
+.avatar{
+  background: url('../assets/avatar.jpg') no-repeat center/cover;
+  user-select: none;
+  vertical-align: middle;
+}
+
+.border-green{
+  border: 1px solid #24A803;
+}

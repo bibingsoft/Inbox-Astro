@@ -2,7 +2,6 @@
 import Layout from "../../layouts/Layout.astro";
 import Search from "../../components/team-inbox/common/Search.jsx";
 import UserList from "../../components/team-inbox/team-inbox-user-listing/UserListing.jsx";
-import UserListActive from "../../components/team-inbox/team-inbox-user-listing/UserListingActive.jsx";
 import ChatLeft from "../../components/team-inbox/team-inbox-chat/ChatCustomer.jsx";
 import ChatRight from "../../components/team-inbox/team-inbox-chat/ChatSupport.jsx";
 import AccordionCustom from "../../components/team-inbox/common/AccordionCustom.jsx";
@@ -120,7 +119,7 @@ import Button from "../../components/common/forms/Button.jsx";
             <!--/.custom_search ends-->
             <div class="inbox-wrapper rounded bg-white mt-3">
               <!-- chat listing -->
-              <UserList
+              <UserList active="inactive"
                 userImage="/assets/chat-widget-sidebar.svg"
                 title="Gsoftcomm"
                 subtitle="Welcome to gsoftcomm..."

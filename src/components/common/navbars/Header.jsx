@@ -43,9 +43,9 @@ function Header() {
                         </a>
       
                         <ul className="dropdown-menu mt-4 dropdown-menu-right" aria-labelledby="dropdownMenuLink">
-                          <li><a className="dropdown-item" href="#">Action</a></li>
-                          <li><a className="dropdown-item" href="#">Another action</a></li>
-                          <li><a className="dropdown-item" href="#">Something else here</a></li>
+                          <li><a className="dropdown-item py-3 px-4" href="#">Action</a></li>
+                          <li><a className="dropdown-item py-3 px-4" href="#">Another action</a></li>
+                          <li><a className="dropdown-item py-3 px-4" href="#">Something else here</a></li>
                         </ul>
                       </div>
                     </li>
@@ -57,16 +57,14 @@ function Header() {
                         </a>
       
                         <ul className="dropdown-menu mt-4 dropdown-menu-right" aria-labelledby="dropdownMenuLink">
-                          <li><a className="dropdown-item" href="#">Action</a></li>
-                          <li><a className="dropdown-item" href="#">Another action</a></li>
-                          <li><a className="dropdown-item" href="#">Something else here</a></li>
+                          <li><a className="dropdown-item py-3 px-4" href="#">Action</a></li>
+                          <li><a className="dropdown-item py-3 px-4" href="#">Another action</a></li>
+                          <li><a className="dropdown-item py-3 px-4" href="#">Something else here</a></li>
                         </ul>
                       </div>
                     </li>
                     <li>
-                      <div className="avatar">
-                        <span className="image"><img src="/assets/avatar-profile-icon.svg"/></span>
-                      </div>
+                    <div class="avatar h-4 w-4 d-inline-flex align-items-center justify-content-center text-center   text-uppercase bg-light-blue rounded-circle position-relative fs-3"></div>
                     </li>
                     <li className="px-0 d-none d-md-block">
                       <div className="dropdown more">
@@ -76,9 +74,9 @@ function Header() {
                         </a>
       
                         <ul className="dropdown-menu dropdown-menu-right mt-4" aria-labelledby="dropdownMenuLink">
-                          <li><a className="dropdown-item" href="#">Action</a></li>
-                          <li><a className="dropdown-item" href="#">Another action</a></li>
-                          <li><a className="dropdown-item" href="#">Something else here</a></li>
+                          <li><a className="dropdown-item py-3 px-4" href="#">Action</a></li>
+                          <li><a className="dropdown-item py-3 px-4" href="#">Another action</a></li>
+                          <li><a className="dropdown-item py-3 px-4" href="#">Something else here</a></li>
                         </ul>
                       </div>
                     </li>

@@ -31,7 +31,7 @@
         $light-blue:#e6e5ff;
         $blueberry: #364887;
         $body-bg: rgb(235, 236, 241);
-        $border-color: #BCBFD0;
+        $border-gray: #AFB5BF;
         $cyan-blue: #EBF0F4;
         $border-input:#AFB5BF;
         $dark:#000000;
@@ -49,6 +49,10 @@
         $vampire-gray:#4d4d4d;
         $off-white: #ffffff1f;
         $tropical-blue:#D6DCF9;
+        $widget-blue:#605E9D;
+        $fb-blue: #6174A4;
+        $whatsapp-green: #67ac55;
+        $line:  rgba(0, 0, 0, 0.14);
 
 
       
@@ -67,7 +71,7 @@
         $custom-colors: (
             "blue":$blue,
             "dark-blue":   $dark-blue,   
-            "border-color": $border-color,
+           "border-gray": $border-gray,
             "blue-active": $blue-active,
             "blue-badge":  $blue-badge,
             "cyan-blue":  $cyan-blue,
@@ -87,6 +91,10 @@
             "blueberry": $blueberry,
             "tropical-blue": $tropical-blue,
             "vampire-gray":  $vampire-gray,
+            "widget-blue":$widget-blue,
+            "fb-blue":  $fb-blue,
+            "whatsapp-green": $whatsapp-green,
+            "line": $line,
           );
          
     

@@ -2,9 +2,9 @@
 
 import React from "react";
 
-function UserList({ userImage,title, subtitle, time, username, socialMedia }) {
+function UserList({ userImage,title, subtitle, time, username, socialMedia, active }) {
     return (
-        <div className="card rounded border-0 position-relative p-4">
+        <div className={`card card-${active} rounded border-0 position-relative p-4`}>
         <div className="new-message-dot ">
         
           <i className="card-circle-org h-1 w-1 bg-blue float-end mt-1 d-block rounded-circle"></i>

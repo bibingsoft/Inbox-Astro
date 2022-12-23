@@ -2,15 +2,17 @@
 
 import React from "react";
 
-function UserListActive({ userImage,title, subtitle, time, username, socialMedia }) {
+function UserListingInbox({ title, subtitle, time, username, socialMedia,active,borderColor }) {
     return (
-      <div className="card card-active  border-0 position-relative p-4">
+      <div className={`card card-${active} rounded border-0 position-relative p-4`}>
       
       <div className="d-flex">               
         <div className="card-round d-flex flex-nowrap">
-        <div className="d-flex align-items-center justify-content-center rounded-circle bg-light-blue h-6 w-6">
-              <img className="h-3 w-3" src={userImage} alt="# "/>
-            </div>
+        
+        <div className="avatar h-6 w-6 d-inline-flex align-items-center justify-content-center text-center text  text-uppercase bg-light-blue rounded-circle position-relative fs-3 border-green"
+         ></div>
+        
+        
         </div>
         <div className="ps-3 w-100">
           <div className="d-flex">
@@ -22,7 +24,7 @@ function UserListActive({ userImage,title, subtitle, time, username, socialMedia
           </div>
           <div className="d-flex align-items-center mt-3">
             <span className="card-time fs-6 text-mist-gray fw-normal">{time}</span>
-            <a className="text-contrast-blue fs-12 fw-normal bg-transparent align-items-center rounded-pill py-1 px-2 chat-widget ms-auto chat-widget ms-auto">
+            <a className={`text-contrast-blue fs-12 fw-normal bg-transparent align-items-center rounded-pill py-1 px-2 chat-${borderColor} ms-auto`}>
               <i><img className="me-1" src={socialMedia}/></i>{username}
             </a>
           </div>
@@ -33,4 +35,4 @@ function UserListActive({ userImage,title, subtitle, time, username, socialMedia
     );
 }
 
-export default UserListActive;
+export default UserListingInbox;

@@ -2,13 +2,15 @@
 import Layout from "../../layouts/Layout.astro";
 import Search from "../../components/team-inbox/common/Search.jsx";
 import UserList from "../../components/team-inbox/team-inbox-user-listing/UserListing.jsx";
-import UserListActive from "../../components/team-inbox/team-inbox-user-listing/UserListingActive.jsx";
+import UserListingInbox from "../../components/team-inbox/team-inbox-user-listing/UserListingInbox.jsx";
 import ChatLeft from "../../components/team-inbox/team-inbox-chat/ChatCustomer.jsx";
 import ChatRight from "../../components/team-inbox/team-inbox-chat/ChatSupport.jsx";
 import AccordionCustom from "../../components/team-inbox/common/AccordionCustom.jsx";
 import Checkbox from "../../components/common/forms/Checkbox.jsx";
 import FloatingButton from "../../components/team-inbox/common/FloatingButton.jsx";
 import Button from "../../components/common/forms/Button.jsx";
+import Input from "../../components/common/forms/Input";
+import Select from "../../components/common/forms/SelectBox";
 ---
 
 <Layout title="comm chat">
@@ -16,12 +18,106 @@ import Button from "../../components/common/forms/Button.jsx";
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-3 pe-lg-0 ">
-                <div class="panel-left p-2 p-md-4 pb-5">
-           
+                <div class="panel-left p-2 p-md-4 pb-5">                 
                     <div class="filter-box bg-white rounded-3 shadow-sm p-3  d-flex align-items-center">
-                      <div class="select-box text-primary position-relative fw-500 text-decoration-none fs-6 pe-4">
+                      <!-- <div class="select-box text-primary position-relative fw-500 text-decoration-none fs-6 pe-4">
                         New <i class="count h-3 w-3 fst-normal  bg-blue-badge text-white text-center ms-3 d-inline-block rounded-circle">1</i>
-                      </div>
+                      </div> -->
+                      
+
+                      <div class="px-0">
+                        <div class="dropdown more ">
+                          <a class="select-box pe-4 text-primary" href="#" role="button" id="dropdownMenu" data-bs-toggle="dropdown" > New <i class="count h-3 w-3 fst-normal  bg-blue-badge text-white text-center ms-3 d-inline-block rounded-circle">1</i>
+        
+                          </a>
+       
+                          <ul class="dropdown-menu mt-4 m-auto w-100 dropdown-filter  shadow-sm " aria-labelledby="dropdownMenuLink">
+                            <li>
+                              <div class="d-flex flex-row align-items-center p-3">
+                                <div class="input-group  custom-search-sidebar  rounded ">
+                                  <span class="input-group-text border-end-0 bg-white" id="basic-addon1"><img
+                                      src="/assets/search-form.svg"/></span>
+                                  <input type="search" class="form-control bg-white border-start-0" placeholder="Search"
+                                    aria-label="search" aria-describedby="basic-addon1"/>
+                                </div>
+                              </div>
+                            </li>
+                            <li><a class="dropdown-item py-3 px-4" href="#">
+                                <span>New </span>
+                                <span class="select-box-value float-end p-0">
+                                  <i class="count d-flex align-items-center justify-content-center h-3 w-3 fst-normal  bg-blue-badge text-white text-center ms-3 d-inline-block rounded-circle fs-12">3</i></span></a></li>
+        
+                            <li><a class="dropdown-item py-3 px-4" href="#">
+                                <span>Open </span></a></li>
+        
+                            <li><a class="dropdown-item py-3 px-4" href="#">
+                                <span>Assigned to me </span>
+                              </a></li>
+                            <li><a class="dropdown-item py-3 px-4" href="#">
+                                <span>All Assigned </span>
+                              </a></li>
+                            <li><a class="dropdown-item py-3 px-4" href="#">
+                                <span>Resolved </span>
+                              </a></li>
+                            <li><a class="dropdown-item py-3 px-4" href="#">
+                                <span> Bot Conversations </span>
+                              </a></li>
+                            <li class="border border-bottom-0 border-left-0 border-right-0"></li>
+        
+                            <a id="custom-filter" class="dropdown-item text-center primary-blue mt-1 py-3 px-4" href="#">
+                              <img src="/assets/add-blue.svg">
+                              New custom view
+        
+                            </a>
+        
+                         
+                          </ul>
+                        </div>
+                         <!-- custom filter starts -->
+                       
+
+                          <ul id="custom-filter-box" class="p-4 dropdown-menu dropdown-custom-filter custom-filter-box  shadow-sm mt-4 d-none"
+                            aria-labelledby="dropdownMenuLink">
+                            <div class="form-group form-custom-group">
+                              <span class="fw-500 text-dark-blue fs-14 mb-2"> New Custom View</span>
+
+                            </div>
+                            <Input label="View name" id="name" placeholder="Provide a name to view" type="input" />
+                            <Select label="Topic" id="topic" value="Filter by topic" />
+                          
+
+
+                            <div class="form-group mt-3">
+                              <label class="text-primary mb-1">Filter by status</label>
+                              <div class="d-flex justify-content-between gap-3">
+                                <Checkbox title="New" id="new"/>
+                                <Checkbox title="Assigned" id="assigned"/>
+                                <Checkbox title="Resolved" id="resolved"/>
+                              </div>
+                            </div>
+                            <Select label="Groups" id="group" value="Filter by groups" />
+                            <Select label="Agents" id="agents" value="Filter by team member" />
+                           
+                           
+
+                            <div class="form-group mt-3">
+                              <div class="d-flex flex-column gap-2">
+                                <Checkbox title="Show 'Away Conversations' only" id="conversation"/>
+                                <Checkbox title="Share this view with your team" id="share"/>
+                               
+
+                              </div>
+                            </div>
+                            <div class="form-group d-flex gap-3 mt-3">
+                              <button class="btn bg-black d-flex align-items-center text-white w-100 justify-content-center"><span>Save</span> </button> 
+                              <button class="btn border border-1 rounded px-2 py-3 d-flex align-items-center justify-content-center me-3 w-100">
+                               cancel</button>
+                            </div>
+
+                          </ul>
+                       <!--custom filter ends -->
+                        </div>
+                        
                       <div class="ms-auto me-3">
                         <ul class="switcher h-4 w-10 d-flex align-items-center justify-content-between rounded-pill p-1 bg-cyan-blue">
                           <li class="active"><a data-bs-toggle="tooltip" data-bs-title="tooltip" data-bs-placement="top" class="d-block h-5 w-5 text-center rounded-circle" href="#"><img src="/assets/bag.svg"></a></li>
@@ -54,6 +150,7 @@ import Button from "../../components/common/forms/Button.jsx";
                         </ul>
                       </div>
                       <!-- menu filter ends -->
+                      
                       <!-- right section responsive view starts-->
                       <div class="dropdown more">
           
@@ -84,13 +181,16 @@ import Button from "../../components/common/forms/Button.jsx";
                     <!--/.custom_search ends-->
                     <div class="inbox-wrapper rounded bg-white  mt-3">
                         <!-- chat listing -->
-                    <UserList userImage="/assets/chat-widget-sidebar.svg" title="Gsoftcomm" subtitle="Welcome to gsoftcomm..." time="2 Min ago" username="Chat widget" socialMedia="/assets/chat-widget-sidebar.svg"/>
-                    <UserListActive userImage="/assets/chat-widget-sidebar.svg" title="Gsoftcomm" subtitle="Welcome to gsoftcomm..." time="1 Min ago" username="Chat widget2" socialMedia="/assets/chat-widget-sidebar.svg"/>
-                    <UserList userImage="/assets/chat-widget-sidebar.svg" title="Gsoftcomm" subtitle="Welcome to gsoftcomm..." time="5 Min ago" username="Chat widget3" socialMedia="/assets/chat-widget-sidebar.svg"/>
-                      
+                        <UserListingInbox borderColor="whatsapp" active="inactive" title="Paige Turner" subtitle="Welcome to gsoftcomm..." time="1 Min ago" username="Page-tuner" socialMedia="/assets/whatsapp.svg"/>
+                        <UserListingInbox  borderColor="fb" active="active" title="Amanda Hug" subtitle="Welcome to gsoftcomm..." time="2 Min ago" username="Amanda123" socialMedia="/assets/facebook.svg"/>
+                         <UserListingInbox  borderColor="whatsapp" active="inactive" title="Elieen Dover" subtitle="Welcome to gsoftcomm..." time="5 Min ago" username="Elieen_dove" socialMedia="/assets/whatsapp.svg"/>
                     </div>
                   </div><!--/-panel-left-->
-
+                  <div class="loading text-center">
+                    <div class="spinner-border text-vampire-gray text-loader spinner-border-sm" role="status">
+                      <span class="sr-only">Loading...</span>
+                    </div> Loading more conversations
+                  </div>
              </div>
              <!--/.col-3-->
              
@@ -103,7 +203,7 @@ import Button from "../../components/common/forms/Button.jsx";
                         <div class="panel-center shadow-sm bg-white rounded">
                           <div class="panel-center-box shadow-sm rounded-top bg-white d-flex flex-wrap align-items-center p-3 justify-content-between ">
             
-                          <Button bgColor="light-blue" textColor="light-dark" btnImage="/assets/chat-widget-sidebar.svg" btnName="Chat widget"/>
+                          <Button client:load option={1} bgColor="light-blue" textColor="light-dark" btnImage="/assets/avatar.jpg" btnName="Amanda_hug"/>
 
                             <div class="d-flex align-items-center">
             
@@ -124,7 +224,7 @@ import Button from "../../components/common/forms/Button.jsx";
             
             
                               <!-- assign to an agent -->
-                              <Button bgColor="black" textColor="white" btnImage="/assets/check.svg" btnName="Resolve"/>
+                              <Button client:load option={0} bgColor="black" textColor="white" btnImage="/assets/check.svg" btnName="Resolve"/>
                              
                             </div>
                           </div>
@@ -169,7 +269,7 @@ import Button from "../../components/common/forms/Button.jsx";
                                     </li>
                                     <li class="me-3"><a href="#" class=""><i class="me-2"><img src="/assets/Smile-icon.svg"></i></a>
                                     </li>
-                                    <li><a href="#" class="send h-5 w-5 d-flex align-items-center justify-content-center bg-black text-center rounded-circle shadow-sm pulse"><img src="/assets/send-w.svg"></a></li>
+                                    <li><a href="#" data-bs-toggle="tooltip" data-bs-title="Send message" data-bs-placement="top" class="send h-5 w-5 d-flex align-items-center justify-content-center bg-black text-center rounded-circle shadow-sm pulse"><img src="/assets/send-w.svg"></a></li>
                                   </ul>
                                 </div>
                               </div>
@@ -447,7 +547,7 @@ import Button from "../../components/common/forms/Button.jsx";
                               <span class="card__fb white-bg">
                                 <i><img class="me-2" src="/assets/facebook.svg"></i>Amanda_hug
                               </span>
-                              <span class="d-block my-2 mt-4"><label class="dark-charcoal">Conversation with <span
+                              <span class="d-block my-2 mt-4"><label class="text-primary">Conversation with <span
                                     class="primary-blue">Paige Turner</span> </label> </span>
                               <span class="d-block my-2 mb-3"><label class="dark-grey">Duration: </label> 10
                                 minutes</span>
@@ -491,7 +591,7 @@ import Button from "../../components/common/forms/Button.jsx";
                                 </div>
                                 <div class="user-timeline user-history">
                                   <div class="user-action p-1">
-                                    <div class="dark-charcoal">Sign into gsoftcomm</div>
+                                    <div class="text-primary">Sign into gsoftcomm</div>
                                     <div class="santa-grey">5:30pm</div>
   
                                   </div>
@@ -500,7 +600,7 @@ import Button from "../../components/common/forms/Button.jsx";
                                 <div class="user-timeline user-history">
                                   <div class="user-action  p-1">
   
-                                    <div class="dark-charcoal">Sign into gsoftcomm</div>
+                                    <div class="text-primary">Sign into gsoftcomm</div>
                                     <div class="santa-grey">5:30pm</div>
   
   
@@ -513,7 +613,7 @@ import Button from "../../components/common/forms/Button.jsx";
                                 </div>
                                 <div class="user-timeline user-history user-history-end">
                                   <div class="user-action  p-1">
-                                    <div class="dark-charcoal">Ticket has resolved</div>
+                                    <div class="text-primary">Ticket has resolved</div>
                                     <div class="santa-grey">5:30pm</div>
   
                                   </div>
@@ -549,14 +649,14 @@ import Button from "../../components/common/forms/Button.jsx";
                               <div class="d-block mb-4"><label>Agent Steven Paul has joined the conversation</label>
                               </div>
                               <div class="d-block mb-3"><span class="chat-trans-time">05:13:20</span></div>
-                              <span class="d-block mb-4"><label><span class="dark-charcoal font-500">Paige
+                              <span class="d-block mb-4"><label><span class="text-primary font-500">Paige
                                     Turner:</span>
                                   Hello! Finally found the time to write to you) I need your help in creating
                                   interactive
                                   animations
                                 </label> </span>
                               <span class="d-block mb-3"><span class="chat-trans-time">05:00:20</span></span>
-                              <span class="d-block mb-4"><label><span class="dark-charcoal font-500">Paige
+                              <span class="d-block mb-4"><label><span class="text-primary font-500">Paige
                                     Turner:</span>
                                   Can I send you files?
                                 </label> </span>
