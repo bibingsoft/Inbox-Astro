@@ -23,6 +23,9 @@
   position: relative;
   z-index: 998;
   overflow: hidden;
+  &:hover{
+    background: $blue-active;
+  }
 }
 
 

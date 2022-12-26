@@ -1,0 +1,200 @@
+---
+import LayoutWithoutMenu from "../../layouts/LayoutWithoutMenu.astro";
+import Input from "../../components/common/forms/Input";
+import Select from "../../components/common/forms/SelectBox";
+import RadioCalendar from "../../components/common/forms/radioCalendar";
+import Button from "../../components/common/forms/Button";
+---
+
+<LayoutWithoutMenu title="comm chat">
+ 
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 mx-auto  mt-5 mx-auto">
+        <div
+          class="d-flex rounded-3 text-white px-5 py-4 bg-blue-active"
+        >
+          <div class="d-flex flex-column gap-2">
+            <h5 class="fw-normal">Select time slot</h5>
+            <h5 class="fs-3 fw-500">Meeting with Steven Paul</h5>
+            <p class="fs-6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+              fringilla justo et consectetur pellentesque. Suspendisse sit amet
+              odio luctus.
+            </p>
+          </div>
+          <div class="ms-auto">
+            <svg
+              width="66"
+              height="72"
+              viewBox="0 0 66 72"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M62.1429 70.7757H3.85718C2.50461 70.7757 1.4082 69.6793 1.4082 68.3267V25.2798H64.5919V68.3267C64.5919 69.6793 63.4955 70.7757 62.1429 70.7757Z"
+                fill="white"></path>
+              <path
+                d="M22.1021 1.22461H14.5103V13.9593H22.1021V1.22461Z"
+                fill="#1E1E38"></path>
+              <path
+                d="M55.1633 7.59204V17.6329H40.2245V7.59204H25.7756V17.6329H10.8368V7.59204H3.85718C2.50461 7.59204 1.4082 8.68845 1.4082 10.041V25.2798H64.5919V10.041C64.5919 8.68845 63.4955 7.59204 62.1429 7.59204H55.1633Z"
+                fill="#1E1E38"></path>
+              <path
+                d="M51.4898 1.22461H43.8979V13.9593H51.4898V1.22461Z"
+                fill="#1E1E38"></path>
+              <path
+                d="M14.5101 15.1837H22.102C22.7781 15.1837 23.3265 14.6353 23.3265 13.9592V1.22449C23.3265 0.548327 22.7781 0 22.102 0H14.5101C13.834 0 13.2856 0.548327 13.2856 1.22449V13.9592C13.2856 14.6353 13.834 15.1837 14.5101 15.1837ZM15.7346 2.44898H20.8775V12.7347H15.7346V2.44898Z"
+                fill="#1E1E38"></path>
+              <path
+                d="M62.1428 6.36743H55.1632C54.4868 6.36743 53.9387 6.91576 53.9387 7.59192V16.4082H41.4489V7.59192C41.4489 6.91576 40.9008 6.36743 40.2244 6.36743H25.7754C25.0993 6.36743 24.5509 6.91576 24.5509 7.59192V16.4082H12.0611V7.59192C12.0611 6.91576 11.5128 6.36743 10.8367 6.36743H3.85706C1.83151 6.36743 0.183594 8.01535 0.183594 10.0409V25.2797V68.3266C0.183594 70.3522 1.83151 72.0001 3.85706 72.0001H62.1428C64.1686 72.0001 65.8163 70.3522 65.8163 68.3266V25.2797V10.0409C65.8163 8.01535 64.1686 6.36743 62.1428 6.36743ZM2.63257 10.0409C2.63257 9.36572 3.18188 8.81641 3.85706 8.81641H9.61217V17.6327C9.61217 18.3089 10.1605 18.8572 10.8367 18.8572H25.7754C26.4516 18.8572 26.9999 18.3089 26.9999 17.6327V8.81641H38.9999V17.6327C38.9999 18.3089 39.548 18.8572 40.2244 18.8572H55.1632C55.8396 18.8572 56.3877 18.3089 56.3877 17.6327V8.81641H62.1428C62.818 8.81641 63.3673 9.36572 63.3673 10.0409V24.0552H2.63257V10.0409ZM63.3673 68.3266C63.3673 69.0018 62.818 69.5511 62.1428 69.5511H3.85706C3.18188 69.5511 2.63257 69.0018 2.63257 68.3266V26.5042H63.3673V68.3266Z"
+                fill="#1E1E38"></path>
+              <path
+                d="M43.8978 15.1837H51.4897C52.1661 15.1837 52.7142 14.6353 52.7142 13.9592V1.22449C52.7142 0.548327 52.1661 0 51.4897 0H43.8978C43.2214 0 42.6733 0.548327 42.6733 1.22449V13.9592C42.6733 14.6353 43.2214 15.1837 43.8978 15.1837ZM45.1223 2.44898H50.2652V12.7347H45.1223V2.44898Z"
+                fill="#1E1E38"></path>
+              <path
+                d="M23.9584 59.4203C21.5762 59.4203 20.0331 58.5815 18.8924 57.1052L16.3425 60.2926C18.0536 62.3728 20.7039 63.5132 24.1261 63.5132C29.4269 63.5132 32.8489 60.8294 32.8489 56.6355C32.8489 53.5155 30.9703 51.1334 28.152 50.6637C30.7019 50.194 32.4127 47.8457 32.4127 45.1954C32.4127 41.6392 29.2925 39.2571 24.7636 39.2571C21.2743 39.2571 18.0201 40.6327 16.678 42.679L19.4963 45.8326C20.5364 44.1217 22.214 43.1485 24.2603 43.1485C26.2396 43.1485 27.6152 44.0544 27.6152 45.8661C27.6152 47.7785 26.0047 49.1539 23.2873 49.1539H22.2473V52.5088H23.1867C26.5416 52.5088 28.1856 53.8172 28.1856 56.132C28.1856 58.3466 26.676 59.4203 23.9584 59.4203Z"
+                fill="#1E1E38"></path>
+              <path
+                d="M41.0014 44.3566V54.522H36.2374V58.5815H49.8586V54.522H45.5979V39.4248H41.0014C40.6324 40.1965 37.2104 42.6119 35.5667 42.6119V46.8058C37.3108 46.8058 40.2295 45.3966 41.0014 44.3566Z"
+                fill="#1E1E38"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gs-informartion bg-white mt-3 rounded-3 px-5 py-4">
+      <h2 class="fs-4 text-primary fw-normal">Your informations</h2>
+      <div class="row">
+        <div class="col-sm-12 col-lg-4">
+          <Input
+            label="First Name*"
+            id="firstName"
+            placeholder="Page"
+            type="input"
+          />
+        </div>
+        <div class="col-sm-12 col-lg-4">
+          <Input
+            label="Last Name*"
+            id="lastName"
+            placeholder="Tuner"
+            type="input"
+          />
+        </div>
+        <div class="col-sm-12 col-lg-4">
+          <Input
+            label="Your Email Address*"
+            id="email"
+            placeholder="Pagetuner@example.com"
+            type="input"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-sm-12 col-lg-4">
+        <div class="bg-white rounded-3 p-3">
+          <div id="calendar"></div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-lg-8 mt-4 mt-lg-0 ps-0">
+        <div class="bg-white rounded-3 p-5">
+          <h2 class="text-primary fs-3">Choose time slot for meeting</h2>
+
+          <div class="form-group form-custom-box form-date">
+            <Select
+              label="Choose your time zone"
+              id="time"
+              value="UTC+5.30, New Delhi, Mumbai, Culcutta,"
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="text-primary fw-500 mt-4 mb-2">Meeting duration</label
+            >
+            <div class="d-flex gap-2 row">
+              <div
+                role="button"
+                class="col-lg-2 col-md-5 col-sm-12 meeting-time d-flex align-items-center rounded-pill px-3 py-2 justify-content-center bg-blue-shade"
+              >
+                5 minutes
+              </div>
+              <div
+                role="button"
+                class="col-lg-2  col-md-5 col-sm-12 meeting-time d-flex align-items-center rounded-pill px-3 py-2 justify-content-center text-white bg-blue-active"
+              >
+                15 minutes
+              </div>
+              <div
+                role="button"
+                class="col-lg-2  col-md-5 col-sm-12 meeting-time d-flex align-items-center rounded-pill px-3 py-2 justify-content-center bg-blue-shade"
+              >
+                30 minutes
+              </div>
+              <div
+                role="button"
+                class="col-lg-2  col-md-5 col-sm-12 meeting-time d-flex align-items-center rounded-pill px-3 py-2 justify-content-center bg-blue-shade"
+              >
+                1 hour
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group mt-4">
+            <label class="text-primary fw-500"
+              >Select time slot for meeting</label
+            >
+            <div class="row">
+              <div class="col-lg-3 col-sm-6">
+                <RadioCalendar id="time1" title="07:00 am" />
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <RadioCalendar id="time2" title="08:00 am" />
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <RadioCalendar id="time3" title="09:00 am" />
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <RadioCalendar id="time4" title="10:00 am" />
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <RadioCalendar id="time5" title="11:00 am" />
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <RadioCalendar id="time6" title="12:00 am" />
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <RadioCalendar id="time7" title="01:00 am" />
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <RadioCalendar id="time8" title="02:00 am" />
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <RadioCalendar id="time9" title="03:00 am" />
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <RadioCalendar id="time10" title="04:00 am" />
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <RadioCalendar id="time11" title="05:00 am" />
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <RadioCalendar id="time8" title="02:00 am" />
+              </div>
+            </div>
+            <div class="d-flex gap-3 mt-5">
+              <a href="gs-calendar-meeting-confirmation.html" class="btn bg-black d-flex align-items-center text-white"
+                >Confirm</a
+              >
+                                   
+                     
+              <button class="btn bg-black d-flex align-items-center text-white">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+</LayoutWithoutMenu>

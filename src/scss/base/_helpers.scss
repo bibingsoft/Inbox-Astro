@@ -20,4 +20,9 @@
        width: size($i);
     }
 }
+@for $i from 1 through 99 {
+    .w-min-#{$i} {
+       min-width: size($i) !important;
+    }
+}
 

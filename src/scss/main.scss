@@ -37,7 +37,9 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 // 5. Components
 @import 'components/button';
 @import 'components/checkbox';
+@import 'components/radioButton';
 @import 'components/floatingButton';
+@import 'components/calendarRadio';
 
 // 6. Page-specific styles
 @import 'pages/home';

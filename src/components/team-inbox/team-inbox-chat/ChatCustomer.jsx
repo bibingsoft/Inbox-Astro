@@ -1,6 +1,6 @@
 import React from "react";
 
-function chatLeft({ username, time, chatCustomer }) {
+function chatLeft({ userName, time, chatCustomer }) {
     return (
         <div className="chat-left">
                                   <div className="d-flex flex-row gap-2">
@@ -13,7 +13,7 @@ function chatLeft({ username, time, chatCustomer }) {
                                       </div>
                                     </div>
                                     <div className="d-flex flex-column pt-1">
-                                      <div className="text-mist-gray d-block">{username}, {time}</div>
+                                      <div className="text-mist-gray d-block">{userName}, {time}</div>
                                       <div className="d-flex mt-2  align-items-start">
             
                                         <div className="chat-cvr d-flex align-items-start flex-column w-100">

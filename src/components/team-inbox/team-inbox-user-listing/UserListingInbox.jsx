@@ -5,7 +5,7 @@ import React from "react";
 function UserListingInbox({ title, subtitle, time, username, socialMedia,active,borderColor }) {
     return (
       <div className={`card card-${active} rounded border-0 position-relative p-4`}>
-      
+      <div class="new-message-dot "><i class="card-circle-org h-1 w-1 bg-blue float-end mt-1 d-block rounded-circle"></i></div>
       <div className="d-flex">               
         <div className="card-round d-flex flex-nowrap">
         

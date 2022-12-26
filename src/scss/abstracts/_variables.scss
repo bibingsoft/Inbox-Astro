@@ -27,6 +27,7 @@
         $blue:#157EFB;
         $blue-link: #4a6ada;
         $blue-active:#645DF6;
+        $blue-shade:#C3CEE9;
         $blue-badge:#2D50C8;
         $light-blue:#e6e5ff;
         $blueberry: #364887;
@@ -53,6 +54,7 @@
         $fb-blue: #6174A4;
         $whatsapp-green: #67ac55;
         $line:  rgba(0, 0, 0, 0.14);
+        $disable: #76787A;
 
 
       
@@ -95,7 +97,10 @@
             "fb-blue":  $fb-blue,
             "whatsapp-green": $whatsapp-green,
             "line": $line,
+            "disable": $disable,
+            "blue-shade": $blue-shade, 
           );
+          
          
     
           $utilities: (
