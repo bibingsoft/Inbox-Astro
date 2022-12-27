@@ -129,6 +129,9 @@
     .fw-800{
       font-weight: 800;
     }
+    .fs-11{
+      font-size: toRem(11px);
+    }
     .fs-12{
       font-size: toRem(12px);
     }
@@ -144,7 +147,11 @@
   user-select: none;
   vertical-align: middle;
 }
-
+.avatar-conv{
+  background: url('../assets/conv-icon.svg') no-repeat center/cover;
+  user-select: none;
+  vertical-align: middle;
+}
 .border-green{
   border: 1px solid #24A803;
 }
@@ -155,3 +162,71 @@
   position: absolute;
   right: 500px;
 }
+
+.dropdown-resolve li a:hover{
+  color: $blue-active;
+  background:transparent !important;
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.modal-dialog-right {
+  margin-right: 50px;
+}
+
+.animated {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.resolve-modal {
+  & .nav-resolve-tab {
+    border: 1px solid #c3cee9;    
+  }
+  & .nav-resolve-tab.active {
+    background-color:  $blue-active;
+    border: 1px solid $blue-active;
+    color:#fff !important;
+  }
+
+ 
+}
+
+.search-results.active {
+  background: #5D57E3 !important;
+  color: #fff !important;
+}
+

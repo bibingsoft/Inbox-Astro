@@ -39,7 +39,8 @@
         $light-dark:#222222;
         $light-blue:#EFEBFF;
         $light-grey:#d9d9d9;
-        $light-yellow:#FFE2AB;
+        $light-yellow:#FFF1D5;
+        $dark-yellow:#FEC860;
         $yellow:#FFB82E;
         $gray-blue: #8190B7;
         $chat-blue: #ebefff;
@@ -55,6 +56,14 @@
         $whatsapp-green: #67ac55;
         $line:  rgba(0, 0, 0, 0.14);
         $disable: #76787A;
+        $light-blue2: #E9F1FE;
+        $titan-white: #eef0f9;
+        $hawkes-blue:#d7ddff;
+        $slate-blue:#4B4A97;
+        $moody-blue:#6E7FDB;
+        $royal-blue:#446BF4;
+        $green-light:#DFF2E4;
+        $green:#006C38;
 
 
       
@@ -68,7 +77,7 @@
             "secondary":  $secondary-color,
             "danger":  $red,
             "dark": $dark,
-            "light-blue": $light-blue
+            "light-blue": $light-blue,
           );
         $custom-colors: (
             "blue":$blue,
@@ -81,6 +90,7 @@
             "light-blue": $light-blue,
             "light-grey":$light-grey,
             "light-yellow": $light-yellow,
+            "dark-yellow": $dark-yellow,
             "light-dark":  $light-dark,
             "yellow": $yellow,
             "gray-blue":  $gray-blue,
@@ -99,6 +109,14 @@
             "line": $line,
             "disable": $disable,
             "blue-shade": $blue-shade, 
+            "light-blue2":  $light-blue2,
+            "titan-white": $titan-white,
+            "hawkes-blue":$hawkes-blue,
+            "slate-blue": $slate-blue,
+            "moody-blue": $moody-blue,
+            "royal-blue": $royal-blue,
+            "green-light":  $green-light,
+            "green": $green,
           );
           
          

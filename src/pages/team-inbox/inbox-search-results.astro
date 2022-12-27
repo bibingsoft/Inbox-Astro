@@ -22,287 +22,154 @@ import TicketList from "../../components/team-inbox/common/TicketsListing";
         <div class="col-lg-3 pe-lg-0">
           <div class="panel-left p-2 p-md-4 pb-5">
             <div
-              class="filter-box bg-white rounded-3 shadow-sm p-3 d-flex align-items-center"
+              class="filter-box bg-white rounded-top shadow-sm p-3 d-flex align-items-center"
             >
-              <!-- <div class="select-box text-primary position-relative fw-500 text-decoration-none fs-6 pe-4">
-                        New <i class="count h-3 w-3 fst-normal  bg-blue-badge text-white text-center ms-3 d-inline-block rounded-circle">1</i>
-                      </div> -->
-
-              <div class="px-0">
-                <div class="dropdown more">
-                  <a
-                    class="select-box pe-4 text-primary"
-                    href="#"
-                    role="button"
-                    id="dropdownMenu"
-                    data-bs-toggle="dropdown"
+              <a href="#">
+                <span class="me-2">
+                  <svg
+                    width="19"
+                    height="20"
+                    viewBox="0 0 19 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    New <i
-                      class="count h-3 w-3 fst-normal bg-blue-badge text-white text-center ms-3 d-inline-block rounded-circle"
-                      >1</i
-                    >
-                  </a>
-
-                  <ul
-                    class="dropdown-menu mt-4 m-auto w-100 dropdown-filter shadow-sm"
-                    aria-labelledby="dropdownMenuLink"
-                  >
-                    <li>
-                      <div class="d-flex flex-row align-items-center p-3">
-                        <div class="input-group custom-search-sidebar rounded">
-                          <span
-                            class="input-group-text border-end-0 bg-white"
-                            id="basic-addon1"
-                            ><img src="/assets/search-form.svg" />
-                          </span>
-                          <input
-                            type="search"
-                            class="form-control bg-white border-start-0"
-                            placeholder="Search"
-                            aria-label="search"
-                            aria-describedby="basic-addon1"
-                          />
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <a class="dropdown-item py-3 px-4" href="#">
-                        <span>New</span>
-                        <span class="select-box-value float-end p-0">
-                          <i
-                            class="count d-flex align-items-center justify-content-center h-3 w-3 fst-normal bg-blue-badge text-white text-center ms-3 d-inline-block rounded-circle fs-12"
-                            >3</i
-                          >
-                        </span>
-                      </a>
-                    </li>
-
-                    <li>
-                      <a class="dropdown-item py-3 px-4" href="#">
-                        <span>Open</span>
-                      </a>
-                    </li>
-
-                    <li>
-                      <a class="dropdown-item py-3 px-4" href="#">
-                        <span>Assigned to me</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item py-3 px-4" href="#">
-                        <span>All Assigned</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item py-3 px-4" href="#">
-                        <span>Resolved</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item py-3 px-4" href="#">
-                        <span> Bot Conversations</span>
-                      </a>
-                    </li>
-                    <li
-                      class="border border-bottom-0 border-left-0 border-right-0"
-                    >
-                    </li>
-
-                    <a
-                      id="custom-filter"
-                      class="dropdown-item text-center primary-blue mt-1 py-3 px-4"
-                      href="#"
-                    >
-                      <img src="/assets/add-blue.svg" />
-                      New custom view
-                    </a>
-                  </ul>
-                </div>
-                <!-- custom filter starts -->
-
-                <ul
-                  id="custom-filter-box"
-                  class="p-4 dropdown-menu dropdown-custom-filter custom-filter-box shadow-sm mt-4 d-none"
-                  aria-labelledby="dropdownMenuLink"
-                >
-                  <div class="form-group form-custom-group">
-                    <span class="fw-500 text-dark-blue fs-14 mb-2">
-                      New Custom View</span
-                    >
-                  </div>
-                  <Input
-                    label="View name"
-                    id="name"
-                    placeholder="Provide a name to view"
-                    type="input"
-                  />
-                  <Select label="Topic" id="topic" value="Filter by topic" />
-
-                  <div class="form-group mt-4">
-                    <label class="text-primary mb-1">Filter by status</label>
-                    <div class="d-flex justify-content-between gap-3">
-                      <Checkbox title="New" id="new" />
-                      <Checkbox title="Assigned" id="assigned" />
-                      <Checkbox title="Resolved" id="resolved" />
-                    </div>
-                  </div>
-                  <Select label="Groups" id="group" value="Filter by groups" />
-                  <Select
-                    label="Agents"
-                    id="agents"
-                    value="Filter by team member"
-                  />
-
-                  <div class="form-group mt-4">
-                    <div class="d-flex flex-column gap-2">
-                      <Checkbox
-                        title="Show 'Away Conversations' only"
-                        id="conversation"
-                      />
-                      <Checkbox
-                        title="Share this view with your team"
-                        id="share"
-                      />
-                    </div>
-                  </div>
-                  <div class="form-group d-flex gap-3 mt-4">
-                    <button
-                      class="btn bg-black d-flex align-items-center text-white w-100 justify-content-center"
-                      ><span>Save</span>
-                    </button>
-                    <button
-                      class="btn border border-1 rounded px-2 py-3 d-flex align-items-center justify-content-center me-3 w-100"
-                    >
-                      cancel</button
-                    >
-                  </div>
-                </ul>
-                <!--custom filter ends -->
-              </div>
-
-              <div class="ms-auto me-3">
-                <ul
-                  class="switcher h-4 w-10 d-flex align-items-center justify-content-between rounded-pill p-1 bg-cyan-blue"
-                >
-                  <li class="active">
-                    <a
-                      data-bs-toggle="tooltip"
-                      data-bs-title="tooltip"
-                      data-bs-placement="top"
-                      class="d-block h-5 w-5 text-center rounded-circle"
-                      href="#"
-                      ><img src="/assets/bag.svg" />
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      data-bs-toggle="tooltip"
-                      data-bs-title="Priority inbox"
-                      data-bs-placement="top"
-                      class="d-block h-5 w-5 text-center rounded-circle"
-                      href="#"
-                      ><img src="/assets/bag-in.svg" />
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              <!--menu filter starts -->
-              <div
-                class="dropdown more"
-                data-bs-toggle="tooltip"
-                data-bs-placement="top"
-                title="Filter"
-                data-bs-original-title="Filter"
-                aria-label="Filter"
-              >
-                <div
-                  id="filter-button"
-                  class="filter-round d-flex align-items-center justify-content-center flex-direction-column rounded-circle p-1"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                </div>
-
-                <ul
-                  class="dropdown-menu dropdown-response-filter p-4 mt-2 ms-3"
-                  id="dropdown-response-filter"
-                  aria-labelledby="dropdownMenuLink"
-                >
-                  <div class="form-group">
-                    <div class="d-flex flex-column gap-2">
-                      <Checkbox title="First Response" id="first-response" />
-                      <Checkbox title="Response Due" id="Response Due" />
-                      <Checkbox title="No Response Due" id="No Response Due" />
-                    </div>
-                  </div>
-                </ul>
-              </div>
-              <!-- menu filter ends -->
-
-              <!-- right section responsive view starts-->
-              <div class="dropdown more">
-                <div
-                  class="d-block d-lg-none bg-cyan-blue d-flex align-items-center justify-content-center flex-direction-column rounded-circle p-2"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <img src="/assets/mobile-filter.svg" />
-                  <div
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="top"
-                    title="Filter"
-                    data-bs-original-title="Filter"
-                    aria-label="Filter"
-                  >
-                  </div>
-                </div>
-
-                <ul
-                  class="dropdown-menu dropdown-response-filter p-4 mt-2"
-                  id="dropdown-response-filter"
-                  aria-labelledby="dropdownMenuLink"
-                >
-                  <div class="form-group">
-                    <div class="d-flex flex-column gap-2"></div>
-                  </div>
-                </ul>
-              </div>
-              <!-- right section responsive view ends-->
+                    <path
+                      d="M16.0312 10H2.96875"
+                      stroke="#2D50C8"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"></path>
+                    <path
+                      d="M8.3125 4.65625L2.96875 10L8.3125 15.3438"
+                      stroke="#2D50C8"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"></path>
+                  </svg>
+                </span>Back to search results
+              </a>
             </div>
-            <!--/.filter-box-->
-            <!-- custom search starts -->
-            <Search />
-            <!--/.custom_search ends-->
-            <div class="inbox-wrapper rounded bg-white mt-3">
-              <!-- chat listing -->
-              <UserListingInbox
-                borderColor="whatsapp"
-                active="inactive"
-                title="Paige Turner"
-                subtitle="Welcome to gsoftcomm..."
-                time="1 Min ago"
-                username="Page-tuner"
-                socialMedia="/assets/whatsapp.svg"
-              />
-              <UserListingInbox
-                borderColor="fb"
-                active="active"
-                title="Amanda Hug"
-                subtitle="Welcome to gsoftcomm..."
-                time="2 Min ago"
-                username="Amanda123"
-                socialMedia="/assets/facebook.svg"
-              />
-              <UserListingInbox
-                borderColor="whatsapp"
-                active="inactive"
-                title="Elieen Dover"
-                subtitle="Welcome to gsoftcomm..."
-                time="5 Min ago"
-                username="Elieen_dove"
-                socialMedia="/assets/whatsapp.svg"
-              />
+            <div class="inbox-wrapper rounded-bottom bg-white">
+              <!-- user details -->
+              <div class="card-details-user p-4">
+                <div
+                  class="d-flex flex-column align-items-center mb-4 text-center"
+                >
+                  <div class="d-flex align-items-center gap-4 w-100">
+                    <div class="d-flex">
+                      <div
+                        class="avatar h-10 w-10 d-inline-flex align-items-center justify-content-center text-center text text-uppercase bg-light-blue rounded-circle position-relative fs-3"
+                      >
+                      </div>
+                    </div>
+                    <div class="d-flex flex-column gap-2">
+                      <span class="text-primary fw-500 fs-14">Amanda Hug</span>
+                      <span class="text-secondary"
+                        ><a href="#"
+                          ><i class="me-1"
+                            ><img src="/assets/location.svg" />
+                          </i>
+                        </a>Location</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center my-4">
+                  <i class="me-2"><img src="/assets/mail.svg" /></i>
+                  <a href="#">name@example.com</a>
+                </div>
+                <div class="d-flex align-items-center my-3">
+                  <i class="me-2"><img src="/assets/call.svg" /></i>
+                  <a href="#" class="text-secondary fw-500">+1 6573456228</a>
+                </div>
+                <div
+                  class="box-grey-footer bg-white rounded d-flex align-items-center p-3 mt-3"
+                >
+                  <span
+                    ><label class="text-secondary">Identifier:</label> 74474012152860</span
+                  >
+                  <a href="#" class="ms-auto"
+                    ><img src="/assets/duplicate.svg" />
+                  </a>
+                </div>
+                <div class="mt-4">
+                  <button
+                    class="btn bg-dark text-center d-flex align-items-center text-white p-4 w-100 justify-content-center"
+                  >
+                    Start a New chat
+                  </button>
+                </div>
+              </div>
+              <!-- user details -->
+              <!-- search listing -->
+              <div class="card rounded border-0 position-relative p-4">
+                <div class="d-flex">
+                  <div class="card-round d-flex flex-nowrap">
+                    <div
+                      class="avatar-conv h-6 w-6 d-inline-flex align-items-center justify-content-center text-center text-uppercase position-relative fs-3"
+                    >
+                    </div>
+                  </div><div class="ps-3 w-100">
+                    <div class="d-flex">
+                      <div>
+                        <span class="fs-6 d-block fw-500 text-primary"
+                          >Ticket has been created</span
+                        ><span
+                          class="text-gray-medium fs-6 d-block mt-2 card-truncate"
+                          >1 hour ago</span
+                        >
+                      </div>
+                    </div><div class="d-flex align-items-center mt-3">
+                      <span
+                        class="rounded-3 fw-semibold text-uppercase py-2 px-2 fs-11 d-flex align-items-center justify-content-center bg-hawkes-blue text-royal-blue"
+                        >Open</span
+                      ><a
+                        class="text-contrast-blue fs-12 fw-normal bg-transparent align-items-center rounded-pill py-1 px-2 chat-whatsapp ms-auto"
+                        ><i
+                          ><img class="me-1" src="/assets/facebook.svg" />
+                        </i>Page-tuner</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="card card-active rounded border-0 position-relative p-4"
+              >
+                <div class="d-flex">
+                  <div class="card-round d-flex flex-nowrap">
+                    <div
+                      class="avatar-conv h-6 w-6 d-inline-flex align-items-center justify-content-center text-center text-uppercase position-relative fs-3"
+                    >
+                    </div>
+                  </div><div class="ps-3 w-100">
+                    <div class="d-flex">
+                      <div>
+                        <span class="fs-6 d-block fw-500 text-primary"
+                          >Ticket has been created</span
+                        ><span
+                          class="text-gray-medium fs-6 d-block mt-2 card-truncate"
+                          >1 hour ago</span
+                        >
+                      </div>
+                    </div><div class="d-flex align-items-center mt-3">
+                      <span
+                        class="rounded-3 fw-semibold py-2 px-2 fs-11 d-flex align-items-center text-uppurcase justify-content-center bg-green-light text-green"
+                        ><img
+                          class="me-2"
+                          src="/assets/check-green.svg"
+                        />Resolved</span
+                      ><a
+                        class="text-contrast-blue fs-12 fw-normal bg-transparent align-items-center rounded-pill py-1 px-2 chat-whatsapp ms-auto"
+                        ><i
+                          ><img class="me-1" src="/assets/whatsapp.svg" />
+                        </i>Page-tuner</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div><!--/-panel-left-->
           <div class="loading text-center">
@@ -474,47 +341,26 @@ import TicketList from "../../components/team-inbox/common/TicketsListing";
 
                         <!-- assign to an agent ends-->
 
-                        <!-- Resolve / create a ticket starts -->
+                        <!-- Reopen ticket starts -->
 
-                        <div class="dropdown more">
-                          <button
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                            class="btn bg-black d-flex align-items-center text-white"
-                            ><i class="me-2"
-                              ><span
-                                ><img
-                                  class="rounded-circle"
-                                  src="/assets/check.svg"
-                                  width="22"
-                                  height="22"
-                                  alt="# "
-                                />
-                              </span>
-                            </i><span>Resolve</span>
-                          </button>
-                          <ul
-                            class="dropdown-menu dropdown-resolve mt-2"
-                            aria-labelledby="dropdownMenuLink"
-                          >
-                            <li>
-                              <a class="dropdown-item py-2 px-4" href="#"
-                                >Resolve</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                href="#"
-                                class="dropdown-item py-2 px-4"
-                                data-bs-toggle="modal"
-                                data-bs-target="#resolveModal"
-                                >Resolve & Create Ticket</a
-                              >
-                            </li>
-                          </ul>
-                        </div>
+                        <button
+                          data-bs-toggle="modal"
+                          data-bs-target="#reopenModal"
+                          class="btn bg-black d-flex align-items-center text-white"
+                          ><i class="me-2"
+                            ><span
+                              ><img
+                                class="rounded-circle"
+                                src="/assets/reopen.svg"
+                                width="22"
+                                height="22"
+                                alt="# "
+                              />
+                            </span>
+                          </i><span>Reopen</span>
+                        </button>
 
-                        <!-- Resolve / create a ticket ends -->
+                        <!--reopen ticket ends -->
                       </div>
                     </div>
                     <!--/.panel-center-box-->
@@ -734,12 +580,25 @@ import TicketList from "../../components/team-inbox/common/TicketsListing";
                           </div>
 
                           <div
-                          class="d-flex align-items-center justify-content-center mt-4"
-                        >
-                         
-                            <div>Ticket created for the conversation <a class="fw-500" href="#">#EBAP-1234</a>, 12.00 AM
+                            class="d-flex align-items-center justify-content-center mt-4"
+                          >
+                            <div>
+                              Ticket created for the conversation <a
+                                class="fw-500"
+                                href="#">#EBAP-1234</a
+                              >, 12.00 AM
                             </div>
+                          </div>
+
+                          <div
+                            class="d-flex align-items-center justify-content-center mt-4"
+                          >
+                            <div>
+                              Conversation was reopned by <span class="fw-500"
+                                >Steven Paul, 03.00 AM</span
+                              >
                             </div>
+                          </div>
 
                           <div class="text-center text-disable mt-4 mb-2">
                             <svg
@@ -875,65 +734,31 @@ import TicketList from "../../components/team-inbox/common/TicketsListing";
                 <div id="right-section" class="col-lg-4">
                   <!-- hide content -->
                   <div class="panel-right">
-                    <!--/.user details box-->
+                    <!--/chat summary-->
                     <div
-                      class="card box-grey overflow-hidden card p-4 bg-white border-0 shadow-sm mb-3 rounded position-relative mb-3"
+                      class="card box-grey overflow-hidden card p-4 bg-white border-0 shadow-sm rounded position-relative mb-3"
                     >
-                      <div class="collapseicon-right position-absolute">
-                        <a id="collapse-right" href="#"
-                          ><img src="/assets/preview.svg" />
-                        </a>
-                      </div>
-                      <div
-                        class="d-flex flex-column align-items-center mb-4 text-center"
-                      >
-                        <div class="ps-3 w-100">
-                          <div
-                            class="d-flex flex-column align-items-center gap-3"
-                          >
-                            <div class="d-flex flex-column">
-                              <div class="card-round">
-                                <div class="card-round">
-                                  <div class="avatar h-12 w-12 d-inline-flex align-items-center justify-content-center text-center text  text-uppercase bg-light-blue rounded-circle position-relative fs-3 "></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div>
-                              <span
-                                class="card-name fs-6 d-block fw-500 text-primary"
-                                >Gsoftcomm</span
-                              >
-                              <span class="text-gray-medium fs-6 d-block mt-2"
-                                ><a href="#"
-                                  ><i class="me-1"
-                                    ><img src="/assets/location.svg" />
-                                  </i>
-                                </a>Location</span
-                              >
-                            </div>
-                          </div>
+                      <div class="d-flex align-items-center mb-4">
+                        <div class="me-3">
+                          <img src="/assets/chat-image.svg" />
+                        </div>
+                        <div class="fw-500 text-primary">Chat Summary</div>
+
+                        <div class="ms-auto">
+                          <a id="collapse-right" href="#"
+                            ><img src="/assets/preview.svg" />
+                          </a>
                         </div>
                       </div>
-                      <div class="d-flex align-items-center my-3">
-                        <i class="me-2"><img src="/assets/mail.svg" /></i>
-                        <a href="#">name@example.com</a>
-                      </div>
-                      <div class="d-flex align-items-center">
-                        <i class="me-2"><img src="/assets/call.svg" /></i>
-                        <a href="#" class="text-primary fw-500">+1 6573456228</a>
-                      </div>
-                      <div
-                        class="box-grey-footer bg-white rounded d-flex align-items-center p-3 mt-3"
-                      >
-                        <span
-                          ><label class="text-secondary">Identifier:</label> 74474012152860</span
-                        >
-                        <a href="#" class="ms-auto"
-                          ><img src="/assets/duplicate.svg" />
-                        </a>
+                      <div>
+                        <div>Total Conversations:<span class="fw-semibold">6</span> </div>
+                        <div class="card-progress d-flex rounded-2 overflow-hidden w-100 h-1 mt-2 bg-chat-blue">
+                          <div class="card-progress-bar bg-blue-active rounded-2 " role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="mt-2 float-end"><span class="fw-semibold">5</span> Resolved</div>
                       </div>
                     </div>
-                    <!--/.user details box-->
+
                     <!-- Accordion box -->
 
                     <AccordionCustom
@@ -984,27 +809,6 @@ import TicketList from "../../components/team-inbox/common/TicketsListing";
                           ><img src="/assets/create-tckt.svg" />
                         </i> Create Ticket</a
                       >
-
-                      <div class="p-3 rounded-3 mt-4 bg-titan-white">
-                        <div class="d-flex  align-items-center">
-                          <div><img class="me-3" src="/assets/help-support.svg"></div>
-                          <div class="d-flex flex-column gap-2">
-                            <div class="fw-500">T12345 </div>
-                            <div>Conversation with Paige Turner</div>
-                          </div>
-                        </div>
-                        <div class="mt-3">
-                          <span class="d-block my-2"><label class="text-secondary">Created on:</label><span class="text-primary">12/03/2022 11:31AM</span> </span>
-                          <span class="d-block my-2"><label class="text-secondary">Due in:</label> <span class="text-primary">13/03/2022 11:31AM</span></span>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-between mt-4">
-                          <span class="rounded-3 fw-semibold text-uppercase py-2 px-2 fs-11 d-flex align-items-center justify-content-center bg-hawkes-blue text-royal-blue">Open</span>
-                          <a href="#"> <span class="text-secondary"><i class="me-1"><img src="/assets/no-agent-icon.svg"></i>
-                              No agent</span></a>
-
-
-                        </div>
-                      </div>
                     </AccordionCustom>
                   </div>
                 </div>
@@ -1565,7 +1369,7 @@ import TicketList from "../../components/team-inbox/common/TicketsListing";
   </div>
 
   <!-- Resolve Modal -->
-  <div class="modal resolve-modal" id="resolveModal">
+  <div class="modal reopenModal" id="reopenModal">
     <div
       class="modal-dialog modal-dialog-right fadeInRight animated ml-auto modal-custom-dialog"
     >
@@ -1573,7 +1377,7 @@ import TicketList from "../../components/team-inbox/common/TicketsListing";
         <!-- Modal Header -->
         <div class="modal-header border-0">
           <h4 class="modal-title fw-500 text-primary fs-5">
-            Resolve & Create Ticket in Support desk
+            Reopen conversation
           </h4>
 
           <a href="#" type="button" class="btn-close" data-bs-dismiss="modal"
@@ -1584,117 +1388,23 @@ import TicketList from "../../components/team-inbox/common/TicketsListing";
         <div class="modal-body">
           <div class="d-flex flex-wrap">
             <p class="fs-6 text-secondary">
-              Choose to either save as a new Support Desk ticket or append it to
-              an existing ticket
+              This action will <span class="fw-500">Reopening</span> this conversation,
+              it will be added to the New' conversation view.
             </p>
           </div>
 
-          <Select label="Select label" id="selectlabel" value="Choose label" />
-
-          <div class="tab-ticket mt-5">
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button
-                  class="w-min-34 nav-link rounded-0 p-2 text-primary nav-resolve-tab border-end-0 rounded-start active"
-                  id="pills-ticket"
-                  data-bs-toggle="pill"
-                  data-bs-target="#pills-new-ticket"
-                  type="button"
-                  role="tab"
-                  aria-controls="pills-home"
-                  aria-selected="true">Save as new ticket</button
-                >
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="w-min-34 nav-link rounded-0 p-2 text-primary nav-resolve-tab border-start-0 rounded-end"
-                  id="pills-profile-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#pills-ext-ticket"
-                  type="button"
-                  role="tab"
-                  aria-controls="pills-profile"
-                  aria-selected="false">Append to existing ticket</button
-                >
-              </li>
-            </ul>
-            <div class="tab-content" id="pills-tabContent">
-              <div
-                class="tab-pane fade show active"
-                id="pills-new-ticket"
-                role="tabpanel"
-                aria-labelledby="pills-home-tab"
+          <div class="form-group mt-4">
+            <label class="text-primary mb-1" for="reOpen"
+              >To confirm this action please type <span class="fw-500"
+                >“Reopen”</span
               >
-                <Select
-                  label="Subject"
-                  id="Subject"
-                  value="Type conversation subject"
-                />
-
-                <Select
-                  label="Subject"
-                  id="Subject"
-                  value="Type conversation subject"
-                />
-
-                <!-- <div class="form-group form-custom-group">
-                  <label class="mt-1" for="assign">Tags </label>
-                  <select id="select_group" class="js-select2 form-control form-custom-control" multiple="multiple">
-
-                    <option value="O1" selected data-badge="">First week </option>
-                    <option value="O2" selected data-badge="">New</option>
-
-                  </select>
-                </div> -->
-              </div>
-              <div
-                class="tab-pane fade"
-                id="pills-ext-ticket"
-                role="tabpanel"
-                aria-labelledby="pills-profile-tab"
-              >
-                <div class="existing-tickets">
-                  <h5 class="text-secondary fs-6">
-                    Select existing tickets to append
-                  </h5>
-                  <!-- ticket listing -->
-                  <TicketList
-                    ticketNumber="TC1AP9234"
-                    userName="Paige Turner"
-                    createdDate="20th Jun 2022"
-                    dueDate="23rd Jun 2022"
-                    priority="low"
-                    bg="hawkes-blue"
-                    textColor="slate-blue"
-                  />
-
-                  <TicketList
-                    ticketNumber="TC1AP9234"
-                    userName="Paige Turner"
-                    createdDate="20th Jun 2022"
-                    dueDate="23rd Jun 2022"
-                    priority="low"
-                    bg="moody-blue"
-                    textColor="white"
-                  />
-
-                  <!-- ticket listing -->
-                </div>
-
-                <div class="form-group mt-3">
-                  <label for="assign">Tags</label>
-                  <select
-                    class="js-select3 form-control form-custom-control"
-                    multiple="multiple"
-                  >
-                    <option value="O1" selected data-badge=""
-                      >First week
-                    </option>
-                    <option value="O2" selected data-badge="">New</option>
-                  </select>
-                </div>
-              </div>
-            </div>
+            </label>
+            <input
+              type="text"
+              class="form-control bg-white"
+              id="reOpen"
+              placeholder="Type “Reopen”"
+            />
           </div>
         </div>
 
@@ -1703,7 +1413,7 @@ import TicketList from "../../components/team-inbox/common/TicketsListing";
           <button
             type="button"
             class="btn bg-black d-flex align-items-center text-white me-3"
-            >Save</button
+            >Reopen</button
           >
           <button
             type="button"

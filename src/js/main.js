@@ -19,6 +19,8 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 });
 
 
+
+
 //collapse functionality
 
 
