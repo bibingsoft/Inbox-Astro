@@ -1,10 +1,14 @@
-.nav-item a {
+
+.left-nav{
+z-index: 99;
+.nav-link-side {
   &:hover {
-    background-color: $blue-active;
+    background-color: $blue-active !important;
   }
   &.active {
     width: toRem(40px);
     height: toRem(40px);
     background-color: $blue-active !important;
   }
+}
 }

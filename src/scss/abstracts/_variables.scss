@@ -42,6 +42,7 @@
         $light-yellow:#FFF1D5;
         $dark-yellow:#FEC860;
         $yellow:#FFB82E;
+        $yellow-shade: #FFE7B0;
         $gray-blue: #8190B7;
         $chat-blue: #ebefff;
         $contrast-blue:#6174A4;
@@ -64,6 +65,9 @@
         $royal-blue:#446BF4;
         $green-light:#DFF2E4;
         $green:#006C38;
+        $s-green:#0FA779;
+        $orange: #FF7E36;
+        $green-white: #E7E8EB;
 
 
       
@@ -117,6 +121,10 @@
             "royal-blue": $royal-blue,
             "green-light":  $green-light,
             "green": $green,
+            "orange":  $orange,
+            "yellow-shade": $yellow-shade,
+            "green-white":  $green-white,
+            "s-green": $s-green,
           );
           
          
